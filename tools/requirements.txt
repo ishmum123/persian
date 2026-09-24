@@ -1,0 +1,6 @@
+# Shared builder deps (spacy, wordfreq, simplemma), pinned in vocab-engine:
+-r ../engine/tools/packbuilder/requirements.txt
+# Stanza (Apache-2.0) tags Persian; its fa default model (UD Persian-Seraji,
+# CC BY-SA 4.0) downloads on the first build into .cache/stanza/ (build time only,
+# no model files ship with the pack). Pulls in torch.
+stanza==1.14.0
