@@ -56,7 +56,7 @@ Levels: {'A1': 600, 'A2': 700, 'B1': 700}. POS: {'noun': 1184, 'adj': 310, 'verb
 ## Top 100 by rank (lemma [pos] gloss)
 
 ```
-   1 بودن [verb] to be (است، هست: is)
+   1 بودن [verb] to be (است، هست: is); (باشد) OK, all right
    2 و [conj] and
    3 به [prep] to; at, in
    4 کردن [verb] to do, to make; (light verb)
@@ -76,7 +76,7 @@ Levels: {'A1': 600, 'A2': 700, 'B1': 700}. POS: {'noun': 1184, 'adj': 310, 'verb
   18 گفتن [verb] to say, to tell
   19 رفتن [verb] to go; to leave
   20 آن [det] that
-  21 خواستن [verb] to want; will (future auxiliary)
+  21 خواستن [verb] to want; will (future auxiliary); (معذرت خواستن) to apologise
   22 خوب [adj] good; well
   23 خود [pron] self, oneself; own
   24 آمدن [verb] to come
@@ -90,9 +90,9 @@ Levels: {'A1': 600, 'A2': 700, 'B1': 700}. POS: {'noun': 1184, 'adj': 310, 'verb
   32 یا [conj] or
   33 دیگر [adj] other, another; anymore
   34 دانستن [verb] to know
-  35 دادن [verb] to give
+  35 دادن [verb] to give; (آب دادن) to water
   36 فکر کردن [verb] to think
-  37 دیدن [verb] to see
+  37 دیدن [verb] to see; (آسیب دیدن) to be damaged
   38 فقط [adv] only, just
   39 خیلی [adv] very, a lot
   40 اما [conj] but
@@ -101,7 +101,7 @@ Levels: {'A1': 600, 'A2': 700, 'B1': 700}. POS: {'noun': 1184, 'adj': 310, 'verb
   43 پس [adv] so, then; back; (پس از) after
   44 انجام دادن [verb] to do, to carry out
   45 تا [prep] until, up to, as far as
-  46 گرفتن [verb] to take, to get; to catch
+  46 گرفتن [verb] to take, to get; to catch; (جشن گرفتن) to hold a party; (جا گرفتن) to book; (درد گرفتن) to start to hurt
   47 سال [noun] year
   48 چه [pron] what
   49 کار کردن [verb] to work
@@ -124,12 +124,12 @@ Levels: {'A1': 600, 'A2': 700, 'B1': 700}. POS: {'noun': 1184, 'adj': 310, 'verb
   66 زندگی کردن [verb] to live
   67 حالا [adv] now
   68 حال [noun] state, condition; health
-  69 سر [noun] head; top; end
+  69 سر [noun] head; top; end; (سر کار) at work; (سر میز) at the table
   70 مورد [noun] case, matter; (در مورد) about
-  71 جا [noun] place, room
+  71 جا [noun] place, room; (به جای) instead of
   72 چیزی [pron] something, anything
   73 اینکه [conj] that (the fact that)
-  74 دست [noun] hand
+  74 دست [noun] hand; side (دست چپ: on the left)
   75 مثل [prep] like, as
   76 استفاده کردن [verb] to use
   77 خانه [noun] house, home
@@ -143,7 +143,7 @@ Levels: {'A1': 600, 'A2': 700, 'B1': 700}. POS: {'noun': 1184, 'adj': 310, 'verb
   85 او [pron] he, she; him, her
   86 مرد [noun] man
   87 چون [conj] because; since
-  88 بیشتر [adj] more; most
+  88 بیشتر [adj] more; most; (بیش از) more than
   89 واقعاً [adv] really, truly
   90 خدا [noun] God
   91 وقت [noun] time

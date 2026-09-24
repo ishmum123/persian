@@ -52,3 +52,63 @@ Residuals from the v1 QA rounds. The rules already in place are in
 - Tagger/dictionary part-of-speech mismatches are fixed by hand tables
   (UPOS_FIX, PART_ADJ, SHARED_STEM for کشیدن/کشتن and شدن/شستن). New
   homograph stems need entries there.
+
+## Reading passages
+- A native-speaker pass over the 60 texts has not been done yet; only an
+  automated QA pass plus two rounds of manual/external QA fixes (see
+  `tools/REPORT_passages.md` for the full manual notes and per-passage
+  coverage/link numbers).
+- The only out-of-pack lemma across all 60 passages is فسنجان (fesenjan,
+  the dish p0053's narrator cooks: no pack word names it).
+- The passage-only linker rules for Persian (an X-tagged plain word gets
+  its dictionary class; a verb read with a non-infinitive lemma is
+  re-read from its surface; بهتر/بیشتر/کمتر keep their own lemma; a
+  light-verb compound the pack lacks splits into its parts; a noun that
+  is a bare preposition's object never forms a finite compound; a pack
+  noun X+ی stays that noun only when the passage English names its
+  gloss, else it is X + indefinite ی; نه reads "nine" only in counting
+  contexts; a noun compound of two pack nouns the pack lacks as a whole
+  links its head) live in vocab-engine's `packbuilder/langs/fa.py`
+  passage hooks, not in this repo, and are covered by its
+  `test_passage_fa.py`. None of them changes the word or sentence build
+  (see the "Passage link rules" section below and `tools/REPORT_passages.md`).
+- The 15 gloss senses added or corrected in `tools/gloss_overrides.json`
+  while writing the passages are listed in `tools/REPORT_passages.md`'s
+  manual-QA notes (گل, دروازه, زنگ, سر, بردن, قانون, صاف, برابر, قرار, خط,
+  گرفتن, اغلب, خاک, بلند, ایستادن, and more).
+- کم‌کم, هیچ‌وقت, هیچ‌کس, هیچ‌کدام now show with their ZWNJ headword
+  spelling; see "ZWNJ headwords" below.
+
+## ZWNJ headwords (2026-09-25)
+- The engine matches example text literally (core.js `findSurface`, no
+  folding). A headword spelled with ZWNJ (آن‌ها, کم‌کم, هیچ‌کس) is invisible in
+  corpus sentences that write it joined (آنها) or spaced (آن ها). fa.py
+  `finalize_words` therefore gives every ZWNJ headword its joined spelling as
+  `alt`, plus the spaced one when the corpus writes it. Any new DISPLAY entry
+  with ZWNJ gets this automatically. Check with
+  `.cache/pb/zwnj_find.js` (node; see its header).
+- Still unfound: 5 of 64 آن‌ها examples. The word appears only inflected
+  (آنهاست, آنهایی) or as the clitic شان that the tagger lemmatises to آنها.
+  The engine does not match inflected forms for any word.
+
+## کم‌کم vs کمکم "help me" (open, needs a decision)
+- Both pack examples of w1254 کم‌کم "gradually" are really کمک + م "help me":
+  s0141 هیچ کس به کمکم نیامد, s1328 منتظرم تا کسی کمکم کند.
+- Measured on 2026-09-25: a corpus rule (کمکم after به, or before a form of
+  کردن, is کمک) drops w1254 out of the 2000. عربی (w2010, B1) comes in,
+  864 words change rank and 2,041 sentences.json entries change. Almost all
+  corpus کمکم tokens are "help me". The rule was reverted.
+- Options: accept the re-rank as a v2 pack change, or add a core hook that
+  corrects sentence links without touching the frequency pass, then drop the
+  two links and give w1254 written examples.
+
+## Passage link rules (latent limits)
+- Noun compound head (`passage_post_resolve`): a token that is two pack
+  nouns joined (ثبت‌نام) and is not a pack word links its first noun (ثبت).
+  The head's gloss can miss the compound's meaning ("registration" vs
+  "record"), and a split is taken only when exactly one cut makes two pack
+  nouns. It only runs in passages.
+- Whole pack noun X+ی (ماهی, گوشی) is kept only when the passage English
+  names its gloss. The flag is set in `fix_sentence` on passage rows only.
+  A paraphrased translation falls back to the stem X. The pack has 15 such
+  pairs, including بیماری, پزشکی, همکاری, دوستی, دزدی and عروسی.

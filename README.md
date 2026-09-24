@@ -3,7 +3,8 @@
 Static data pack for a language-agnostic vocab trainer (`key: "fa"`). It has
 2000 words spanning A1-B1, each with a short English gloss and a
 romanisation. Every word also has at least two example sentences with
-English translations.
+English translations. The Read tab adds 60 short reading passages with
+comprehension questions (see "Reading passages" below).
 
 **Live:** https://ishmum123.github.io/persian/
 
@@ -35,6 +36,42 @@ and reviewed, but not by a native Persian speaker. Tatoeba has no Persian audio 
 so the pack has no sentence audio, and speech uses the browser's fa-IR
 voice. 1,980 of 2000 words have a romanisation; `tools/REPORT.md` lists
 the rest. Known residuals are in `TODO.md`.
+
+## Reading passages (Read tab)
+
+`pack/passages.json` holds 60 short reading texts, 20 each at A1, A2 and B1,
+with comprehension questions each. The format is in the engine's
+`docs/PACK_SCHEMA.md`. The texts were written for this pack (`"src": "gen"`)
+and their source is `tools/passages_src.json`. Rebuild from that source with:
+
+```
+PYTHONPATH=engine/tools python3 -m packbuilder passages --lang fa .   # --check: report only
+python3 engine/tools/jsonify_pack.py pack                             # passages go into passages.js
+```
+
+The builder links word ids the same way it does for the example sentences,
+using the same ZWNJ-aware surface matching (see "Script and display" and
+"ZWNJ headwords" in `TODO.md`). It enforces in-pack coverage of at least
+95% at A1 and A2, and at least 93% at B1: A1 words run 67-90 (whitespace
+count 63-83), A2 95-118 (92-106), B1 120-150 (116-141). It also enforces a
+level budget: an A1 passage may use at most 3 A2 words (and no B1 words)
+and an A2 passage at most 3 B1 words. All 60 passages hit full or
+near-full coverage; the one exception is فسنجان (fesenjan) in a B1 recipe
+passage, which no pack word names. Per-passage numbers and the QA notes
+are in `tools/REPORT_passages.md`.
+
+A level's 20 passages unlock once the learner has learned 70% of that
+level's words. Tapping any word in a passage shows its gloss, including
+inflected forms, via per-sentence token spans linked to word ids.
+Comprehension questions (286 total: 143 multiple-choice, 143 true/false)
+feed missed words back into the review queue as weak words. As with the
+rest of the pack, there is no audio: passages have no recordings, and the
+browser has no Persian TTS voice either, so the Read tab's speaker
+buttons are silent.
+
+The passages and questions are machine-written by Claude, checked by an
+automated QA pass and two rounds of manual/external QA fixes; they have
+not had a native-speaker review.
 
 ## Script and display
 

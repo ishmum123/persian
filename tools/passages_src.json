@@ -1,0 +1,7110 @@
+{
+ "rules": {
+  "coverage": {
+   "A1": 0.95,
+   "A2": 0.95,
+   "B1": 0.93
+  },
+  "budget": {
+   "A1": [
+    "A2",
+    3
+   ],
+   "A2": [
+    "B1",
+    3
+   ],
+   "B1": [
+    null,
+    0
+   ]
+  },
+  "words_per_passage": {
+   "A1": [
+    60,
+    90
+   ],
+   "A2": [
+    90,
+    120
+   ],
+   "B1": [
+    110,
+    150
+   ]
+  },
+  "questions": [
+   4,
+   5
+  ]
+ },
+ "passages": [
+  {
+   "id": "p0001",
+   "lv": "A1",
+   "title": "روز علی",
+   "oop": {
+    "علی": "name",
+    "شیراز": "name"
+   },
+   "names": [
+    "علی",
+    "شیراز"
+   ],
+   "sentences": [
+    [
+     "اسم من علی است و در شهر شیراز زندگی می‌کنم.",
+     "My name is Ali and I live in the city of Shiraz."
+    ],
+    [
+     "من در یک شرکت بزرگ کار می‌کنم.",
+     "I work at a big company."
+    ],
+    [
+     "صبحانه‌ام همیشه نان و پنیر و چای است.",
+     "My breakfast is always bread, cheese and tea."
+    ],
+    [
+     "هر روز صبح با اتوبوس به سر کار می‌روم، چون ماشین ندارم.",
+     "Every morning I go to work by bus, because I don't have a car."
+    ],
+    [
+     "ظهر با دوستانم در یک رستوران کوچک ناهار می‌خوریم.",
+     "At noon my friends and I have lunch in a small restaurant."
+    ],
+    [
+     "عصر به خانه برمی‌گردم و کمی می‌خوابم.",
+     "In the late afternoon I go back home and sleep a little."
+    ],
+    [
+     "شب‌ها برای خانواده‌ام شام درست می‌کنم.",
+     "In the evenings I make dinner for my family."
+    ],
+    [
+     "بعد از شام کتاب می‌خوانم یا فیلم می‌بینم.",
+     "After dinner I read a book or watch a film."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "علی چطور به سر کار می‌رود؟",
+     "en": "How does Ali get to work?",
+     "type": "mc",
+     "options": [
+      "با اتوبوس",
+      "با ماشین",
+      "با قطار",
+      "با دوچرخه"
+     ],
+     "answer": 0,
+     "words": [
+      "اتوبوس"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "علی ماشین ندارد.",
+     "en": "Ali doesn't have a car.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "ماشین"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "علی ناهار را تنها می‌خورد.",
+     "en": "Ali eats lunch alone.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "ناهار",
+      "دوست"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "علی شب‌ها چه کار می‌کند؟",
+     "en": "What does Ali do in the evenings?",
+     "type": "mc",
+     "options": [
+      "به پارک می‌رود",
+      "شام درست می‌کند",
+      "در شرکت کار می‌کند",
+      "به مادرش زنگ می‌زند"
+     ],
+     "answer": 1,
+     "words": [
+      "شام",
+      "درست کردن"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "صبحانه‌ی علی نان و پنیر و قهوه است.",
+     "en": "Ali's breakfast is bread, cheese and coffee.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "صبحانه",
+      "چای"
+     ],
+     "sentence": 2
+    }
+   ]
+  },
+  {
+   "id": "p0002",
+   "lv": "A1",
+   "title": "خانواده‌ی مریم",
+   "oop": {
+    "مریم": "name",
+    "تهران": "name",
+    "رضا": "name",
+    "سارا": "name"
+   },
+   "names": [
+    "مریم",
+    "تهران",
+    "رضا",
+    "سارا"
+   ],
+   "sentences": [
+    [
+     "مریم دوازده سال دارد و در تهران زندگی می‌کند.",
+     "Maryam is twelve years old and lives in Tehran."
+    ],
+    [
+     "در خانواده‌ی او پنج نفر هستند.",
+     "There are five people in her family."
+    ],
+    [
+     "پدرش دکتر است و در یک بیمارستان بزرگ کار می‌کند.",
+     "Her father is a doctor and works in a big hospital."
+    ],
+    [
+     "مادرش در مدرسه‌ی نزدیک خانه معلم است.",
+     "Her mother is a teacher at the school near their home."
+    ],
+    [
+     "مریم یک برادر بزرگ به اسم رضا و یک خواهر کوچک به اسم سارا دارد.",
+     "Maryam has an older brother called Reza and a little sister called Sara."
+    ],
+    [
+     "رضا هفده سال دارد و موسیقی را خیلی دوست دارد.",
+     "Reza is seventeen and loves music."
+    ],
+    [
+     "سارا چهار سال دارد و تمام روز با گربه بازی می‌کند.",
+     "Sara is four and plays with the cat all day."
+    ],
+    [
+     "جمعه‌ها همه با هم به پارک می‌روند و ناهار را آنجا می‌خورند.",
+     "On Fridays they all go to the park together and have lunch there."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "در خانواده‌ی مریم چند نفر هستند؟",
+     "en": "How many people are there in Maryam's family?",
+     "type": "mc",
+     "options": [
+      "سه نفر",
+      "چهار نفر",
+      "پنج نفر",
+      "شش نفر"
+     ],
+     "answer": 2,
+     "words": [
+      "نفر"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "پدر مریم کجا کار می‌کند؟",
+     "en": "Where does Maryam's father work?",
+     "type": "mc",
+     "options": [
+      "در یک هتل",
+      "در مدرسه",
+      "در یک مغازه",
+      "در بیمارستان"
+     ],
+     "answer": 3,
+     "words": [
+      "پدر",
+      "بیمارستان"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "رضا از مریم بزرگ‌تر است.",
+     "en": "Reza is older than Maryam.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "برادر",
+      "بزرگ"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "سارا با سگ بازی می‌کند.",
+     "en": "Sara plays with the dog.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "گربه",
+      "بازی کردن"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "خانواده‌ی مریم جمعه‌ها کجا ناهار می‌خورند؟",
+     "en": "Where does Maryam's family have lunch on Fridays?",
+     "type": "mc",
+     "options": [
+      "در پارک",
+      "در خانه",
+      "در رستوران",
+      "در خانه‌ی دوستانشان"
+     ],
+     "answer": 0,
+     "words": [
+      "جمعه",
+      "پارک"
+     ],
+     "sentence": 7
+    }
+   ]
+  },
+  {
+   "id": "p0003",
+   "lv": "A1",
+   "title": "در بازار",
+   "oop": {
+    "زهرا": "name"
+   },
+   "names": [
+    "زهرا"
+   ],
+   "sentences": [
+    [
+     "شنبه صبح، زهرا با پسرش به بازار می‌رود.",
+     "On Saturday morning Zahra goes to the market with her son."
+    ],
+    [
+     "آن‌ها همیشه میوه را از یک مغازه‌ی کوچک نزدیک خانه می‌خرند.",
+     "They always buy fruit from a small shop near their home."
+    ],
+    [
+     "«سلام آقا! لطفاً شش سیب و کمی پنیر به من بدهید.»",
+     "\"Hello, sir! Please give me six apples and a little cheese.\""
+    ],
+    [
+     "«حتماً خانم. نان هم می‌خواهید؟ نان امروز خیلی تازه است.»",
+     "\"Of course, madam. Would you like bread too? Today's bread is very fresh.\""
+    ],
+    [
+     "«بله، ممنون. همه چقدر می‌شود؟»",
+     "\"Yes, thank you. How much is it all?\""
+    ],
+    [
+     "مرد یک سیب قرمز به پسر زهرا می‌دهد و می‌گوید: «این مال تو است!»",
+     "The man gives Zahra's son a red apple and says: \"This is for you!\""
+    ],
+    [
+     "زهرا پول را می‌دهد و آن‌ها پیاده به خانه برمی‌گردند.",
+     "Zahra pays and they walk back home."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "زهرا روز شنبه به بازار می‌رود.",
+     "en": "Zahra goes to the market on Saturday.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "شنبه",
+      "بازار"
+     ],
+     "sentence": 0
+    },
+    {
+     "q": "مغازه کجاست؟",
+     "en": "Where is the shop?",
+     "type": "mc",
+     "options": [
+      "کنار مدرسه",
+      "نزدیک خانه",
+      "پشت بیمارستان",
+      "کنار پارک"
+     ],
+     "answer": 1,
+     "words": [
+      "نزدیک"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "زهرا اول چه چیزی می‌خواهد؟",
+     "en": "What does Zahra ask for first?",
+     "type": "mc",
+     "options": [
+      "نان و شیر",
+      "گوشت و برنج",
+      "سیب و پنیر",
+      "چای و قهوه"
+     ],
+     "answer": 2,
+     "words": [
+      "سیب",
+      "پنیر"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "مرد به پسر زهرا چیزی می‌دهد.",
+     "en": "The man gives Zahra's son something.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "دادن"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "آن‌ها با اتوبوس به خانه برمی‌گردند.",
+     "en": "They go back home by bus.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "پیاده",
+      "برگشتن"
+     ],
+     "sentence": 6
+    }
+   ]
+  },
+  {
+   "id": "p0004",
+   "lv": "A1",
+   "title": "پیامی برای نسرین",
+   "oop": {
+    "نسرین": "name",
+    "مینا": "name"
+   },
+   "names": [
+    "نسرین",
+    "مینا"
+   ],
+   "sentences": [
+    [
+     "سلام نسرین جان!",
+     "Hi, dear Nasrin!"
+    ],
+    [
+     "ببخشید، امشب نمی‌توانم با تو به سینما بیایم.",
+     "Sorry, I can't come to the cinema with you tonight."
+    ],
+    [
+     "مادرم مریض است و باید در خانه پیش برادر کوچکم بمانم.",
+     "My mother is ill and I have to stay at home with my little brother."
+    ],
+    [
+     "او شش سال دارد و نمی‌تواند تنها در خانه بماند.",
+     "He is six and can't stay at home alone."
+    ],
+    [
+     "تو فردا شب وقت داری؟",
+     "Do you have time tomorrow evening?"
+    ],
+    [
+     "می‌توانیم فیلم ساعت هشت را ببینیم و بعد با هم شام بخوریم.",
+     "We can see the eight o'clock film and then have dinner together."
+    ],
+    [
+     "فردا صبح قبل از کلاس به تو زنگ می‌زنم.",
+     "I'll call you tomorrow morning before class."
+    ],
+    [
+     "تا فردا! دوست تو، مینا",
+     "See you tomorrow! Your friend, Mina"
+    ]
+   ],
+   "questions": [
+    {
+     "q": "مینا امشب به سینما می‌رود.",
+     "en": "Mina is going to the cinema tonight.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "امشب",
+      "سینما"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "چرا مینا باید در خانه بماند؟",
+     "en": "Why does Mina have to stay at home?",
+     "type": "mc",
+     "options": [
+      "دوستش به خانه‌اش می‌آید",
+      "خودش مریض است",
+      "خیلی کار دارد",
+      "مادرش مریض است"
+     ],
+     "answer": 3,
+     "words": [
+      "مادر",
+      "مریض"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "برادر مینا نمی‌تواند تنها بماند.",
+     "en": "Mina's brother can't stay alone.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "تنها",
+      "ماندن"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "مینا چه وقتی به نسرین زنگ می‌زند؟",
+     "en": "When will Mina call Nasrin?",
+     "type": "mc",
+     "options": [
+      "فردا صبح",
+      "امشب",
+      "فردا شب",
+      "ساعت هشت"
+     ],
+     "answer": 0,
+     "words": [
+      "زنگ زدن"
+     ],
+     "sentence": 6
+    }
+   ]
+  },
+  {
+   "id": "p0005",
+   "lv": "A1",
+   "title": "چهار فصل",
+   "oop": {},
+   "names": [],
+   "sentences": [
+    [
+     "شهر ما چهار فصل دارد.",
+     "Our city has four seasons."
+    ],
+    [
+     "در بهار هوا گرم و خوب است و همه جا پر از گل است.",
+     "In spring the weather is warm and nice and everywhere is full of flowers."
+    ],
+    [
+     "تابستان خیلی گرم است و مردم به کنار دریا می‌روند.",
+     "Summer is very hot and people go to the seaside."
+    ],
+    [
+     "در پاییز باران زیاد می‌آید و درخت‌ها زرد و قرمز می‌شوند.",
+     "In autumn it rains a lot and the trees turn yellow and red."
+    ],
+    [
+     "در زمستان هوا سرد است و در کوه برف زیادی می‌آید.",
+     "In winter the weather is cold and a lot of snow falls in the mountains."
+    ],
+    [
+     "بچه‌ها برف را خیلی دوست دارند و بیرون بازی می‌کنند.",
+     "Children love snow and play outside."
+    ],
+    [
+     "من بهار را بیشتر دوست دارم، چون نه گرم است و نه سرد.",
+     "I like spring best, because it is neither hot nor cold."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "در تابستان مردم کجا می‌روند؟",
+     "en": "Where do people go in summer?",
+     "type": "mc",
+     "options": [
+      "به کوه",
+      "کنار دریا",
+      "به پارک",
+      "به بازار"
+     ],
+     "answer": 1,
+     "words": [
+      "تابستان",
+      "دریا"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "در پاییز باران کم می‌آید.",
+     "en": "In autumn it rains little.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "پاییز",
+      "باران"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "در زمستان هوا گرم نیست.",
+     "en": "In winter the weather isn't warm.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "زمستان",
+      "سرد"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "نویسنده کدام فصل را بیشتر دوست دارد؟",
+     "en": "Which season does the writer like best?",
+     "type": "mc",
+     "options": [
+      "پاییز",
+      "تابستان",
+      "بهار",
+      "زمستان"
+     ],
+     "answer": 2,
+     "words": [
+      "بهار"
+     ],
+     "sentence": 6
+    }
+   ]
+  },
+  {
+   "id": "p0006",
+   "lv": "A1",
+   "title": "در رستوران",
+   "oop": {
+    "رضا": "name",
+    "لیلا": "name"
+   },
+   "names": [
+    "رضا",
+    "لیلا"
+   ],
+   "sentences": [
+    [
+     "رضا و لیلا برای شام به یک رستوران کوچک می‌روند.",
+     "Reza and Leila go to a small restaurant for dinner."
+    ],
+    [
+     "مرد جوانی می‌آید و می‌پرسد: «سلام، چه می‌خورید؟»",
+     "A young man comes and asks: \"Hello, what will you have?\""
+    ],
+    [
+     "لیلا می‌گوید: «من برنج و ماهی می‌خواهم.»",
+     "Leila says: \"I'd like rice and fish.\""
+    ],
+    [
+     "رضا گوشت نمی‌خورد، برای همین فقط برنج می‌خواهد.",
+     "Reza doesn't eat meat, so he only wants rice."
+    ],
+    [
+     "«چه می‌نوشید؟» «دو چای، لطفاً.»",
+     "\"What will you drink?\" \"Two teas, please.\""
+    ],
+    [
+     "غذا خیلی خوشمزه است، اما کمی دیر می‌آید.",
+     "The food is very tasty, but it comes a little late."
+    ],
+    [
+     "بعد از شام، رضا می‌پرسد: «ببخشید آقا، قیمت همه چقدر است؟»",
+     "After dinner Reza asks: \"Excuse me, sir, how much is everything?\""
+    ],
+    [
+     "غذای این رستوران ارزان است و آن‌ها می‌خواهند دوباره به آنجا بروند.",
+     "The food at this restaurant is cheap and they want to go there again."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "لیلا چه غذایی می‌خواهد؟",
+     "en": "What food does Leila want?",
+     "type": "mc",
+     "options": [
+      "گوشت و نان",
+      "برنج و گوشت",
+      "نان و پنیر",
+      "برنج و ماهی"
+     ],
+     "answer": 3,
+     "words": [
+      "ماهی"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "رضا گوشت می‌خواهد.",
+     "en": "Reza wants meat.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "گوشت"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "آن‌ها چه می‌نوشند؟",
+     "en": "What do they drink?",
+     "type": "mc",
+     "options": [
+      "چای",
+      "قهوه",
+      "آب",
+      "شیر"
+     ],
+     "answer": 0,
+     "words": [
+      "چای"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "آن‌ها کمی منتظر غذا می‌مانند.",
+     "en": "They wait a little for the food.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "دیر"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "غذای رستوران گران است.",
+     "en": "The restaurant's food is expensive.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "ارزان"
+     ],
+     "sentence": 7
+    }
+   ]
+  },
+  {
+   "id": "p0007",
+   "lv": "A1",
+   "title": "سگ من",
+   "oop": {
+    "ماکس": "name"
+   },
+   "names": [
+    "ماکس"
+   ],
+   "sentences": [
+    [
+     "من یک سگ کوچک و سفید دارم.",
+     "I have a small white dog."
+    ],
+    [
+     "اسمش ماکس است و سه سال دارد.",
+     "His name is Max and he is three years old."
+    ],
+    [
+     "هر روز صبح و عصر با او در پارک قدم می‌زنم.",
+     "Every morning and every afternoon I walk with him in the park."
+    ],
+    [
+     "ماکس دویدن را خیلی دوست دارد و همیشه دنبال پرنده‌ها می‌دود.",
+     "Max loves running and always runs after the birds."
+    ],
+    [
+     "او غذای خودش را دارد، اما گوشت و نان هم می‌خورد.",
+     "He has his own food, but he also eats meat and bread."
+    ],
+    [
+     "شب‌ها ماکس کنار تخت من می‌خوابد.",
+     "At night Max sleeps next to my bed."
+    ],
+    [
+     "وقتی به خانه می‌آیم، او خیلی خوشحال می‌شود و به طرف در می‌دود.",
+     "When I come home, he gets very happy and runs to the door."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "رنگ ماکس چیست؟",
+     "en": "What colour is Max?",
+     "type": "mc",
+     "options": [
+      "سیاه",
+      "سفید",
+      "قهوه‌ای",
+      "زرد"
+     ],
+     "answer": 1,
+     "words": [
+      "سفید"
+     ],
+     "sentence": 0
+    },
+    {
+     "q": "ماکس روزی دو بار به پارک می‌رود.",
+     "en": "Max goes to the park twice a day.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "پارک",
+      "قدم زدن"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "ماکس دنبال چه چیزی می‌دود؟",
+     "en": "What does Max run after?",
+     "type": "mc",
+     "options": [
+      "بچه‌ها",
+      "گربه‌ها",
+      "پرنده‌ها",
+      "ماشین‌ها"
+     ],
+     "answer": 2,
+     "words": [
+      "دنبال",
+      "دویدن"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "ماکس شب‌ها در خانه می‌خوابد.",
+     "en": "Max sleeps in the house at night.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "خوابیدن"
+     ],
+     "sentence": 5
+    }
+   ]
+  },
+  {
+   "id": "p0008",
+   "lv": "A1",
+   "title": "توجه!",
+   "oop": {
+    "کریمی": "name"
+   },
+   "names": [
+    "کریمی"
+   ],
+   "sentences": [
+    [
+     "توجه!",
+     "Attention!"
+    ],
+    [
+     "مغازه‌ی ما از شنبه تا سه‌شنبه باز نیست.",
+     "Our shop is not open from Saturday to Tuesday."
+    ],
+    [
+     "در این چهار روز، ما در مغازه کار داریم و آن را جدید و زیبا می‌کنیم.",
+     "During these four days we have work to do in the shop and are making it new and beautiful."
+    ],
+    [
+     "چهارشنبه ساعت هشت صبح دوباره در را باز می‌کنیم.",
+     "On Wednesday at eight in the morning we open the door again."
+    ],
+    [
+     "روز چهارشنبه، قیمت همه‌ی میوه‌ها خیلی کم است.",
+     "On Wednesday the prices of all the fruit are very low."
+    ],
+    [
+     "اگر سوالی دارید، به این شماره زنگ بزنید: ۰۹۱۲۳۴۵۶۷۸۹",
+     "If you have a question, call this number: 09123456789"
+    ],
+    [
+     "از همه‌ی شما ممنون هستیم.",
+     "We thank you all."
+    ],
+    [
+     "منتظر شما هستیم!",
+     "We look forward to seeing you!"
+    ],
+    [
+     "مغازه‌ی میوه‌ی آقای کریمی",
+     "Mr Karimi's fruit shop"
+    ]
+   ],
+   "questions": [
+    {
+     "q": "مغازه چند روز باز نیست؟",
+     "en": "For how many days is the shop not open?",
+     "type": "mc",
+     "options": [
+      "دو روز",
+      "سه روز",
+      "یک هفته",
+      "چهار روز"
+     ],
+     "answer": 3,
+     "words": [
+      "روز"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "مغازه از چهارشنبه دوباره کار می‌کند.",
+     "en": "The shop works again from Wednesday.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "چهارشنبه",
+      "دوباره"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "روز چهارشنبه چه چیزی ارزان است؟",
+     "en": "What is cheap on Wednesday?",
+     "type": "mc",
+     "options": [
+      "میوه",
+      "نان",
+      "شیر",
+      "گوشت"
+     ],
+     "answer": 0,
+     "words": [
+      "میوه",
+      "قیمت"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "اگر سوال دارید، باید به مغازه بروید.",
+     "en": "If you have a question, you must go to the shop.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "زنگ زدن",
+      "شماره"
+     ],
+     "sentence": 5
+    }
+   ]
+  },
+  {
+   "id": "p0009",
+   "lv": "A1",
+   "title": "جشن تولد",
+   "oop": {
+    "نازنین": "name",
+    "پروین": "name"
+   },
+   "names": [
+    "نازنین",
+    "پروین"
+   ],
+   "sentences": [
+    [
+     "سلام دوستان!",
+     "Hello, friends!"
+    ],
+    [
+     "جمعه‌ی این هفته تولد دخترم نازنین است و او هفت ساله می‌شود.",
+     "This Friday is my daughter Nazanin's birthday and she turns seven."
+    ],
+    [
+     "ما یک جشن کوچک در خانه داریم.",
+     "We are having a small party at home."
+    ],
+    [
+     "خیلی خوشحال می‌شویم اگر شما و بچه‌هایتان بیایید.",
+     "We will be very happy if you and your children come."
+    ],
+    [
+     "جشن ساعت چهار عصر شروع می‌شود و تا هفت ادامه دارد.",
+     "The party starts at four in the afternoon and goes on until seven."
+    ],
+    [
+     "بچه‌ها می‌توانند در پارک کنار خانه بازی کنند.",
+     "The children can play in the park next to the house."
+    ],
+    [
+     "نازنین کتاب‌های داستان را خیلی دوست دارد.",
+     "Nazanin loves storybooks."
+    ],
+    [
+     "لطفاً تا چهارشنبه به من زنگ بزنید و بگویید که می‌آیید یا نه.",
+     "Please call me by Wednesday and tell me whether you are coming or not."
+    ],
+    [
+     "منتظر شما هستیم! پروین",
+     "We look forward to seeing you! Parvin"
+    ]
+   ],
+   "questions": [
+    {
+     "q": "جشن در یک رستوران است.",
+     "en": "The party is at a restaurant.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "جشن",
+      "خانه"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "جشن کی تمام می‌شود؟",
+     "en": "When does the party end?",
+     "type": "mc",
+     "options": [
+      "ساعت چهار",
+      "ساعت هفت",
+      "ساعت پنج",
+      "ساعت شش"
+     ],
+     "answer": 1,
+     "words": [
+      "ادامه"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "نازنین کتاب خواندن را دوست ندارد.",
+     "en": "Nazanin doesn't like reading books.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "کتاب",
+      "دوست داشتن"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "پروین از دوستانش چه می‌خواهد؟",
+     "en": "What does Parvin ask her friends to do?",
+     "type": "mc",
+     "options": [
+      "زود به جشن بیایند",
+      "برای نازنین کتاب بخرند",
+      "تا چهارشنبه به او زنگ بزنند",
+      "برای جشن غذا بیاورند"
+     ],
+     "answer": 2,
+     "words": [
+      "زنگ زدن"
+     ],
+     "sentence": 7
+    }
+   ]
+  },
+  {
+   "id": "p0010",
+   "lv": "A1",
+   "title": "خانه‌ی جدید ما",
+   "oop": {},
+   "names": [],
+   "sentences": [
+    [
+     "ما ماه پیش به یک خانه‌ی جدید رفتیم.",
+     "Last month we moved to a new house."
+    ],
+    [
+     "خانه‌ی ما در یک خیابان آرام، نزدیک مدرسه‌ی بچه‌ها است.",
+     "Our house is on a quiet street, near the children's school."
+    ],
+    [
+     "خانه سه اتاق و یک آشپزخانه‌ی بزرگ دارد.",
+     "The house has three rooms and a big kitchen."
+    ],
+    [
+     "اتاق من کوچک است، اما یک پنجره‌ی بزرگ دارد.",
+     "My room is small, but it has a big window."
+    ],
+    [
+     "از پنجره‌ی اتاقم، کوه و درخت‌های سبز را می‌بینم.",
+     "From my bedroom window I can see the mountains and green trees."
+    ],
+    [
+     "در اتاقم یک تخت، یک میز و یک صندلی هست.",
+     "In my room there is a bed, a table and a chair."
+    ],
+    [
+     "مادرم آشپزخانه را از همه جای خانه بیشتر دوست دارد.",
+     "My mother likes the kitchen more than any other part of the house."
+    ],
+    [
+     "ما قبلاً در یک خانه‌ی کوچک زندگی می‌کردیم، ولی این خانه خیلی بزرگ‌تر است.",
+     "We used to live in a small house, but this house is much bigger."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "خانه‌ی جدید نزدیک مدرسه است.",
+     "en": "The new house is near the school.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "مدرسه",
+      "نزدیک"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "خانه چند اتاق دارد؟",
+     "en": "How many rooms does the house have?",
+     "type": "mc",
+     "options": [
+      "دو اتاق",
+      "پنج اتاق",
+      "چهار اتاق",
+      "سه اتاق"
+     ],
+     "answer": 3,
+     "words": [
+      "اتاق"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "از پنجره‌ی اتاق چه چیزی دیده می‌شود؟",
+     "en": "What can be seen from the bedroom window?",
+     "type": "mc",
+     "options": [
+      "کوه و درخت",
+      "دریا و کشتی",
+      "خیابان و ماشین",
+      "پارک و بچه‌ها"
+     ],
+     "answer": 0,
+     "words": [
+      "کوه",
+      "درخت"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "در اتاق نویسنده یک میز هست.",
+     "en": "There is a table in the writer's room.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "میز"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "آن‌ها قبلاً در یک خانه‌ی بزرگ زندگی می‌کردند.",
+     "en": "They used to live in a big house.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "قبلاً",
+      "کوچک"
+     ],
+     "sentence": 7
+    }
+   ]
+  },
+  {
+   "id": "p0011",
+   "lv": "A1",
+   "title": "جمعه در پارک",
+   "oop": {
+    "پرویز": "name"
+   },
+   "names": [
+    "پرویز"
+   ],
+   "sentences": [
+    [
+     "جمعه هوا خیلی خوب بود.",
+     "On Friday the weather was very nice."
+    ],
+    [
+     "من و دوستم پرویز صبح زود به پارک بزرگ شهر رفتیم.",
+     "My friend Parviz and I went to the city's big park early in the morning."
+    ],
+    [
+     "در پارک، خیلی از مردم با خانواده‌هایشان بودند.",
+     "In the park there were a lot of people with their families."
+    ],
+    [
+     "بچه‌ها بازی می‌کردند و آدم‌های پیر روی صندلی‌ها نشسته بودند.",
+     "The children were playing and old people were sitting on the benches."
+    ],
+    [
+     "ما اول کمی دویدیم و بعد زیر یک درخت بزرگ نشستیم.",
+     "First we ran a little and then sat under a big tree."
+    ],
+    [
+     "پرویز با خودش چای و نان آورده بود.",
+     "Parviz had brought tea and bread with him."
+    ],
+    [
+     "ما چای خوردیم و درباره‌ی کار و زندگی حرف زدیم.",
+     "We drank tea and talked about work and life."
+    ],
+    [
+     "ظهر به خانه برگشتیم، چون هوا خیلی گرم شده بود.",
+     "At noon we went back home, because it had got very hot."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "آن‌ها کی به پارک رفتند؟",
+     "en": "When did they go to the park?",
+     "type": "mc",
+     "options": [
+      "ظهر",
+      "صبح زود",
+      "عصر",
+      "شب"
+     ],
+     "answer": 1,
+     "words": [
+      "صبح",
+      "زود"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "در پارک آدم‌های زیادی بودند.",
+     "en": "There were a lot of people in the park.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "مردم"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "بعد از دویدن کجا نشستند؟",
+     "en": "Where did they sit after running?",
+     "type": "mc",
+     "options": [
+      "روی یک صندلی",
+      "کنار آب",
+      "زیر یک درخت",
+      "نزدیک در پارک"
+     ],
+     "answer": 2,
+     "words": [
+      "درخت",
+      "نشستن"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "پرویز قهوه آورده بود.",
+     "en": "Parviz had brought coffee.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "چای",
+      "آوردن"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "آن‌ها تا شب در پارک ماندند.",
+     "en": "They stayed in the park until night.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "ظهر",
+      "برگشتن"
+     ],
+     "sentence": 7
+    }
+   ]
+  },
+  {
+   "id": "p0012",
+   "lv": "A1",
+   "title": "اولین روز کار",
+   "oop": {
+    "کریمی": "name",
+    "رضایی": "name",
+    "احمدی": "name",
+    "ایران": "name"
+   },
+   "names": [
+    "کریمی",
+    "رضایی",
+    "احمدی",
+    "ایران"
+   ],
+   "sentences": [
+    [
+     "امروز اولین روز کار من در یک هتل بود.",
+     "Today was my first day of work at a hotel."
+    ],
+    [
+     "ساعت هفت صبح به هتل رسیدم.",
+     "I got to the hotel at seven in the morning."
+    ],
+    [
+     "رئیس هتل، خانم کریمی، زن خوب و آرامی است.",
+     "The hotel manager, Mrs Karimi, is a kind and calm woman."
+    ],
+    [
+     "او همه جای هتل را به من نشان داد.",
+     "She showed me every part of the hotel."
+    ],
+    [
+     "کار من این است که به تلفن‌ها جواب بدهم و به مهمان‌ها کمک کنم.",
+     "My job is to answer the phones and help the guests."
+    ],
+    [
+     "امروز خیلی از مهمان‌ها از کشورهای دیگر بودند و من با آن‌ها انگلیسی حرف زدم.",
+     "Today a lot of the guests were from other countries and I spoke English with them."
+    ],
+    [
+     "ساعت چهار کارم تمام شد و خیلی خسته بودم.",
+     "My work finished at four and I was very tired."
+    ],
+    [
+     "اما کار جدیدم را خیلی دوست دارم.",
+     "But I really like my new job."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "نویسنده ساعت نه به هتل رسید.",
+     "en": "The writer got to the hotel at nine.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "رسیدن"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "رئیس هتل چه کسی است؟",
+     "en": "Who is the hotel manager?",
+     "type": "mc",
+     "options": [
+      "آقای احمدی",
+      "آقای کریمی",
+      "خانم رضایی",
+      "خانم کریمی"
+     ],
+     "answer": 3,
+     "words": [
+      "رئیس"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "کار نویسنده در هتل چیست؟",
+     "en": "What is the writer's job at the hotel?",
+     "type": "mc",
+     "options": [
+      "جواب دادن به تلفن",
+      "پختن غذا برای مهمان‌ها",
+      "شستن اتاق‌ها",
+      "کار در رستوران هتل"
+     ],
+     "answer": 0,
+     "words": [
+      "تلفن",
+      "جواب دادن"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "همه‌ی مهمان‌ها از ایران بودند.",
+     "en": "All the guests were from Iran.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "کشور"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "نویسنده کار جدیدش را دوست ندارد.",
+     "en": "The writer doesn't like the new job.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "دوست داشتن"
+     ],
+     "sentence": 7
+    }
+   ]
+  },
+  {
+   "id": "p0013",
+   "lv": "A1",
+   "title": "خیابان سعدی کجاست؟",
+   "oop": {
+    "سعدی": "name"
+   },
+   "names": [
+    "سعدی"
+   ],
+   "sentences": [
+    [
+     "«ببخشید آقا، خیابان سعدی کجاست؟»",
+     "\"Excuse me, sir, where is Saadi Street?\""
+    ],
+    [
+     "«خیابان سعدی؟ از اینجا زیاد دور نیست.»",
+     "\"Saadi Street? It isn't far from here.\""
+    ],
+    [
+     "«این خیابان را مستقیم تا پارک بروید.»",
+     "\"Go straight along this street as far as the park.\""
+    ],
+    [
+     "«بعد از پارک، دست چپ یک مدرسه‌ی بزرگ هست.»",
+     "\"After the park, on the left, there is a big school.\""
+    ],
+    [
+     "«خیابان سعدی درست کنار همان مدرسه است.»",
+     "\"Saadi Street is right next to that school.\""
+    ],
+    [
+     "«پیاده از اینجا چقدر راه است؟»",
+     "\"How far is it from here on foot?\""
+    ],
+    [
+     "«ده دقیقه. اما اگر خسته هستید، می‌توانید با اتوبوس شماره‌ی پنج بروید.»",
+     "\"Ten minutes. But if you are tired, you can take the number five bus.\""
+    ],
+    [
+     "«اتوبوس هر پنج دقیقه یک بار می‌آید.»",
+     "\"The bus comes every five minutes.\""
+    ],
+    [
+     "«خیلی ممنون!» «خواهش می‌کنم.»",
+     "\"Thank you very much!\" \"You're welcome.\""
+    ]
+   ],
+   "questions": [
+    {
+     "q": "خیابان سعدی خیلی دور است.",
+     "en": "Saadi Street is very far away.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "دور"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "بعد از پارک، دست چپ چه چیزی هست؟",
+     "en": "What is on the left after the park?",
+     "type": "mc",
+     "options": [
+      "یک بیمارستان",
+      "یک مدرسه",
+      "یک رستوران",
+      "یک هتل"
+     ],
+     "answer": 1,
+     "words": [
+      "مدرسه"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "پیاده تا خیابان سعدی چقدر راه است؟",
+     "en": "How long is the walk to Saadi Street?",
+     "type": "mc",
+     "options": [
+      "پنج دقیقه",
+      "بیست دقیقه",
+      "ده دقیقه",
+      "یک ساعت"
+     ],
+     "answer": 2,
+     "words": [
+      "دقیقه"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "مرد می‌گوید که می‌شود با اتوبوس هم رفت.",
+     "en": "The man says you can also go by bus.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "اتوبوس"
+     ],
+     "sentence": 6
+    }
+   ]
+  },
+  {
+   "id": "p0014",
+   "lv": "A1",
+   "title": "گربه‌ی همسایه",
+   "oop": {
+    "رضایی": "name",
+    "پیشی": "name"
+   },
+   "names": [
+    "رضایی",
+    "پیشی"
+   ],
+   "sentences": [
+    [
+     "خانم رضایی همسایه‌ی ما است و یک گربه‌ی سیاه دارد.",
+     "Mrs Rezaei is our neighbour and has a black cat."
+    ],
+    [
+     "اسم گربه پیشی است.",
+     "The cat's name is Pishi."
+    ],
+    [
+     "خانم رضایی پیر است و تنها زندگی می‌کند.",
+     "Mrs Rezaei is old and lives alone."
+    ],
+    [
+     "هفته‌ی پیش او برای دیدن دخترش به شهر دیگری رفت.",
+     "Last week she went to another city to see her daughter."
+    ],
+    [
+     "او از من خواست که هر روز به گربه‌اش غذا بدهم.",
+     "She asked me to feed her cat every day."
+    ],
+    [
+     "من صبح‌ها قبل از مدرسه به پیشی غذا و آب می‌دادم.",
+     "In the mornings before school I gave Pishi food and water."
+    ],
+    [
+     "پیشی اول از من می‌ترسید، اما بعد از دو روز با من دوست شد.",
+     "At first Pishi was afraid of me, but after two days she became my friend."
+    ],
+    [
+     "وقتی خانم رضایی برگشت، برای من یک کتاب خوب آورد.",
+     "When Mrs Rezaei came back, she brought me a good book."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "گربه چه رنگ است؟",
+     "en": "What colour is the cat?",
+     "type": "mc",
+     "options": [
+      "خاکستری",
+      "سفید",
+      "زرد",
+      "سیاه"
+     ],
+     "answer": 3,
+     "words": [
+      "سیاه"
+     ],
+     "sentence": 0
+    },
+    {
+     "q": "خانم رضایی با دخترش زندگی می‌کند.",
+     "en": "Mrs Rezaei lives with her daughter.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "تنها"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "خانم رضایی از نویسنده چه خواست؟",
+     "en": "What did Mrs Rezaei ask the writer to do?",
+     "type": "mc",
+     "options": [
+      "به گربه غذا بدهد",
+      "گربه را به خانه‌اش ببرد",
+      "با گربه بازی کند",
+      "برای او نان بخرد"
+     ],
+     "answer": 0,
+     "words": [
+      "غذا",
+      "خواستن"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "پیشی از روز اول با نویسنده دوست بود.",
+     "en": "Pishi was friends with the writer from the first day.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "دوست"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "خانم رضایی برای نویسنده چیزی آورد.",
+     "en": "Mrs Rezaei brought the writer something.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "آوردن"
+     ],
+     "sentence": 7
+    }
+   ]
+  },
+  {
+   "id": "p0015",
+   "lv": "A1",
+   "title": "نامه‌ای از اصفهان",
+   "oop": {
+    "اصفهان": "name",
+    "سینا": "name",
+    "نیما": "name",
+    "کاوه": "name"
+   },
+   "names": [
+    "اصفهان",
+    "سینا",
+    "نیما",
+    "کاوه"
+   ],
+   "sentences": [
+    [
+     "سلام مادر عزیزم!",
+     "Hello, my dear mother!"
+    ],
+    [
+     "حالم خوب است و از زندگی در اصفهان خیلی خوشحالم.",
+     "I'm well and very happy with life in Isfahan."
+    ],
+    [
+     "خانه‌ی کوچکم نزدیک دانشگاه است و هر روز پیاده به کلاس می‌روم.",
+     "My little house is near the university and I walk to class every day."
+    ],
+    [
+     "کلاس‌ها سخت است، ولی استادهایم خیلی خوب هستند.",
+     "The classes are hard, but my teachers are very good."
+    ],
+    [
+     "من اینجا دو دوست جدید دارم: سینا و نیما.",
+     "I have two new friends here: Sina and Nima."
+    ],
+    [
+     "ما شب‌ها با هم غذا درست می‌کنیم و فیلم می‌بینیم.",
+     "In the evenings we cook together and watch films."
+    ],
+    [
+     "هوای اینجا کمی سرد است، برای همین لباس گرم می‌خواهم.",
+     "The weather here is a bit cold, so I need warm clothes."
+    ],
+    [
+     "لطفاً به پدر و خواهرم سلام برسان.",
+     "Please say hello to Dad and my sister."
+    ],
+    [
+     "ماه بعد به خانه می‌آیم. دوستت دارم! پسرت، کاوه",
+     "I'll come home next month. I love you! Your son, Kaveh"
+    ]
+   ],
+   "questions": [
+    {
+     "q": "کاوه در اصفهان خوشحال است.",
+     "en": "Kaveh is happy in Isfahan.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "خوشحال"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "کاوه چطور به کلاس می‌رود؟",
+     "en": "How does Kaveh get to class?",
+     "type": "mc",
+     "options": [
+      "با اتوبوس",
+      "پیاده",
+      "با دوچرخه",
+      "با ماشین"
+     ],
+     "answer": 1,
+     "words": [
+      "کلاس"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "استادهای کاوه چطور هستند؟",
+     "en": "What are Kaveh's teachers like?",
+     "type": "mc",
+     "options": [
+      "خیلی پیر",
+      "خیلی سخت",
+      "خیلی خوب",
+      "خیلی جوان"
+     ],
+     "answer": 2,
+     "words": [
+      "استاد"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "کاوه شب‌ها با دوستانش شام درست می‌کند.",
+     "en": "Kaveh makes dinner with his friends in the evenings.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "غذا",
+      "درست کردن"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "کاوه چه چیزی لازم دارد؟",
+     "en": "What does Kaveh need?",
+     "type": "mc",
+     "options": [
+      "پول زیاد",
+      "کفش جدید",
+      "یک کیف بزرگ",
+      "لباس گرم"
+     ],
+     "answer": 3,
+     "words": [
+      "لباس",
+      "گرم"
+     ],
+     "sentence": 6
+    }
+   ]
+  },
+  {
+   "id": "p0016",
+   "lv": "A1",
+   "title": "تلفن مادر",
+   "oop": {},
+   "names": [],
+   "sentences": [
+    [
+     "«سلام پسرم! کجا هستی؟ خیلی دیر است!»",
+     "\"Hello, son! Where are you? It's very late!\""
+    ],
+    [
+     "«سلام مادر! ببخشید، من هنوز سر کار هستم.»",
+     "\"Hi, Mum! Sorry, I'm still at work.\""
+    ],
+    [
+     "«امروز کار زیادی داریم و رئیسم می‌گوید که باید تا ساعت نه بمانیم.»",
+     "\"We have a lot of work today and my boss says we have to stay until nine.\""
+    ],
+    [
+     "«شام خورده‌ای؟»",
+     "\"Have you had dinner?\""
+    ],
+    [
+     "«نه، هنوز نه. اما زیاد گرسنه نیستم.»",
+     "\"No, not yet. But I'm not very hungry.\""
+    ],
+    [
+     "«من برایت غذا نگه می‌دارم. پدرت هم منتظر تو است.»",
+     "\"I'll keep some food for you. Your father is waiting for you too.\""
+    ],
+    [
+     "«ممنون مادر. فکر می‌کنم ساعت ده به خانه می‌رسم.»",
+     "\"Thanks, Mum. I think I'll get home at ten.\""
+    ],
+    [
+     "«باشد پسرم. در راه مواظب خودت باش!»",
+     "\"All right, son. Take care on the way!\""
+    ]
+   ],
+   "questions": [
+    {
+     "q": "پسر الآن در خانه است.",
+     "en": "The son is at home now.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "هنوز",
+      "کار"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "پسر تا چه ساعتی باید کار کند؟",
+     "en": "Until what time does the son have to work?",
+     "type": "mc",
+     "options": [
+      "تا ساعت نه",
+      "تا ساعت ده",
+      "تا ساعت هشت",
+      "تا ساعت یازده"
+     ],
+     "answer": 0,
+     "words": [
+      "رئیس",
+      "ماندن"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "پسر خیلی گرسنه است.",
+     "en": "The son is very hungry.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "گرسنه"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "مادر چه کار می‌کند؟",
+     "en": "What does the mother do?",
+     "type": "mc",
+     "options": [
+      "به رئیس پسرش زنگ می‌زند",
+      "برای او غذا نگه می‌دارد",
+      "با پدر به رستوران می‌رود",
+      "شام را تنها می‌خورد"
+     ],
+     "answer": 1,
+     "words": [
+      "غذا",
+      "نگه داشتن"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "پسر ساعت ده به خانه می‌رسد.",
+     "en": "The son gets home at ten.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "رسیدن"
+     ],
+     "sentence": 6
+    }
+   ]
+  },
+  {
+   "id": "p0017",
+   "lv": "A1",
+   "title": "کلاس زبان",
+   "oop": {},
+   "names": [],
+   "sentences": [
+    [
+     "سال پیش تصمیم گرفتم انگلیسی یاد بگیرم.",
+     "Last year I decided to learn English."
+    ],
+    [
+     "حالا هفته‌ای دو بار به کلاس می‌روم.",
+     "Now I go to class twice a week."
+    ],
+    [
+     "در کلاس ما ده نفر هستند و معلممان یک خانم جوان است.",
+     "There are ten people in our class and our teacher is a young woman."
+    ],
+    [
+     "او خیلی آرام حرف می‌زند و همه چیز را خوب توضیح می‌دهد.",
+     "She speaks very calmly and explains everything well."
+    ],
+    [
+     "در کلاس، ما با هم حرف می‌زنیم، به آهنگ گوش می‌دهیم و بازی می‌کنیم.",
+     "In class we talk to each other, listen to songs and play games."
+    ],
+    [
+     "خواندن برای من آسان است، ولی حرف زدن هنوز سخت است.",
+     "Reading is easy for me, but speaking is still hard."
+    ],
+    [
+     "هر شب یک فیلم به انگلیسی نگاه می‌کنم.",
+     "Every night I watch a film in English."
+    ],
+    [
+     "می‌خواهم سال بعد برای کار به یک کشور دیگر بروم.",
+     "I want to go to another country for work next year."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "نویسنده هفته‌ای چند بار به کلاس می‌رود؟",
+     "en": "How many times a week does the writer go to class?",
+     "type": "mc",
+     "options": [
+      "یک بار",
+      "سه بار",
+      "دو بار",
+      "هر روز"
+     ],
+     "answer": 2,
+     "words": [
+      "کلاس",
+      "بار"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "معلم کلاس یک مرد پیر است.",
+     "en": "The class teacher is an old man.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "معلم",
+      "جوان"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "برای نویسنده حرف زدن از خواندن سخت‌تر است.",
+     "en": "For the writer, speaking is harder than reading.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "سخت"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "چرا نویسنده انگلیسی یاد می‌گیرد؟",
+     "en": "Why is the writer learning English?",
+     "type": "mc",
+     "options": [
+      "برای نوشتن کتاب",
+      "برای کمک به بچه‌هایش",
+      "برای دیدن فیلم",
+      "برای کار در یک کشور دیگر"
+     ],
+     "answer": 3,
+     "words": [
+      "کشور"
+     ],
+     "sentence": 7
+    }
+   ]
+  },
+  {
+   "id": "p0018",
+   "lv": "A1",
+   "title": "در قطار",
+   "oop": {
+    "تهران": "name",
+    "مشهد": "name"
+   },
+   "names": [
+    "تهران",
+    "مشهد"
+   ],
+   "sentences": [
+    [
+     "قطار ساعت هشت صبح از تهران به طرف مشهد می‌رود.",
+     "The train leaves Tehran for Mashhad at eight in the morning."
+    ],
+    [
+     "قطار پر از مردم است.",
+     "The train is full of people."
+    ],
+    [
+     "کنار من یک مرد پیر نشسته است و روزنامه می‌خواند.",
+     "An old man is sitting next to me, reading a newspaper."
+    ],
+    [
+     "کنار پنجره هم یک زن جوان با دختر کوچکش نشسته است.",
+     "By the window a young woman is sitting with her little daughter."
+    ],
+    [
+     "دختر هر چند دقیقه یک بار می‌پرسد: «مادر، کی می‌رسیم؟»",
+     "Every few minutes the girl asks: \"Mum, when will we get there?\""
+    ],
+    [
+     "مادرش می‌گوید: «هنوز خیلی مانده. کمی بخواب!»",
+     "Her mother says: \"There's still a long way to go. Sleep a little!\""
+    ],
+    [
+     "من از پنجره به کوه‌ها و روستاها نگاه می‌کنم.",
+     "I look out of the window at the mountains and villages."
+    ],
+    [
+     "این سفر ده ساعت طول می‌کشد.",
+     "This trip takes ten hours."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "در قطار آدم زیادی نیست.",
+     "en": "There aren't many people on the train.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "مردم",
+      "پر"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "مرد پیر چه کار می‌کند؟",
+     "en": "What is the old man doing?",
+     "type": "mc",
+     "options": [
+      "روزنامه می‌خواند",
+      "می‌خوابد",
+      "چای می‌نوشد",
+      "با تلفن حرف می‌زند"
+     ],
+     "answer": 0,
+     "words": [
+      "روزنامه",
+      "خواندن"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "دختر کوچک چند بار یک سوال را می‌پرسد.",
+     "en": "The little girl asks the same question several times.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "پرسیدن"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "سفر چقدر طول می‌کشد؟",
+     "en": "How long does the trip take?",
+     "type": "mc",
+     "options": [
+      "هشت ساعت",
+      "ده ساعت",
+      "دو ساعت",
+      "یک روز"
+     ],
+     "answer": 1,
+     "words": [
+      "طول کشیدن"
+     ],
+     "sentence": 7
+    }
+   ]
+  },
+  {
+   "id": "p0019",
+   "lv": "A1",
+   "title": "برنج ایرانی",
+   "oop": {
+    "ایران": "name"
+   },
+   "names": [
+    "ایران"
+   ],
+   "sentences": [
+    [
+     "در ایران، مردم برنج را خیلی دوست دارند.",
+     "In Iran people love rice."
+    ],
+    [
+     "اول، برنج را سه بار با آب سرد بشویید.",
+     "First, wash the rice three times in cold water."
+    ],
+    [
+     "بعد، آن را دو ساعت در آب بگذارید.",
+     "Then leave it in water for two hours."
+    ],
+    [
+     "مقدار زیادی آب روی آتش گرم کنید و برنج را در آن بریزید.",
+     "Heat plenty of water on the stove and pour the rice into it."
+    ],
+    [
+     "بعد از ده دقیقه، برنج را از آب بیرون بیاورید.",
+     "After ten minutes, take the rice out of the water."
+    ],
+    [
+     "حالا برنج را دوباره روی آتش بگذارید و در آن را ببندید.",
+     "Now put the rice back on the heat and close the lid."
+    ],
+    [
+     "بعد از یک ساعت، غذا آماده است.",
+     "After an hour the food is ready."
+    ],
+    [
+     "این برنج را با گوشت بخورید.",
+     "Eat this rice with meat."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "اول با برنج چه کار می‌کنید؟",
+     "en": "What do you do with the rice first?",
+     "type": "mc",
+     "options": [
+      "آن را می‌خرید",
+      "آن را می‌پزید",
+      "آن را می‌شویید",
+      "آن را می‌خورید"
+     ],
+     "answer": 2,
+     "words": [
+      "شستن"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "برنج باید دو ساعت در آب بماند.",
+     "en": "The rice has to stay in water for two hours.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "ساعت",
+      "آب"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "برنج را در آب سرد روی آتش می‌ریزید.",
+     "en": "You pour the rice into cold water on the stove.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "گرم"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "غذا کی آماده است؟",
+     "en": "When is the food ready?",
+     "type": "mc",
+     "options": [
+      "بعد از سه ساعت",
+      "بعد از ده دقیقه",
+      "بعد از دو ساعت",
+      "بعد از یک ساعت"
+     ],
+     "answer": 3,
+     "words": [
+      "ساعت",
+      "آماده"
+     ],
+     "sentence": 6
+    }
+   ]
+  },
+  {
+   "id": "p0020",
+   "lv": "A1",
+   "title": "دوست جدید",
+   "oop": {
+    "آرش": "name"
+   },
+   "names": [
+    "آرش"
+   ],
+   "sentences": [
+    [
+     "ماه پیش یک پسر جدید به کلاس ما آمد.",
+     "Last month a new boy came to our class."
+    ],
+    [
+     "اسمش آرش است و از یک شهر کوچک در شمال آمده است.",
+     "His name is Arash and he has come from a small town in the north."
+    ],
+    [
+     "روز اول، آرش با هیچ‌کس حرف نمی‌زد و تنها می‌نشست.",
+     "On the first day Arash didn't talk to anyone and sat alone."
+    ],
+    [
+     "من کنار او نشستم و از او پرسیدم: «فوتبال دوست داری؟»",
+     "I sat next to him and asked him: \"Do you like football?\""
+    ],
+    [
+     "او گفت: «بله، خیلی!»",
+     "He said: \"Yes, a lot!\""
+    ],
+    [
+     "از آن روز، ما هر روز بعد از مدرسه با هم بازی می‌کنیم.",
+     "Since that day we play together every day after school."
+    ],
+    [
+     "آرش حالا دوستان زیادی دارد و در کلاس خوشحال است.",
+     "Now Arash has lots of friends and is happy in class."
+    ],
+    [
+     "او می‌گوید شهر ما را هم دوست دارد، اما کوه‌های شهر خودش را بیشتر.",
+     "He says he likes our town too, but he likes the mountains of his own town more."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "آرش از کجا آمده است؟",
+     "en": "Where has Arash come from?",
+     "type": "mc",
+     "options": [
+      "از یک شهر کوچک",
+      "از یک کشور کوچک",
+      "از یک کشور دیگر",
+      "از یک شهر بزرگ"
+     ],
+     "answer": 0,
+     "words": [
+      "شهر",
+      "کوچک"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "آرش روز اول با همه حرف می‌زد.",
+     "en": "On the first day Arash talked to everyone.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "هیچ‌کس"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "آرش فوتبال را دوست دارد.",
+     "en": "Arash likes football.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "فوتبال"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "آن‌ها کی با هم بازی می‌کنند؟",
+     "en": "When do they play together?",
+     "type": "mc",
+     "options": [
+      "قبل از مدرسه",
+      "بعد از مدرسه",
+      "در کلاس",
+      "شب‌ها"
+     ],
+     "answer": 1,
+     "words": [
+      "بازی کردن",
+      "مدرسه"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "آرش حالا در کلاس تنها است.",
+     "en": "Arash is alone in class now.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "خوشحال",
+      "دوست"
+     ],
+     "sentence": 6
+    }
+   ]
+  },
+  {
+   "id": "p0021",
+   "lv": "A2",
+   "title": "سفر به شمال",
+   "oop": {
+    "رامسر": "name",
+    "ایران": "name"
+   },
+   "names": [
+    "رامسر",
+    "ایران"
+   ],
+   "sentences": [
+    [
+     "تابستان گذشته با خانواده‌ام به شمال ایران سفر کردیم.",
+     "Last summer my family and I travelled to the north of Iran."
+    ],
+    [
+     "ما با ماشین پدرم رفتیم و راه حدود شش ساعت طول کشید.",
+     "We went in my father's car and the journey took about six hours."
+    ],
+    [
+     "جاده از وسط کوه‌ها و جنگل‌های سبز می‌گذشت و خیلی زیبا بود.",
+     "The road went through green mountains and forests and was very beautiful."
+    ],
+    [
+     "در شهر رامسر یک خانه‌ی کوچک نزدیک ساحل گرفتیم.",
+     "In the town of Ramsar we took a small house near the beach."
+    ],
+    [
+     "هر روز صبح کنار دریا قدم می‌زدیم و بچه‌ها در آب بازی می‌کردند.",
+     "Every morning we walked by the sea and the children played in the water."
+    ],
+    [
+     "یک روز باران شدیدی آمد و نتوانستیم بیرون برویم.",
+     "One day there was heavy rain and we couldn't go out."
+    ],
+    [
+     "آن روز در خانه ماندیم، بازی کردیم و ماهی تازه پختیم.",
+     "That day we stayed at home, played games and cooked fresh fish."
+    ],
+    [
+     "روز آخر به یک روستای کوچک در کوه رفتیم.",
+     "On the last day we went to a small village in the mountains."
+    ],
+    [
+     "مردم آنجا خیلی مهربان بودند و به ما چای و نان محلی دادند.",
+     "The people there were very kind and gave us tea and local bread."
+    ],
+    [
+     "این سفر یکی از بهترین خاطره‌های من است.",
+     "This trip is one of my best memories."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "آن‌ها با چه چیزی به شمال رفتند؟",
+     "en": "How did they travel to the north?",
+     "type": "mc",
+     "options": [
+      "با هواپیمای صبح",
+      "با قطار شب",
+      "با ماشین پدرش",
+      "با اتوبوس"
+     ],
+     "answer": 2,
+     "words": [
+      "ماشین"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "راه شمال کمتر از سه ساعت بود.",
+     "en": "The journey north was less than three hours.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "طول کشیدن"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "آن‌ها در رامسر کجا ماندند؟",
+     "en": "Where did they stay in Ramsar?",
+     "type": "mc",
+     "options": [
+      "در روستایی در کوه",
+      "در یک هتل بزرگ کنار شهر",
+      "در خانه‌ی یکی از دوستانشان",
+      "در خانه‌ای نزدیک ساحل"
+     ],
+     "answer": 3,
+     "words": [
+      "ساحل"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "در روز بارانی، آن‌ها بیرون نرفتند.",
+     "en": "On the rainy day they didn't go out.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "باران",
+      "بیرون"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "مردم روستا به آن‌ها چیزی برای خوردن دادند.",
+     "en": "The village people gave them something to eat.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "دادن",
+      "نان"
+     ],
+     "sentence": 8
+    }
+   ]
+  },
+  {
+   "id": "p0022",
+   "lv": "A2",
+   "title": "کار جدید کامران",
+   "oop": {
+    "کامران": "name"
+   },
+   "names": [
+    "کامران"
+   ],
+   "sentences": [
+    [
+     "کامران بیست و شش سال دارد و تا ماه پیش در یک بانک کار می‌کرد.",
+     "Kamran is twenty-six and until last month he worked at a bank."
+    ],
+    [
+     "کار در بانک بد نبود، اما او همیشه دوست داشت با کامپیوتر کار کند.",
+     "Working at the bank wasn't bad, but he had always wanted to work with computers."
+    ],
+    [
+     "برای همین، یک سال شب‌ها در کلاس‌های کامپیوتر درس خواند.",
+     "So for a year he studied in computer classes in the evenings."
+    ],
+    [
+     "حالا در یک شرکت جوان در مرکز شهر کار می‌کند.",
+     "Now he works at a young company in the city centre."
+    ],
+    [
+     "همکارانش همه جوان هستند و به او خیلی کمک می‌کنند.",
+     "His colleagues are all young and help him a lot."
+    ],
+    [
+     "ساعت کار او از نه تا پنج است، ولی گاهی شب‌ها هم کار می‌کند.",
+     "His working hours are from nine to five, but sometimes he works in the evenings too."
+    ],
+    [
+     "پولی که حالا می‌گیرد از قبل کمتر است.",
+     "The money he gets now is less than before."
+    ],
+    [
+     "اما کامران از کارش لذت می‌برد و هر روز چیز تازه‌ای یاد می‌گیرد.",
+     "But Kamran enjoys his work and learns something new every day."
+    ],
+    [
+     "او امیدوار است که بعد از دو سال مدیر یک گروه بشود.",
+     "He hopes to become the manager of a team in two years."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "کامران قبلاً در یک مدرسه کار می‌کرد.",
+     "en": "Kamran used to work at a school.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "بانک"
+     ],
+     "sentence": 0
+    },
+    {
+     "q": "کامران کار با کامپیوتر را چطور یاد گرفت؟",
+     "en": "How did Kamran learn to work with computers?",
+     "type": "mc",
+     "options": [
+      "شب‌ها به کلاس رفت",
+      "یکی از دوستانش به او یاد داد",
+      "رئیس بانک به او کمک کرد",
+      "خودش از اینترنت یاد گرفت"
+     ],
+     "answer": 0,
+     "words": [
+      "درس خواندن",
+      "کلاس"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "کامران بعضی شب‌ها هم کار می‌کند.",
+     "en": "Kamran works on some evenings too.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "گاهی"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "کامران حالا پول بیشتری می‌گیرد.",
+     "en": "Kamran now earns more money.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "کمتر"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "کامران در آینده چه می‌خواهد؟",
+     "en": "What does Kamran want in the future?",
+     "type": "mc",
+     "options": [
+      "به بانک برگردد",
+      "مدیر یک گروه بشود",
+      "شرکت خودش را باز کند",
+      "در کشور دیگری کار کند"
+     ],
+     "answer": 1,
+     "words": [
+      "مدیر",
+      "امیدوار"
+     ],
+     "sentence": 8
+    }
+   ]
+  },
+  {
+   "id": "p0023",
+   "lv": "A2",
+   "title": "پیش دکتر",
+   "oop": {
+    "مریم": "name"
+   },
+   "names": [
+    "مریم"
+   ],
+   "sentences": [
+    [
+     "دکتر: «سلام، بفرمایید بنشینید. چه مشکلی دارید؟»",
+     "Doctor: \"Hello, please sit down. What's the problem?\""
+    ],
+    [
+     "مریم: «از دیروز سرم خیلی درد می‌کند و بدنم گرم است.»",
+     "Maryam: \"Since yesterday I've had a bad headache and my body feels hot.\""
+    ],
+    [
+     "«دیشب هم نتوانستم خوب بخوابم و امروز خیلی خسته هستم.»",
+     "\"And last night I couldn't sleep well, and today I'm very tired.\""
+    ],
+    [
+     "دکتر: «این روزها غذا خوب می‌خورید؟»",
+     "Doctor: \"Are you eating well these days?\""
+    ],
+    [
+     "مریم: «نه، اصلاً گرسنه نیستم. فقط چای می‌نوشم.»",
+     "Maryam: \"No, I'm not hungry at all. I only drink tea.\""
+    ],
+    [
+     "دکتر او را با دقت نگاه می‌کند و می‌گوید: «سرما خورده‌اید. چیز مهمی نیست.»",
+     "The doctor examines her carefully and says: \"You've caught a cold. It's nothing serious.\""
+    ],
+    [
+     "«این دارو را روزی سه بار بعد از غذا بخورید.»",
+     "\"Take this medicine three times a day after meals.\""
+    ],
+    [
+     "«چند روز در خانه بمانید، زیاد آب بنوشید و استراحت کنید.»",
+     "\"Stay at home for a few days, drink lots of water and rest.\""
+    ],
+    [
+     "مریم: «می‌توانم فردا سر کار بروم؟»",
+     "Maryam: \"Can I go to work tomorrow?\""
+    ],
+    [
+     "دکتر: «نه، بهتر است تا شنبه در خانه باشید.»",
+     "Doctor: \"No, it's better to stay at home until Saturday.\""
+    ]
+   ],
+   "questions": [
+    {
+     "q": "مشکل مریم چیست؟",
+     "en": "What is Maryam's problem?",
+     "type": "mc",
+     "options": [
+      "دستش درد می‌کند",
+      "پایش درد می‌کند",
+      "سرش درد می‌کند",
+      "چشمش درد می‌کند"
+     ],
+     "answer": 2,
+     "words": [
+      "درد"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "مریم دیشب خوب خوابید.",
+     "en": "Maryam slept well last night.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "خوابیدن",
+      "دیشب"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "مریم این روزها غذای زیادی نمی‌خورد.",
+     "en": "Maryam isn't eating much these days.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "گرسنه"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "مریم دارو را کی باید بخورد؟",
+     "en": "When should Maryam take the medicine?",
+     "type": "mc",
+     "options": [
+      "فقط صبح‌ها",
+      "قبل از غذا",
+      "فقط شب‌ها",
+      "بعد از غذا"
+     ],
+     "answer": 3,
+     "words": [
+      "دارو"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "دکتر می‌گوید که مریم فردا نباید سر کار برود.",
+     "en": "The doctor says Maryam shouldn't go to work tomorrow.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "شنبه"
+     ],
+     "sentence": 9
+    }
+   ]
+  },
+  {
+   "id": "p0024",
+   "lv": "A2",
+   "title": "یک اتاق برای اجاره",
+   "oop": {},
+   "names": [],
+   "sentences": [
+    [
+     "یک اتاق برای اجاره",
+     "A room to rent"
+    ],
+    [
+     "یک اتاق بزرگ و روشن در طبقه‌ی دوم یک ساختمان قدیمی داریم.",
+     "We have a large, bright room on the second floor of an old building."
+    ],
+    [
+     "ساختمان در یک خیابان آرام در مرکز شهر است و ایستگاه اتوبوس نزدیک آن است.",
+     "The building is on a quiet street in the city centre and the bus stop is close to it."
+    ],
+    [
+     "اتاق یک تخت، یک میز و دو صندلی دارد.",
+     "The room has a bed, a desk and two chairs."
+    ],
+    [
+     "آشپزخانه و حمام مشترک است و خانه اینترنت هم دارد.",
+     "The kitchen and bathroom are shared and the house also has internet."
+    ],
+    [
+     "قیمت اتاق در ماه پنج میلیون است و پول آب و برق هم در همین قیمت حساب شده است.",
+     "The room costs five million a month and water and electricity are included in that price."
+    ],
+    [
+     "ما دنبال یک دانشجو یا یک کارمند آرام هستیم که سیگار نکشد.",
+     "We are looking for a quiet student or office worker who doesn't smoke."
+    ],
+    [
+     "برای دیدن اتاق، بعد از ساعت پنج عصر به این شماره زنگ بزنید: ۰۹۱۲۷۶۵۴۳۲۱",
+     "To see the room, call this number after five in the afternoon: 09127654321"
+    ]
+   ],
+   "questions": [
+    {
+     "q": "اتاق در کدام طبقه است؟",
+     "en": "Which floor is the room on?",
+     "type": "mc",
+     "options": [
+      "طبقه‌ی دوم",
+      "طبقه‌ی اول",
+      "طبقه‌ی سوم",
+      "طبقه‌ی چهارم"
+     ],
+     "answer": 0,
+     "words": [
+      "طبقه"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "آشپزخانه فقط مال این اتاق است.",
+     "en": "The kitchen belongs only to this room.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "مشترک"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "پول آب و برق را باید جدا داد.",
+     "en": "Water and electricity must be paid separately.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "برق"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "صاحب خانه دنبال چه کسی است؟",
+     "en": "Who is the owner looking for?",
+     "type": "mc",
+     "options": [
+      "یک خانواده‌ی بزرگ با سه بچه",
+      "یک دانشجو یا کارمند آرام",
+      "دو دوست جوان",
+      "کسی که سیگار می‌کشد"
+     ],
+     "answer": 1,
+     "words": [
+      "دانشجو"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "برای دیدن اتاق باید صبح زنگ زد.",
+     "en": "To see the room you have to call in the morning.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "زنگ زدن",
+      "عصر"
+     ],
+     "sentence": 7
+    }
+   ]
+  },
+  {
+   "id": "p0025",
+   "lv": "A2",
+   "title": "ماهی سرخ کرده",
+   "oop": {},
+   "names": [],
+   "sentences": [
+    [
+     "این غذا ساده و خوشمزه است و برای چهار نفر کافی است.",
+     "This dish is simple and tasty and is enough for four people."
+    ],
+    [
+     "اول، یک ماهی بزرگ بخرید و آن را خوب بشویید.",
+     "First, buy a large fish and wash it well."
+    ],
+    [
+     "بعد روی ماهی کمی نمک بریزید و آن را یک ساعت در جای سرد بگذارید.",
+     "Then put a little salt on the fish and leave it in a cold place for an hour."
+    ],
+    [
+     "در این مدت، برنج را آماده کنید.",
+     "In the meantime, get the rice ready."
+    ],
+    [
+     "کمی روغن در یک ظرف روی آتش گرم کنید.",
+     "Heat a little oil in a pan on the stove."
+    ],
+    [
+     "وقتی روغن خیلی گرم شد، ماهی را در آن بگذارید.",
+     "When the oil is very hot, put the fish in it."
+    ],
+    [
+     "هر طرف ماهی را ده دقیقه بپزید تا زرد و خوشمزه شود.",
+     "Cook each side of the fish for ten minutes until it is golden and tasty."
+    ],
+    [
+     "ماهی را با برنج گرم سر میز بیاورید.",
+     "Bring the fish to the table with hot rice."
+    ],
+    [
+     "اگر بچه‌ها ماهی دوست ندارند، می‌توانید به جای آن از مرغ استفاده کنید.",
+     "If the children don't like fish, you can use chicken instead."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "این غذا برای شش نفر است.",
+     "en": "This dish is for six people.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "نفر",
+      "کافی"
+     ],
+     "sentence": 0
+    },
+    {
+     "q": "بعد از نمک، ماهی را کجا می‌گذارید؟",
+     "en": "After the salt, where do you put the fish?",
+     "type": "mc",
+     "options": [
+      "در آب گرم",
+      "روی آتش",
+      "در جای سرد",
+      "کنار برنج"
+     ],
+     "answer": 2,
+     "words": [
+      "سرد"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "هر طرف ماهی چند دقیقه روی آتش می‌ماند؟",
+     "en": "How many minutes does each side of the fish stay on the heat?",
+     "type": "mc",
+     "options": [
+      "بیست دقیقه",
+      "یک ساعت",
+      "پنج دقیقه",
+      "ده دقیقه"
+     ],
+     "answer": 3,
+     "words": [
+      "دقیقه"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "به جای ماهی می‌شود مرغ هم پخت.",
+     "en": "You can also cook chicken instead of fish.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "مرغ"
+     ],
+     "sentence": 8
+    }
+   ]
+  },
+  {
+   "id": "p0026",
+   "lv": "A2",
+   "title": "یک روز بد",
+   "oop": {},
+   "names": [],
+   "sentences": [
+    [
+     "دیروز روز خوبی نبود.",
+     "Yesterday was not a good day."
+    ],
+    [
+     "صبح ساعتم زنگ نزد و دیر بیدار شدم.",
+     "In the morning my alarm didn't go off and I woke up late."
+    ],
+    [
+     "خیلی سریع لباس پوشیدم و بدون صبحانه از خانه بیرون رفتم.",
+     "I got dressed very quickly and left the house without breakfast."
+    ],
+    [
+     "در ایستگاه، اتوبوس تازه رفته بود و مجبور شدم بیست دقیقه منتظر بمانم.",
+     "At the stop, the bus had just left and I had to wait twenty minutes."
+    ],
+    [
+     "وقتی به دفتر رسیدم، جلسه شروع شده بود.",
+     "When I got to the office, the meeting had already started."
+    ],
+    [
+     "رئیسم چیزی نگفت، اما معلوم بود که ناراحت است.",
+     "My boss didn't say anything, but it was clear he was annoyed."
+    ],
+    [
+     "ظهر فهمیدم که کیف پولم را در اتوبوس جا گذاشته‌ام.",
+     "At noon I realised I had left my wallet on the bus."
+    ],
+    [
+     "اما شانس با من بود: راننده‌ی اتوبوس کیف را پیدا کرده بود و بعد از ظهر آن را برایم آورد.",
+     "But luck was on my side: the bus driver had found the wallet, and in the afternoon he brought it to me."
+    ],
+    [
+     "شب خیلی خسته بودم و زود خوابیدم.",
+     "In the evening I was very tired and went to bed early."
+    ],
+    [
+     "امیدوارم امروز روز بهتری باشد.",
+     "I hope today is a better day."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "نویسنده صبح زود بیدار شد.",
+     "en": "The writer woke up early in the morning.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "دیر",
+      "بیدار شدن"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "چرا نویسنده در ایستگاه منتظر ماند؟",
+     "en": "Why did the writer wait at the stop?",
+     "type": "mc",
+     "options": [
+      "اتوبوس تازه رفته بود",
+      "ایستگاه بسته بود",
+      "منتظر یکی از دوستانش بود",
+      "باران شدیدی می‌آمد"
+     ],
+     "answer": 0,
+     "words": [
+      "اتوبوس",
+      "منتظر"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "وقتی نویسنده رسید، جلسه شروع شده بود.",
+     "en": "When the writer arrived, the meeting had already started.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "جلسه",
+      "شروع شدن"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "نویسنده کیف پولش را کجا جا گذاشته بود؟",
+     "en": "Where had the writer left the wallet?",
+     "type": "mc",
+     "options": [
+      "در دفتر",
+      "در اتوبوس",
+      "در خانه",
+      "در ایستگاه"
+     ],
+     "answer": 1,
+     "words": [
+      "جا گذاشتن"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "راننده کیف را پیدا کرد.",
+     "en": "The driver found the wallet.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "راننده",
+      "پیدا کردن"
+     ],
+     "sentence": 7
+    }
+   ]
+  },
+  {
+   "id": "p0027",
+   "lv": "A2",
+   "title": "پارک جدید شهر",
+   "oop": {},
+   "names": [],
+   "sentences": [
+    [
+     "پارک جدید شهر از شنبه‌ی گذشته باز شده است.",
+     "The city's new park opened last Saturday."
+    ],
+    [
+     "این پارک در جنوب شهر، کنار رودخانه است.",
+     "This park is in the south of the city, beside the river."
+    ],
+    [
+     "تا دو سال پیش اینجا یک کارخانه‌ی قدیمی بود.",
+     "Until two years ago there was an old factory here."
+    ],
+    [
+     "حالا در پارک درخت‌ها و گل‌های زیادی هست.",
+     "Now there are lots of trees and flowers in the park."
+    ],
+    [
+     "پارک یک جای مخصوص برای بازی بچه‌ها و یک مسیر طولانی برای دوچرخه هم دارد.",
+     "The park also has a special play area for children and a long cycle path."
+    ],
+    [
+     "روز اول، خیلی از مردم به پارک آمدند.",
+     "On the first day a lot of people came to the park."
+    ],
+    [
+     "بیشتر مردم از پارک راضی هستند.",
+     "Most people are happy with the park."
+    ],
+    [
+     "اما بعضی از همسایه‌ها می‌گویند که آخر هفته‌ها خیابان‌های نزدیک پارک پر از ماشین است.",
+     "But some neighbours say that at weekends the streets near the park are full of cars."
+    ],
+    [
+     "پارک هر روز از شش صبح تا یازده شب باز است.",
+     "The park is open every day from six in the morning until eleven at night."
+    ],
+    [
+     "ورود به پارک برای همه آزاد است.",
+     "Entry to the park is free for everyone."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "پارک در کدام قسمت شهر است؟",
+     "en": "Which part of the city is the park in?",
+     "type": "mc",
+     "options": [
+      "در مرکز شهر",
+      "در شمال شهر",
+      "در جنوب شهر",
+      "در غرب شهر"
+     ],
+     "answer": 2,
+     "words": [
+      "جنوب"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "قبلاً اینجا یک کارخانه بود.",
+     "en": "There used to be a factory here.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "کارخانه"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "در پارک چه چیزی برای دوچرخه هست؟",
+     "en": "What is there in the park for bicycles?",
+     "type": "mc",
+     "options": [
+      "یک ایستگاه",
+      "یک مغازه‌ی کوچک",
+      "یک پل بلند",
+      "یک مسیر طولانی"
+     ],
+     "answer": 3,
+     "words": [
+      "مسیر",
+      "دوچرخه"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "همه‌ی همسایه‌ها از پارک راضی هستند.",
+     "en": "All the neighbours are happy with the park.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "بعضی",
+      "همسایه"
+     ],
+     "sentence": 7
+    },
+    {
+     "q": "پارک تا چه ساعتی باز است؟",
+     "en": "Until what time is the park open?",
+     "type": "mc",
+     "options": [
+      "تا یازده شب",
+      "تا نه شب",
+      "تا شش عصر",
+      "تا دوازده شب"
+     ],
+     "answer": 0,
+     "words": [
+      "باز"
+     ],
+     "sentence": 8
+    }
+   ]
+  },
+  {
+   "id": "p0028",
+   "lv": "A2",
+   "title": "جشن تولد پدر",
+   "oop": {},
+   "names": [],
+   "sentences": [
+    [
+     "هفته‌ی بعد پدرم شصت ساله می‌شود.",
+     "Next week my father turns sixty."
+    ],
+    [
+     "من و خواهرم می‌خواهیم برای او یک جشن بگیریم، اما او نباید چیزی بداند.",
+     "My sister and I want to throw him a party, but he mustn't know anything."
+    ],
+    [
+     "برای همین به همه گفته‌ایم که این یک راز است.",
+     "So we have told everyone that it's a secret."
+    ],
+    [
+     "مادرم قرار است آن شب پدر را به یک رستوران ببرد.",
+     "My mother is going to take Dad to a restaurant that evening."
+    ],
+    [
+     "در این مدت، ما خانه را با گل و چراغ‌های رنگی آماده می‌کنیم.",
+     "Meanwhile we will get the house ready with flowers and coloured lights."
+    ],
+    [
+     "عمو و دوستان قدیمی پدرم هم می‌آیند.",
+     "My uncle and my father's old friends are coming too."
+    ],
+    [
+     "خواهرم یک کیک بزرگ درست می‌کند.",
+     "My sister is making a big cake."
+    ],
+    [
+     "وقتی پدر و مادر برگردند، همه‌ی چراغ‌ها را خاموش می‌کنیم.",
+     "When Mum and Dad come back, we will switch off all the lights."
+    ],
+    [
+     "وقتی در را باز کنند، همه با هم می‌گوییم: «تولدت مبارک!»",
+     "When they open the door, we will all say together: \"Happy birthday!\""
+    ],
+    [
+     "امیدوارم این شب برای پدرم خاطره‌ی خوبی بشود.",
+     "I hope this evening becomes a good memory for my father."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "پدر چند ساله می‌شود؟",
+     "en": "How old is the father turning?",
+     "type": "mc",
+     "options": [
+      "پنجاه",
+      "شصت",
+      "هفتاد",
+      "چهل"
+     ],
+     "answer": 1,
+     "words": [
+      "سال"
+     ],
+     "sentence": 0
+    },
+    {
+     "q": "پدر از جشن خبر ندارد.",
+     "en": "The father doesn't know about the party.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "راز"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "مادر آن شب پدر را کجا می‌برد؟",
+     "en": "Where is the mother taking the father that evening?",
+     "type": "mc",
+     "options": [
+      "به خانه‌ی عمو",
+      "به سینما",
+      "به یک رستوران",
+      "به پارک"
+     ],
+     "answer": 2,
+     "words": [
+      "رستوران"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "خواهر برای جشن کیک درست می‌کند.",
+     "en": "The sister is making a cake for the party.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "کیک"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "وقتی پدر برسد، چراغ‌ها روشن است.",
+     "en": "When the father arrives, the lights are on.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "خاموش کردن"
+     ],
+     "sentence": 7
+    }
+   ]
+  },
+  {
+   "id": "p0029",
+   "lv": "A2",
+   "title": "برنامه‌ی سفر فردا",
+   "oop": {
+    "کاشان": "name",
+    "تهران": "name",
+    "رحیمی": "name"
+   },
+   "names": [
+    "کاشان",
+    "تهران",
+    "رحیمی"
+   ],
+   "sentences": [
+    [
+     "سلام به همه‌ی دانشجوها!",
+     "Hello, all students!"
+    ],
+    [
+     "فردا با هم به کاشان می‌رویم.",
+     "Tomorrow we are going to Kashan together."
+    ],
+    [
+     "لطفاً ساعت هفت صبح جلوی در دانشگاه باشید، چون اتوبوس ساعت هفت و نیم حرکت می‌کند.",
+     "Please be in front of the university gate at seven in the morning, because the bus leaves at half past seven."
+    ],
+    [
+     "اول به یک باغ قدیمی و معروف می‌رویم.",
+     "First we will go to an old and famous garden."
+    ],
+    [
+     "بعد در یک رستوران سنتی ناهار می‌خوریم.",
+     "Then we will have lunch in a traditional restaurant."
+    ],
+    [
+     "بعد از ناهار، دو ساعت وقت آزاد دارید تا در بازار قدیمی شهر قدم بزنید و خرید کنید.",
+     "After lunch you will have two hours of free time to walk around the town's old bazaar and shop."
+    ],
+    [
+     "ساعت شش عصر به تهران برمی‌گردیم.",
+     "We will return to Tehran at six in the evening."
+    ],
+    [
+     "لباس راحت و کفش مناسب بپوشید، چون راه زیادی پیاده می‌رویم.",
+     "Wear comfortable clothes and suitable shoes, because we will walk a lot."
+    ],
+    [
+     "آب هم با خودتان بیاورید، چون هوا گرم است.",
+     "Bring water with you too, because the weather is hot."
+    ],
+    [
+     "اگر سوالی دارید، امشب به من پیغام بدهید. استاد رحیمی",
+     "If you have any questions, send me a message tonight. Professor Rahimi"
+    ]
+   ],
+   "questions": [
+    {
+     "q": "دانشجوها باید ساعت چند جلوی دانشگاه باشند؟",
+     "en": "What time should the students be in front of the university?",
+     "type": "mc",
+     "options": [
+      "ساعت هشت",
+      "ساعت هفت و نیم",
+      "ساعت شش",
+      "ساعت هفت"
+     ],
+     "answer": 3,
+     "words": [
+      "جلوی"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "آن‌ها ناهار را در بازار می‌خورند.",
+     "en": "They have lunch in the bazaar.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "ناهار",
+      "رستوران"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "بعد از ناهار دانشجوها چه کار می‌کنند؟",
+     "en": "What do the students do after lunch?",
+     "type": "mc",
+     "options": [
+      "به بازار قدیمی می‌روند",
+      "به باغ می‌روند",
+      "به تهران برمی‌گردند",
+      "در رستوران می‌مانند"
+     ],
+     "answer": 0,
+     "words": [
+      "بازار"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "در این سفر زیاد پیاده راه می‌روند.",
+     "en": "On this trip they will walk a lot.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "پیاده"
+     ],
+     "sentence": 7
+    },
+    {
+     "q": "فردا هوای کاشان سرد است.",
+     "en": "Tomorrow the weather in Kashan will be cold.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "گرم",
+      "هوا"
+     ],
+     "sentence": 8
+    }
+   ]
+  },
+  {
+   "id": "p0030",
+   "lv": "A2",
+   "title": "کدام فیلم؟",
+   "oop": {
+    "سینا": "name",
+    "نیلوفر": "name"
+   },
+   "names": [
+    "سینا",
+    "نیلوفر"
+   ],
+   "sentences": [
+    [
+     "سینا: «امشب برویم سینما؟ یک فیلم جدید آمده است.»",
+     "Sina: \"Shall we go to the cinema tonight? A new film has come out.\""
+    ],
+    [
+     "نیلوفر: «چه فیلمی؟ اگر فیلم ترسناک است، من نمی‌آیم.»",
+     "Niloufar: \"What film? If it's a horror film, I'm not coming.\""
+    ],
+    [
+     "سینا: «نه، یک فیلم شاد است درباره‌ی خانواده‌ای که به یک شهر دیگر می‌روند.»",
+     "Sina: \"No, it's a cheerful film about a family who move to another town.\""
+    ],
+    [
+     "نیلوفر: «بازیگرهایش چه کسانی هستند؟»",
+     "Niloufar: \"Who are the actors?\""
+    ],
+    [
+     "سینا: «بازیگرهای معروفی هستند. همه می‌گویند فیلم خیلی خوبی است.»",
+     "Sina: \"They are well-known actors. Everyone says it's a very good film.\""
+    ],
+    [
+     "نیلوفر: «فیلم ساعت چند شروع می‌شود؟»",
+     "Niloufar: \"What time does the film start?\""
+    ],
+    [
+     "سینا: «ساعت هشت و نیم. قبلش می‌توانیم در کافه‌ی کنار سینما شام بخوریم.»",
+     "Sina: \"At half past eight. Before that we can have dinner in the café next to the cinema.\""
+    ],
+    [
+     "نیلوفر: «خوب است. اما من امروز تا ساعت هفت کار دارم.»",
+     "Niloufar: \"Good. But I have work until seven today.\""
+    ],
+    [
+     "سینا: «مشکلی نیست. ساعت هفت و نیم جلوی کافه منتظرت هستم. بلیت‌ها را هم من می‌خرم.»",
+     "Sina: \"No problem. I'll wait for you in front of the café at half past seven. I'll buy the tickets too.\""
+    ]
+   ],
+   "questions": [
+    {
+     "q": "نیلوفر فیلم‌های ترسناک را دوست دارد.",
+     "en": "Niloufar likes horror films.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "ترسناک"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "فیلم درباره‌ی چیست؟",
+     "en": "What is the film about?",
+     "type": "mc",
+     "options": [
+      "دو دوست که با هم به سفر می‌روند",
+      "خانواده‌ای که به شهر دیگری می‌روند",
+      "زندگی یک بازیگر معروف و خانواده‌اش",
+      "مردی که سگش را گم کرده است"
+     ],
+     "answer": 1,
+     "words": [
+      "خانواده"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "فیلم ساعت چند شروع می‌شود؟",
+     "en": "What time does the film start?",
+     "type": "mc",
+     "options": [
+      "ساعت هشت",
+      "ساعت هفت و نیم",
+      "ساعت هشت و نیم",
+      "ساعت نه"
+     ],
+     "answer": 2,
+     "words": [
+      "ساعت"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "آن‌ها قبل از فیلم با هم شام می‌خورند.",
+     "en": "They have dinner together before the film.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "شام"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "نیلوفر امروز تا ساعت هفت سر کار است.",
+     "en": "Niloufar is at work until seven today.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "کار"
+     ],
+     "sentence": 7
+    }
+   ]
+  },
+  {
+   "id": "p0031",
+   "lv": "A2",
+   "title": "مسابقه‌ی فوتبال",
+   "oop": {
+    "علی": "name",
+    "رضا": "name"
+   },
+   "names": [
+    "علی",
+    "رضا"
+   ],
+   "sentences": [
+    [
+     "شنبه‌ی گذشته تیم مدرسه‌ی ما یک مسابقه‌ی مهم داشت.",
+     "Last Saturday our school team had an important match."
+    ],
+    [
+     "ما باید با تیم یک مدرسه‌ی دیگر بازی می‌کردیم که سال گذشته برنده شده بود.",
+     "We had to play the team of another school that had won the year before."
+    ],
+    [
+     "همه‌ی بچه‌های مدرسه و خیلی از پدر و مادرها آمده بودند.",
+     "All the children from the school and lots of parents had come."
+    ],
+    [
+     "نیمه‌ی اول خوب نبود و آن‌ها دو گل زدند.",
+     "The first half didn't go well and they scored two goals."
+    ],
+    [
+     "در وسط بازی، معلم ورزش با ما حرف زد و گفت که نباید بترسیم.",
+     "Halfway through the game the PE teacher talked to us and said we mustn't be afraid."
+    ],
+    [
+     "در نیمه‌ی دوم ما خیلی بهتر بازی کردیم.",
+     "In the second half we played much better."
+    ],
+    [
+     "علی اولین گل ما را زد و کمی بعد، رضا گل دوم را زد.",
+     "Ali scored our first goal, and a little later Reza scored the second."
+    ],
+    [
+     "در دقیقه‌ی آخر، من توپ را به طرف دروازه زدم و گل شد!",
+     "In the last minute I kicked the ball towards the goal and it went in!"
+    ],
+    [
+     "در پایان ما برنده شدیم و نتیجه‌ی بازی سه بر دو بود.",
+     "In the end we won, and the final score was three to two."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "در نیمه‌ی اول، تیم ما دو گل زد.",
+     "en": "In the first half our team scored two goals.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "نیمه",
+      "گل"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "چه کسی در وسط بازی با بچه‌ها حرف زد؟",
+     "en": "Who talked to the children halfway through the game?",
+     "type": "mc",
+     "options": [
+      "رضا",
+      "مدیر مدرسه",
+      "پدر علی",
+      "معلم ورزش"
+     ],
+     "answer": 3,
+     "words": [
+      "ورزش",
+      "معلم"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "گل آخر را خود نویسنده زد.",
+     "en": "The writer scored the last goal himself.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "دقیقه",
+      "توپ"
+     ],
+     "sentence": 7
+    },
+    {
+     "q": "نتیجه‌ی بازی چه بود؟",
+     "en": "What was the result of the game?",
+     "type": "mc",
+     "options": [
+      "سه بر دو",
+      "دو بر دو",
+      "دو بر سه",
+      "سه بر یک"
+     ],
+     "answer": 0,
+     "words": [
+      "برنده شدن"
+     ],
+     "sentence": 8
+    }
+   ]
+  },
+  {
+   "id": "p0032",
+   "lv": "A2",
+   "title": "زندگی دانشجویی",
+   "oop": {
+    "لیلا": "name",
+    "تهران": "name"
+   },
+   "names": [
+    "لیلا",
+    "تهران"
+   ],
+   "sentences": [
+    [
+     "لیلا از پاییز دانشجوی دانشگاه تهران است و تاریخ می‌خواند.",
+     "Since the autumn Leila has been a student at the University of Tehran, studying history."
+    ],
+    [
+     "او با دو دختر دیگر در یک خانه‌ی کوچک نزدیک دانشگاه زندگی می‌کند.",
+     "She lives with two other girls in a small house near the university."
+    ],
+    [
+     "کلاس‌هایش از شنبه تا چهارشنبه است و هر روز حدود پنج ساعت کلاس دارد.",
+     "Her classes are from Saturday to Wednesday and she has about five hours of class every day."
+    ],
+    [
+     "بعد از کلاس، معمولاً به کتابخانه‌ی دانشگاه می‌رود و درس می‌خواند.",
+     "After class she usually goes to the university library and studies."
+    ],
+    [
+     "کتابخانه تا ساعت ده شب باز است و همیشه پر از دانشجو است.",
+     "The library is open until ten at night and is always full of students."
+    ],
+    [
+     "زندگی در یک شهر بزرگ برای او آسان نیست.",
+     "Living in a big city isn't easy for her."
+    ],
+    [
+     "دلش برای خانواده‌اش تنگ می‌شود و هر هفته با آن‌ها تلفنی حرف می‌زند.",
+     "She misses her family and talks to them on the phone every week."
+    ],
+    [
+     "اما دوستان خوبی پیدا کرده است و از درس‌هایش لذت می‌برد.",
+     "But she has made good friends and enjoys her studies."
+    ],
+    [
+     "او می‌خواهد بعد از دانشگاه معلم تاریخ بشود.",
+     "She wants to become a history teacher after university."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "لیلا در دانشگاه چه می‌خواند؟",
+     "en": "What does Leila study at university?",
+     "type": "mc",
+     "options": [
+      "زبان انگلیسی",
+      "تاریخ",
+      "پزشکی",
+      "هنر"
+     ],
+     "answer": 1,
+     "words": [
+      "تاریخ"
+     ],
+     "sentence": 0
+    },
+    {
+     "q": "لیلا تنها زندگی می‌کند.",
+     "en": "Leila lives alone.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "زندگی کردن"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "لیلا بیشتر روزها بعد از درس مستقیم به خانه برمی‌گردد.",
+     "en": "On most days Leila goes straight home after her lessons.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "معمولاً",
+      "کتابخانه"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "کتابخانه تا چه ساعتی باز است؟",
+     "en": "Until what time is the library open?",
+     "type": "mc",
+     "options": [
+      "تا نیمه‌ی شب",
+      "تا هشت شب",
+      "تا ده شب",
+      "تا پنج عصر"
+     ],
+     "answer": 2,
+     "words": [
+      "باز"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "لیلا می‌خواهد در آینده درس بدهد.",
+     "en": "Leila wants to teach in the future.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "معلم"
+     ],
+     "sentence": 8
+    }
+   ]
+  },
+  {
+   "id": "p0033",
+   "lv": "A2",
+   "title": "اطلاعیه‌ی ایستگاه قطار",
+   "oop": {
+    "اصفهان": "name"
+   },
+   "names": [
+    "اصفهان"
+   ],
+   "sentences": [
+    [
+     "مسافران عزیز، لطفاً توجه کنید!",
+     "Dear passengers, your attention please!"
+    ],
+    [
+     "قطار ساعت ده و نیم که به اصفهان می‌رود، امروز یک ساعت دیرتر حرکت می‌کند.",
+     "The half past ten train to Isfahan will leave an hour later today."
+    ],
+    [
+     "دلیل این دیر حرکت کردن یک مشکل کوچک در قطار است.",
+     "The reason for this late departure is a small problem with the train."
+    ],
+    [
+     "حرکت قطار ساعت یازده و نیم از خط سه است.",
+     "The train will depart from platform three at half past eleven."
+    ],
+    [
+     "مسافرانی که نمی‌خواهند منتظر بمانند، می‌توانند پول بلیت خود را پس بگیرند.",
+     "Passengers who do not want to wait can get their ticket money back."
+    ],
+    [
+     "برای این کار، لطفاً به دفتر ایستگاه در طبقه‌ی اول بروید.",
+     "To do this, please go to the station office on the first floor."
+    ],
+    [
+     "در این مدت، رستوران ایستگاه به همه‌ی مسافران یک چای می‌دهد.",
+     "Meanwhile the station restaurant is giving all passengers a cup of tea."
+    ],
+    [
+     "لطفاً در ایستگاه وسایل خود را همیشه با خود داشته باشید.",
+     "Please keep your belongings with you at all times in the station."
+    ],
+    [
+     "از صبر شما خیلی ممنون هستیم.",
+     "Thank you very much for your patience."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "قطار اصفهان حالا ساعت چند حرکت می‌کند؟",
+     "en": "What time does the Isfahan train leave now?",
+     "type": "mc",
+     "options": [
+      "ساعت دوازده و نیم",
+      "ساعت ده و نیم",
+      "ساعت یازده",
+      "ساعت یازده و نیم"
+     ],
+     "answer": 3,
+     "words": [
+      "حرکت"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "مشکل قطار خیلی بزرگ است.",
+     "en": "The train's problem is very big.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "مشکل",
+      "کوچک"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "مسافران می‌توانند پولشان را پس بگیرند.",
+     "en": "Passengers can get their money back.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "پول"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "دفتر ایستگاه کجاست؟",
+     "en": "Where is the station office?",
+     "type": "mc",
+     "options": [
+      "در طبقه‌ی اول",
+      "کنار رستوران",
+      "نزدیک خط سه",
+      "بیرون از ایستگاه"
+     ],
+     "answer": 0,
+     "words": [
+      "طبقه",
+      "دفتر"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "رستوران به همه‌ی مسافران یک غذای گرم می‌دهد.",
+     "en": "The restaurant gives all passengers a hot meal.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "چای",
+      "دادن"
+     ],
+     "sentence": 6
+    }
+   ]
+  },
+  {
+   "id": "p0034",
+   "lv": "A2",
+   "title": "بازار روز",
+   "oop": {},
+   "names": [],
+   "sentences": [
+    [
+     "هر سه‌شنبه در محله‌ی ما بازار روز است.",
+     "Every Tuesday there is a street market in our neighbourhood."
+    ],
+    [
+     "مردم روستاهای نزدیک میوه، نان، پنیر و گل تازه می‌آورند و می‌فروشند.",
+     "People from the nearby villages bring fresh fruit, bread, cheese and flowers and sell them."
+    ],
+    [
+     "قیمت‌ها از مغازه‌ها ارزان‌تر است و همه چیز تازه است.",
+     "Prices are cheaper than in the shops and everything is fresh."
+    ],
+    [
+     "مادرم همیشه صبح زود می‌رود، چون بعد از ساعت ده بازار خیلی شلوغ می‌شود.",
+     "My mother always goes early in the morning, because after ten the market gets very crowded."
+    ],
+    [
+     "اول از یک مرد پیر سیب خریدیم.",
+     "First we bought apples from an old man."
+    ],
+    [
+     "او گفت که درخت‌های سیب مال خودش است و سیب‌ها را همان روز صبح از درخت جمع کرده است.",
+     "He said the apple trees were his own and he had gathered the apples from the trees that same morning."
+    ],
+    [
+     "بعد، مادرم با یک خانم درباره‌ی قیمت پنیر بحث کرد.",
+     "Then my mother argued with a woman about the price of cheese."
+    ],
+    [
+     "خانم اول قبول نکرد، اما بعد پنیر را کمی ارزان‌تر به ما داد.",
+     "At first the woman didn't agree, but then she gave us the cheese a bit cheaper."
+    ],
+    [
+     "ما با دست‌های پر به خانه برگشتیم.",
+     "We came home with our hands full."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "بازار روز هر جمعه است.",
+     "en": "The street market is every Friday.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "سه‌شنبه"
+     ],
+     "sentence": 0
+    },
+    {
+     "q": "در بازار روز قیمت‌ها از مغازه‌ها کمتر است.",
+     "en": "Prices at the street market are lower than in the shops.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "قیمت",
+      "ارزان"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "چرا مادر صبح زود به بازار می‌رود؟",
+     "en": "Why does the mother go to the market early?",
+     "type": "mc",
+     "options": [
+      "چون صبح‌ها قیمت‌ها کمتر است",
+      "چون بعداً بازار شلوغ می‌شود",
+      "چون باید زود سر کار برود",
+      "چون میوه‌ها صبح تازه‌تر هستند"
+     ],
+     "answer": 1,
+     "words": [
+      "شلوغ"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "مادر با خانم درباره‌ی چه چیزی بحث کرد؟",
+     "en": "What did the mother argue with the woman about?",
+     "type": "mc",
+     "options": [
+      "قیمت نان",
+      "قیمت سیب",
+      "قیمت پنیر",
+      "قیمت گل"
+     ],
+     "answer": 2,
+     "words": [
+      "پنیر",
+      "بحث کردن"
+     ],
+     "sentence": 6
+    }
+   ]
+  },
+  {
+   "id": "p0035",
+   "lv": "A2",
+   "title": "محله‌ی من",
+   "oop": {
+    "شیراز": "name"
+   },
+   "names": [
+    "شیراز"
+   ],
+   "sentences": [
+    [
+     "من در یک محله‌ی قدیمی در مرکز شیراز زندگی می‌کنم.",
+     "I live in an old neighbourhood in the centre of Shiraz."
+    ],
+    [
+     "خیابان‌های اینجا کوتاه و آرام است و بیشتر خانه‌ها دو طبقه دارند.",
+     "The streets here are short and quiet and most houses have two floors."
+    ],
+    [
+     "در محله‌ی ما یک مدرسه، یک پارک کوچک و چند مغازه هست.",
+     "In our neighbourhood there is a school, a small park and a few shops."
+    ],
+    [
+     "صبح‌ها بوی نان تازه همه جا هست.",
+     "In the mornings the smell of fresh bread is everywhere."
+    ],
+    [
+     "همسایه‌ها همدیگر را خوب می‌شناسند و به هم کمک می‌کنند.",
+     "The neighbours know each other well and help one another."
+    ],
+    [
+     "وقتی کسی مریض است، همسایه‌ها برایش غذا می‌برند.",
+     "When someone is ill, the neighbours take them food."
+    ],
+    [
+     "تنها مشکل این است که خیابان‌ها برای ماشین‌ها خیلی تنگ است.",
+     "The only problem is that the streets are very narrow for cars."
+    ],
+    [
+     "بعضی از جوان‌ها به محله‌های جدید شهر رفته‌اند.",
+     "Some of the young people have moved to the new parts of the city."
+    ],
+    [
+     "ولی من اینجا را دوست دارم و نمی‌خواهم از اینجا بروم.",
+     "But I love it here and I don't want to leave."
+    ],
+    [
+     "به نظر من، محله‌ی ما آرام‌ترین جای شهر است.",
+     "In my opinion, our neighbourhood is the quietest place in the city."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "محله در کجای شیراز است؟",
+     "en": "Where in Shiraz is the neighbourhood?",
+     "type": "mc",
+     "options": [
+      "بیرون از شهر",
+      "در شمال شهر",
+      "نزدیک دانشگاه",
+      "در مرکز شهر"
+     ],
+     "answer": 3,
+     "words": [
+      "مرکز"
+     ],
+     "sentence": 0
+    },
+    {
+     "q": "همسایه‌ها همدیگر را نمی‌شناسند.",
+     "en": "The neighbours don't know each other.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "همدیگر",
+      "شناختن"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "همسایه‌ها به آدم‌های مریض محله کمک می‌کنند.",
+     "en": "The neighbours help the sick people of the neighbourhood.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "مریض"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "مشکل محله چیست؟",
+     "en": "What is the neighbourhood's problem?",
+     "type": "mc",
+     "options": [
+      "خیابان‌ها برای ماشین تنگ است",
+      "بچه‌ها جایی برای بازی ندارند",
+      "همسایه‌ها با هم حرف نمی‌زنند",
+      "مغازه‌ای در محله نیست"
+     ],
+     "answer": 0,
+     "words": [
+      "تنگ"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "نویسنده می‌خواهد به یک محله‌ی جدید برود.",
+     "en": "The writer wants to move to a new neighbourhood.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "خواستن"
+     ],
+     "sentence": 8
+    }
+   ]
+  },
+  {
+   "id": "p0036",
+   "lv": "A2",
+   "title": "زمین خوردن با دوچرخه",
+   "oop": {},
+   "names": [],
+   "sentences": [
+    [
+     "دیروز عصر با دوچرخه از دانشگاه به خانه برمی‌گشتم.",
+     "Yesterday evening I was cycling home from the university."
+    ],
+    [
+     "باران شدیدی می‌آمد و دیدن جاده سخت بود.",
+     "It was raining heavily and it was hard to see the road."
+    ],
+    [
+     "نزدیک یک ایستگاه اتوبوس، یک ماشین خیلی سریع جلوی من ایستاد.",
+     "Near a bus stop, a car stopped very abruptly in front of me."
+    ],
+    [
+     "من نتوانستم به موقع بایستم و از دوچرخه افتادم.",
+     "I couldn't stop in time and fell off my bike."
+    ],
+    [
+     "دستم کمی درد گرفت، اما چیز جدی نبود.",
+     "My hand hurt a little, but it was nothing serious."
+    ],
+    [
+     "راننده سریع از ماشین پیاده شد و از من معذرت خواست.",
+     "The driver quickly got out of the car and apologised to me."
+    ],
+    [
+     "یک خانم هم از مغازه‌ی کنار خیابان برایم آب آورد.",
+     "A woman from the shop by the road also brought me some water."
+    ],
+    [
+     "راننده می‌خواست مرا به بیمارستان ببرد، ولی من گفتم لازم نیست.",
+     "The driver wanted to take me to hospital, but I said there was no need."
+    ],
+    [
+     "دوچرخه‌ام کمی آسیب دیده بود و امروز آن را پیش مردی بردم که دوچرخه درست می‌کند.",
+     "My bike was a bit damaged, and today I took it to a man who repairs bikes."
+    ],
+    [
+     "از این به بعد، وقتی باران می‌آید با اتوبوس می‌روم.",
+     "From now on, when it rains I'll take the bus."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "آن روز باران شدیدی می‌آمد.",
+     "en": "It was raining heavily that day.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "باران"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "چرا نویسنده از دوچرخه افتاد؟",
+     "en": "Why did the writer fall off the bike?",
+     "type": "mc",
+     "options": [
+      "دوچرخه‌اش خراب بود",
+      "یک ماشین جلوی او ایستاد",
+      "یک سگ به طرف او دوید",
+      "خیلی خسته بود"
+     ],
+     "answer": 1,
+     "words": [
+      "ماشین",
+      "ایستادن"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "یک خانم برای نویسنده چه آورد؟",
+     "en": "What did a woman bring the writer?",
+     "type": "mc",
+     "options": [
+      "دارو",
+      "چای",
+      "آب",
+      "غذا"
+     ],
+     "answer": 2,
+     "words": [
+      "آب",
+      "آوردن"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "نویسنده با راننده به بیمارستان رفت.",
+     "en": "The writer went to hospital with the driver.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "بیمارستان",
+      "لازم"
+     ],
+     "sentence": 7
+    },
+    {
+     "q": "دوچرخه‌ی نویسنده هم آسیب دید.",
+     "en": "The writer's bike was damaged too.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "دوچرخه",
+      "آسیب"
+     ],
+     "sentence": 8
+    }
+   ]
+  },
+  {
+   "id": "p0037",
+   "lv": "A2",
+   "title": "کلاس نقاشی برای همه",
+   "oop": {
+    "نوری": "name"
+   },
+   "names": [
+    "نوری"
+   ],
+   "sentences": [
+    [
+     "آیا همیشه دوست داشتید نقاشی یاد بگیرید، اما وقت نداشتید؟",
+     "Have you always wanted to learn to paint, but never had the time?"
+    ],
+    [
+     "مرکز هنر شهر از ماه آینده یک کلاس جدید شروع می‌کند.",
+     "The city arts centre is starting a new class next month."
+    ],
+    [
+     "کلاس‌ها دوشنبه و چهارشنبه، از ساعت شش تا هشت عصر است.",
+     "Classes are on Monday and Wednesday, from six to eight in the evening."
+    ],
+    [
+     "برای این کلاس لازم نیست قبلاً نقاشی کرده باشید.",
+     "You don't need to have painted before for this class."
+    ],
+    [
+     "استاد کلاس، خانم نوری، ده سال است که در دانشگاه هنر درس می‌دهد.",
+     "The teacher, Mrs Nouri, has been teaching at the art university for ten years."
+    ],
+    [
+     "همه‌ی وسایل کلاس را مرکز می‌دهد و شما فقط باید خودتان بیایید.",
+     "The centre provides all the materials for the class and you only have to come yourself."
+    ],
+    [
+     "هزینه‌ی کلاس برای دو ماه سه میلیون است.",
+     "The class costs three million for two months."
+    ],
+    [
+     "برای دانشجوها و آدم‌های بالای شصت سال، کلاس نصف قیمت است.",
+     "For students and people over sixty, the class is half price."
+    ],
+    [
+     "فقط دوازده نفر می‌توانند در کلاس باشند.",
+     "Only twelve people can be in the class."
+    ],
+    [
+     "برای ثبت‌نام تا آخر همین ماه به دفتر مرکز بیایید.",
+     "To sign up, come to the centre's office by the end of this month."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "کلاس‌ها چه روزهایی است؟",
+     "en": "On which days are the classes?",
+     "type": "mc",
+     "options": [
+      "فقط روزهای جمعه",
+      "شنبه و سه‌شنبه",
+      "یکشنبه و پنج‌شنبه",
+      "دوشنبه و چهارشنبه"
+     ],
+     "answer": 3,
+     "words": [
+      "دوشنبه",
+      "چهارشنبه"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "برای این کلاس باید قبلاً نقاشی یاد گرفته باشید.",
+     "en": "For this class you must have learned to paint before.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "لازم"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "خانم نوری تجربه‌ی زیادی در درس دادن دارد.",
+     "en": "Mrs Nouri has a lot of teaching experience.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "سال"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "چه کسانی کمتر پول می‌دهند؟",
+     "en": "Who pays less?",
+     "type": "mc",
+     "options": [
+      "دانشجوها و آدم‌های بالای شصت",
+      "بچه‌های زیر ده سال",
+      "کسانی که زودتر ثبت‌نام کنند",
+      "کسانی که دو ماه بیایند"
+     ],
+     "answer": 0,
+     "words": [
+      "نصف"
+     ],
+     "sentence": 7
+    }
+   ]
+  },
+  {
+   "id": "p0038",
+   "lv": "A2",
+   "title": "نامه‌ای از برلین",
+   "oop": {
+    "بابک": "name",
+    "برلین": "name",
+    "پویا": "name"
+   },
+   "names": [
+    "بابک",
+    "برلین",
+    "پویا"
+   ],
+   "sentences": [
+    [
+     "سلام بابک جان!",
+     "Hi Babak!"
+    ],
+    [
+     "حالا سه ماه است که در برلین هستم و کم‌کم به زندگی اینجا عادت می‌کنم.",
+     "I've been in Berlin for three months now and I'm slowly getting used to life here."
+    ],
+    [
+     "هوای اینجا بیشتر وقت‌ها سرد و ابری است.",
+     "The weather here is cold and cloudy most of the time."
+    ],
+    [
+     "من در یک شرکت کوچک کار می‌کنم و آدم‌های محل کارم خیلی خوب هستند.",
+     "I work in a small company and the people at my workplace are very nice."
+    ],
+    [
+     "هفته‌ای سه شب هم به کلاس زبان می‌روم.",
+     "Three evenings a week I also go to a language class."
+    ],
+    [
+     "زبان اینجا سخت است، ولی حالا می‌توانم در مغازه‌ها و رستوران‌ها حرف بزنم.",
+     "The language here is hard, but now I can talk in shops and restaurants."
+    ],
+    [
+     "آخر هفته‌ها با دوچرخه در شهر می‌گردم، چون شهر پر از پارک و موزه است.",
+     "At weekends I go around the city by bike, because the city is full of parks and museums."
+    ],
+    [
+     "غذای ایرانی را خیلی دوست دارم، ولی اینجا پیدا کردن آن سخت است.",
+     "I really like Iranian food, but it's hard to find here."
+    ],
+    [
+     "تو کی به دیدن من می‌آیی؟ تابستان اینجا خیلی زیباست.",
+     "When are you coming to see me? Summer here is very beautiful."
+    ],
+    [
+     "منتظر جوابت هستم. دوست تو، پویا",
+     "I'm waiting for your reply. Your friend, Pouya"
+    ]
+   ],
+   "questions": [
+    {
+     "q": "پویا از شش ماه پیش در برلین زندگی می‌کند.",
+     "en": "Pouya has been living in Berlin for six months.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "ماه"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "هوای برلین بیشتر وقت‌ها چطور است؟",
+     "en": "What is the weather in Berlin like most of the time?",
+     "type": "mc",
+     "options": [
+      "گرم و آفتابی",
+      "سرد و ابری",
+      "گرم و بارانی",
+      "سرد و برفی"
+     ],
+     "answer": 1,
+     "words": [
+      "سرد"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "پویا حالا می‌تواند در مغازه‌ها به زبان آنجا حرف بزند.",
+     "en": "Pouya can now speak the local language in shops.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "مغازه",
+      "حرف زدن"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "پویا آخر هفته‌ها چه کار می‌کند؟",
+     "en": "What does Pouya do at weekends?",
+     "type": "mc",
+     "options": [
+      "در شرکت کار می‌کند",
+      "به کلاس زبان می‌رود",
+      "با دوچرخه به پارک‌ها و موزه‌ها می‌رود",
+      "به یک رستوران ایرانی می‌رود"
+     ],
+     "answer": 2,
+     "words": [
+      "دوچرخه",
+      "موزه"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "پیدا کردن غذای ایرانی در برلین آسان است.",
+     "en": "Finding Iranian food in Berlin is easy.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "سخت"
+     ],
+     "sentence": 7
+    }
+   ]
+  },
+  {
+   "id": "p0039",
+   "lv": "A2",
+   "title": "نوروز",
+   "oop": {
+    "نوروز": "name"
+   },
+   "names": [
+    "نوروز"
+   ],
+   "sentences": [
+    [
+     "نوروز، یعنی روز اول سال ایرانی، اول فروردین است.",
+     "Nowruz, the first day of the Iranian year, falls on the first of Farvardin."
+    ],
+    [
+     "این روز معمولاً با اولین روز بهار یکی است.",
+     "This day is usually the same as the first day of spring."
+    ],
+    [
+     "چند هفته قبل از نوروز، مردم خانه‌هایشان را تمیز می‌کنند و لباس نو می‌خرند.",
+     "A few weeks before Nowruz people clean their homes and buy new clothes."
+    ],
+    [
+     "در روزهای نوروز، مردم به دیدن خانواده و دوستانشان می‌روند و با هم غذا می‌خورند.",
+     "During the Nowruz days people go to visit their family and friends and eat together."
+    ],
+    [
+     "بزرگ‌ترها به بچه‌ها پول یا هدیه می‌دهند.",
+     "The older people give the children money or presents."
+    ],
+    [
+     "مدرسه‌ها حدود دو هفته باز نیستند و خیلی از خانواده‌ها به سفر می‌روند.",
+     "Schools are closed for about two weeks and many families go travelling."
+    ],
+    [
+     "روز سیزدهم فروردین، مردم از خانه بیرون می‌روند و ناهار را در پارک یا کنار آب می‌خورند.",
+     "On the thirteenth of Farvardin people go out of their homes and have lunch in a park or by the water."
+    ],
+    [
+     "نوروز برای ایرانی‌ها جشن امید و شروع دوباره است.",
+     "For Iranians, Nowruz is a celebration of hope and new beginnings."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "مدرسه‌ها در نوروز چه مدت باز نیستند؟",
+     "en": "For how long are schools closed at Nowruz?",
+     "type": "mc",
+     "options": [
+      "حدود یک هفته",
+      "حدود یک ماه",
+      "حدود سه روز",
+      "حدود دو هفته"
+     ],
+     "answer": 3,
+     "words": [
+      "مدرسه"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "قبل از نوروز، مردم لباس نو می‌خرند.",
+     "en": "Before Nowruz people buy new clothes.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "نو"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "در نوروز بچه‌ها به بزرگ‌ترها پول می‌دهند.",
+     "en": "At Nowruz children give money to the adults.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "پول"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "طبق متن، نوروز برای ایرانی‌ها جشن چه چیزی است؟",
+     "en": "According to the text, what is Nowruz a celebration of for Iranians?",
+     "type": "mc",
+     "options": [
+      "امید و شروع دوباره",
+      "کار و درس",
+      "پول و هدیه",
+      "دیدن خانواده و دوستان"
+     ],
+     "answer": 0,
+     "words": [
+      "امید"
+     ],
+     "sentence": 7
+    }
+   ]
+  },
+  {
+   "id": "p0040",
+   "lv": "A2",
+   "title": "گوشی قدیمی",
+   "oop": {},
+   "names": [],
+   "sentences": [
+    [
+     "گوشی من از هفته‌ی پیش مشکل دارد.",
+     "My phone has had a problem since last week."
+    ],
+    [
+     "بعضی وقت‌ها بدون دلیل کار نمی‌کند.",
+     "Sometimes it stops working for no reason."
+    ],
+    [
+     "دیروز آن را به مغازه‌ای بردم که گوشی درست می‌کند.",
+     "Yesterday I took it to a shop that repairs phones."
+    ],
+    [
+     "مرد جوانی که آنجا کار می‌کرد، گوشی را نگاه کرد و گفت: «این گوشی خیلی قدیمی است.»",
+     "The young man working there looked at the phone and said: \"This phone is very old.\""
+    ],
+    [
+     "«درست کردنش حدود دو میلیون هزینه دارد.»",
+     "\"Repairing it will cost about two million.\""
+    ],
+    [
+     "من گفتم: «این خیلی گران است! یک گوشی نو چقدر است؟»",
+     "I said: \"That's very expensive! How much is a new phone?\""
+    ],
+    [
+     "او گفت: «ارزان‌ترین گوشی ما شش میلیون است.»",
+     "He said: \"Our cheapest phone is six million.\""
+    ],
+    [
+     "کمی فکر کردم. گوشی من پنج سال است که با من است و خیلی از عکس‌ها و خاطره‌هایم در آن است.",
+     "I thought for a moment. I've had my phone for five years and lots of my photos and memories are on it."
+    ],
+    [
+     "برای همین تصمیم گرفتم گوشی را آنجا بگذارم تا درستش کنند.",
+     "So I decided to leave the phone there for them to repair."
+    ],
+    [
+     "مرد گفت: «فردا عصر آماده است.»",
+     "The man said: \"It will be ready tomorrow afternoon.\""
+    ]
+   ],
+   "questions": [
+    {
+     "q": "گوشی از دیروز مشکل دارد.",
+     "en": "The phone has had a problem since yesterday.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "هفته"
+     ],
+     "sentence": 0
+    },
+    {
+     "q": "مرد جوان درباره‌ی گوشی چه گفت؟",
+     "en": "What did the young man say about the phone?",
+     "type": "mc",
+     "options": [
+      "خیلی گران است",
+      "خیلی قدیمی است",
+      "هنوز نو است",
+      "هیچ مشکلی ندارد"
+     ],
+     "answer": 1,
+     "words": [
+      "قدیمی"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "یک گوشی نو از درست کردن گوشی قدیمی گران‌تر است.",
+     "en": "A new phone costs more than repairing the old one.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "هزینه"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "چرا نویسنده گوشی نو نخرید؟",
+     "en": "Why didn't the writer buy a new phone?",
+     "type": "mc",
+     "options": [
+      "مرد جوان به او این را گفت",
+      "گوشی‌های نو را دوست ندارد",
+      "عکس‌ها و خاطره‌هایش در آن است",
+      "یکی از دوستانش این را خواست"
+     ],
+     "answer": 2,
+     "words": [
+      "عکس",
+      "خاطره"
+     ],
+     "sentence": 7
+    },
+    {
+     "q": "گوشی فردا صبح آماده است.",
+     "en": "The phone will be ready tomorrow morning.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "آماده"
+     ],
+     "sentence": 9
+    }
+   ]
+  },
+  {
+   "id": "p0041",
+   "lv": "B1",
+   "title": "یک تصمیم سخت",
+   "oop": {
+    "سارا": "name",
+    "شیراز": "name",
+    "تهران": "name"
+   },
+   "names": [
+    "سارا",
+    "شیراز",
+    "تهران"
+   ],
+   "sentences": [
+    [
+     "سارا سی و دو سال دارد و در یک شرکت بیمه در شیراز کار می‌کند.",
+     "Sara is thirty-two and works at an insurance company in Shiraz."
+    ],
+    [
+     "ماه پیش، یک شرکت بزرگ در تهران به او پیشنهاد کار داد.",
+     "Last month a big company in Tehran offered her a job."
+    ],
+    [
+     "با این کار، درآمد او تقریباً دو برابر می‌شود.",
+     "With this job her income would almost double."
+    ],
+    [
+     "علاوه بر این، می‌تواند در پروژه‌های مهم‌تری کار کند.",
+     "Besides that, she could work on more important projects."
+    ],
+    [
+     "اما تصمیم گرفتن برای او آسان نیست.",
+     "But deciding is not easy for her."
+    ],
+    [
+     "خانواده و دوستانش همه در شیراز زندگی می‌کنند و مادرش این روزها حال خوبی ندارد.",
+     "Her family and friends all live in Shiraz and her mother is not well these days."
+    ],
+    [
+     "زندگی در تهران هم گران‌تر است و او باید یک آپارتمان اجاره کند.",
+     "Life in Tehran is also more expensive and she would have to rent a flat."
+    ],
+    [
+     "سارا با پدرش صحبت کرد.",
+     "Sara talked to her father."
+    ],
+    [
+     "پدرش گفت: «این فرصت خوبی است. نگران ما نباش؛ ما خودمان مواظب مادرت هستیم.»",
+     "Her father said: \"This is a good opportunity. Don't worry about us; we'll look after your mother ourselves.\""
+    ],
+    [
+     "اما بهترین دوستش معتقد است که پول همه چیز نیست.",
+     "But her best friend believes that money isn't everything."
+    ],
+    [
+     "سارا هنوز جواب نداده است، چون شرکت تا آخر ماه به او وقت داده است.",
+     "Sara hasn't answered yet, because the company has given her until the end of the month."
+    ],
+    [
+     "او فکر می‌کند شاید بتواند اول یک سال برود و بعد دوباره تصمیم بگیرد.",
+     "She thinks she might go for one year first and then decide again."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "سارا الآن کجا کار می‌کند؟",
+     "en": "Where does Sara work now?",
+     "type": "mc",
+     "options": [
+      "در یک مدرسه",
+      "در یک بانک",
+      "در یک بیمارستان",
+      "در یک شرکت بیمه"
+     ],
+     "answer": 3,
+     "words": [
+      "بیمه",
+      "شرکت"
+     ],
+     "sentence": 0
+    },
+    {
+     "q": "با کار جدید، سارا پول بیشتری می‌گیرد.",
+     "en": "With the new job Sara would earn more money.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "درآمد"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "چرا تصمیم برای سارا سخت است؟",
+     "en": "Why is the decision hard for Sara?",
+     "type": "mc",
+     "options": [
+      "خانواده‌اش در شیراز است و مادرش حال خوبی ندارد",
+      "شرکت جدید کار جالبی به او نمی‌دهد و درآمدش کم است",
+      "پدرش مخالف است و نمی‌خواهد او به تهران برود",
+      "در تهران هیچ جایی برای زندگی پیدا نکرده است"
+     ],
+     "answer": 0,
+     "words": [
+      "خانواده",
+      "مادر"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "پدر سارا با رفتن او به تهران مخالف است.",
+     "en": "Sara's father is against her going to Tehran.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "فرصت"
+     ],
+     "sentence": 8
+    },
+    {
+     "q": "سارا تا کی وقت دارد جواب بدهد؟",
+     "en": "Until when does Sara have to answer?",
+     "type": "mc",
+     "options": [
+      "تا آخر هفته",
+      "تا آخر ماه",
+      "تا آخر سال",
+      "تا فردا صبح"
+     ],
+     "answer": 1,
+     "words": [
+      "وقت"
+     ],
+     "sentence": 10
+    }
+   ]
+  },
+  {
+   "id": "p0042",
+   "lv": "B1",
+   "title": "نامه‌ای به هتل",
+   "oop": {
+    "پارسیان": "name",
+    "کامران": "name",
+    "احمدی": "name"
+   },
+   "names": [
+    "پارسیان",
+    "کامران",
+    "احمدی"
+   ],
+   "sentences": [
+    [
+     "مدیر محترم هتل پارسیان،",
+     "Dear Manager of the Parsian Hotel,"
+    ],
+    [
+     "من و همسرم از دوازدهم تا پانزدهم مهر در هتل شما بودیم.",
+     "My wife and I stayed at your hotel from the twelfth to the fifteenth of Mehr."
+    ],
+    [
+     "متاسفانه این سفر اصلاً آنطور که انتظار داشتیم نبود.",
+     "Unfortunately this trip was not at all what we had expected."
+    ],
+    [
+     "وقتی رسیدیم، اتاقی که یک ماه پیش گرفته بودیم آماده نبود و ما دو ساعت در سالن منتظر ماندیم.",
+     "When we arrived, the room we had booked a month earlier wasn't ready and we waited two hours in the lobby."
+    ],
+    [
+     "اتاقی که بالاخره به ما دادند کوچک بود و از پنجره‌اش فقط یک دیوار دیده می‌شد.",
+     "The room they finally gave us was small and all you could see from its window was a wall."
+    ],
+    [
+     "آب گرم حمام هم فقط صبح‌ها کار می‌کرد.",
+     "The hot water in the bathroom also only worked in the mornings."
+    ],
+    [
+     "در سایت شما نوشته شده است که صبحانه تا ساعت ده است، اما روز دوم ساعت نه که به رستوران رفتیم، تقریباً هیچ غذایی نمانده بود.",
+     "Your website says breakfast is until ten, but on the second day, when we went to the restaurant at nine, there was almost no food left."
+    ],
+    [
+     "وقتی مشکل را به کارمند هتل گفتیم، فقط گفت که نمی‌تواند کاری بکند.",
+     "When we told the hotel employee about the problem, he only said he couldn't do anything."
+    ],
+    [
+     "ما برای این سه شب پول زیادی پرداخت کردیم و فکر می‌کنیم حق داریم بخشی از آن را پس بگیریم.",
+     "We paid a lot of money for these three nights and we think we have the right to get part of it back."
+    ],
+    [
+     "منتظر جواب شما هستم. با احترام، کامران احمدی",
+     "I look forward to your reply. Yours sincerely, Kamran Ahmadi"
+    ]
+   ],
+   "questions": [
+    {
+     "q": "آن‌ها چند شب در هتل بودند؟",
+     "en": "How many nights did they stay at the hotel?",
+     "type": "mc",
+     "options": [
+      "چهار شب",
+      "دو شب",
+      "سه شب",
+      "یک هفته"
+     ],
+     "answer": 2,
+     "words": [
+      "شب"
+     ],
+     "sentence": 8
+    },
+    {
+     "q": "وقتی رسیدند، مجبور شدند برای اتاق منتظر بمانند.",
+     "en": "When they arrived, they had to wait for their room.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "منتظر",
+      "آماده"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "از پنجره‌ی اتاق چه چیزی دیده می‌شد؟",
+     "en": "What could be seen from the room's window?",
+     "type": "mc",
+     "options": [
+      "خیابان اصلی",
+      "دریا",
+      "یک پارک",
+      "یک دیوار"
+     ],
+     "answer": 3,
+     "words": [
+      "دیوار"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "روز دوم، در رستوران غذای کمی مانده بود.",
+     "en": "On the second day there was little food left in the restaurant.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "ماندن"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "کامران از هتل چه می‌خواهد؟",
+     "en": "What does Kamran want from the hotel?",
+     "type": "mc",
+     "options": [
+      "بخشی از پولش را پس بدهند",
+      "یک اتاق بزرگ‌تر به او بدهند",
+      "مدیر هتل از او معذرت بخواهد",
+      "کارمند هتل را از کار بیرون کنند"
+     ],
+     "answer": 0,
+     "words": [
+      "بخش",
+      "پول"
+     ],
+     "sentence": 8
+    }
+   ]
+  },
+  {
+   "id": "p0043",
+   "lv": "B1",
+   "title": "کارخانه‌ی قدیمی بسته می‌شود",
+   "oop": {
+    "موسوی": "name"
+   },
+   "names": [
+    "موسوی"
+   ],
+   "sentences": [
+    [
+     "کارخانه‌ی کفش شهر ما، که بیش از پنجاه سال پیش ساخته شد، ماه آینده برای همیشه تعطیل می‌شود.",
+     "Our town's shoe factory, which was built more than fifty years ago, will close for good next month."
+    ],
+    [
+     "مدیران کارخانه می‌گویند که کفش‌های خارجی ارزان‌تر هستند و مردم کمتر کفش‌های این کارخانه را می‌خرند.",
+     "The factory's managers say foreign shoes are cheaper and people buy fewer of this factory's shoes."
+    ],
+    [
+     "کارخانه در این سال‌ها پول زیادی از دست داده است.",
+     "The factory has lost a lot of money in recent years."
+    ],
+    [
+     "حدود ۳۰۰ کارگر در این کارخانه کار می‌کنند و بسیاری از آن‌ها بیش از بیست سال در آنجا بوده‌اند.",
+     "About 300 workers work at the factory and many of them have been there for over twenty years."
+    ],
+    [
+     "یکی از کارگرها، آقای موسوی، به ما گفت: «من از جوانی اینجا کار می‌کنم. در این سن پیدا کردن کار جدید خیلی سخت است.»",
+     "One of the workers, Mr Mousavi, told us: \"I've worked here since I was young. At this age finding a new job is very hard.\""
+    ],
+    [
+     "شهردار قول داده است که به کارگرها کمک کند.",
+     "The mayor has promised to help the workers."
+    ],
+    [
+     "دولت هم قرار است به این افراد آموزش بدهد تا بتوانند شغل تازه‌ای پیدا کنند.",
+     "The government is also going to give these people training so that they can find new jobs."
+    ],
+    [
+     "بعضی‌ها پیشنهاد کرده‌اند که ساختمان کارخانه به یک موزه یا مرکز فرهنگی تبدیل شود.",
+     "Some people have suggested turning the factory building into a museum or a cultural centre."
+    ],
+    [
+     "اما هنوز هیچ تصمیمی گرفته نشده است.",
+     "But no decision has been made yet."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "این کارخانه چه چیزی تولید می‌کند؟",
+     "en": "What does this factory produce?",
+     "type": "mc",
+     "options": [
+      "لباس",
+      "کفش",
+      "ماشین",
+      "کاغذ"
+     ],
+     "answer": 1,
+     "words": [
+      "کفش"
+     ],
+     "sentence": 0
+    },
+    {
+     "q": "این روزها مردم بیشتر از همیشه این کفش‌ها را می‌خرند.",
+     "en": "These days people are buying these shoes more than ever.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "کمتر"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "آقای موسوی چه نگرانی‌ای دارد؟",
+     "en": "What is Mr Mousavi worried about?",
+     "type": "mc",
+     "options": [
+      "مریض است و نمی‌تواند زیاد کار کند",
+      "خانه‌اش از کارخانه‌های دیگر خیلی دور است",
+      "در سن او پیدا کردن کار جدید سخت است",
+      "پول چند ماه کارش را هنوز نگرفته است"
+     ],
+     "answer": 2,
+     "words": [
+      "سن",
+      "سخت"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "شهردار قول کمک به کارگرها را داده است.",
+     "en": "The mayor has promised help to the workers.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "شهردار",
+      "قول دادن"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "بعضی‌ها درباره‌ی ساختمان کارخانه چه پیشنهادی دارند؟",
+     "en": "What have some people suggested for the factory building?",
+     "type": "mc",
+     "options": [
+      "یک کارخانه‌ی دیگر در آن کار کند",
+      "خراب شود و جای آن پارک ساخته شود",
+      "به یک مدرسه‌ی بزرگ برای بچه‌ها تبدیل شود",
+      "برای کارهای فرهنگی یا یک موزه استفاده شود"
+     ],
+     "answer": 3,
+     "words": [
+      "موزه"
+     ],
+     "sentence": 7
+    }
+   ]
+  },
+  {
+   "id": "p0044",
+   "lv": "B1",
+   "title": "روستای پدرم",
+   "oop": {},
+   "names": [],
+   "sentences": [
+    [
+     "پدرم در یک روستای کوچک در کوه‌های شمال به دنیا آمد.",
+     "My father was born in a small village in the northern mountains."
+    ],
+    [
+     "وقتی بچه بود، روستا برق نداشت و مردم شب‌ها با چراغ نفتی کار می‌کردند.",
+     "When he was a child the village had no electricity and people worked at night by oil lamps."
+    ],
+    [
+     "مدرسه‌ی روستا فقط یک کلاس داشت و بچه‌های همه‌ی سن‌ها با هم درس می‌خواندند.",
+     "The village school had only one classroom and children of all ages studied together."
+    ],
+    [
+     "پدرم هر روز صبح یک ساعت پیاده راه می‌رفت تا به مدرسه برسد.",
+     "Every morning my father walked for an hour to get to school."
+    ],
+    [
+     "بعد از مدرسه باید به پدرش در مزرعه کمک می‌کرد یا مواظب گاوها می‌بود.",
+     "After school he had to help his father on the farm or look after the cows."
+    ],
+    [
+     "او می‌گوید زندگی سخت بود، اما مردم به هم نزدیک‌تر بودند.",
+     "He says life was hard, but people were closer to each other."
+    ],
+    [
+     "همه همدیگر را می‌شناختند و به هم کمک می‌کردند.",
+     "Everyone knew each other and helped one another."
+    ],
+    [
+     "وقتی پدرم هفده ساله شد، برای ادامه‌ی تحصیل به شهر رفت.",
+     "When my father turned seventeen, he went to the city to continue his education."
+    ],
+    [
+     "امروز روستا برق و اینترنت دارد، اما بیشتر جوان‌ها به شهر رفته‌اند.",
+     "Today the village has electricity and internet, but most young people have moved to the city."
+    ],
+    [
+     "او هنوز همه‌ی راه‌های جنگل را بلد است و داستان‌های زیادی از کودکی‌اش تعریف می‌کند.",
+     "He still knows every path in the forest and tells lots of stories from his childhood."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "در کودکی پدر، روستا برق نداشت.",
+     "en": "In the father's childhood the village had no electricity.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "برق"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "پدر چطور به مدرسه می‌رفت؟",
+     "en": "How did the father get to school?",
+     "type": "mc",
+     "options": [
+      "پیاده، در یک ساعت",
+      "با اسب پدرش",
+      "با دوچرخه‌ی برادرش",
+      "با ماشین یکی از همسایه‌ها"
+     ],
+     "answer": 0,
+     "words": [
+      "پیاده",
+      "راه رفتن"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "پدر بعد از مدرسه چه کار می‌کرد؟",
+     "en": "What did the father do after school?",
+     "type": "mc",
+     "options": [
+      "در کلاس می‌ماند و درس می‌خواند",
+      "در مزرعه به پدرش کمک می‌کرد",
+      "با دوستانش در جنگل بازی می‌کرد",
+      "در مغازه‌ی روستا کار می‌کرد"
+     ],
+     "answer": 1,
+     "words": [
+      "مزرعه"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "به نظر پدر، مردم آن زمان به هم نزدیک‌تر بودند.",
+     "en": "In the father's view, people were closer to each other back then.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "نزدیک"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "چرا پدر به شهر رفت؟",
+     "en": "Why did the father go to the city?",
+     "type": "mc",
+     "options": [
+      "چون ازدواج کرد",
+      "برای پیدا کردن کار",
+      "برای ادامه‌ی تحصیل",
+      "چون روستا برق نداشت"
+     ],
+     "answer": 2,
+     "words": [
+      "تحصیل"
+     ],
+     "sentence": 7
+    }
+   ]
+  },
+  {
+   "id": "p0045",
+   "lv": "B1",
+   "title": "چطور بهتر بخوابیم؟",
+   "oop": {},
+   "names": [],
+   "sentences": [
+    [
+     "خیلی از ما شب‌ها دیر می‌خوابیم و صبح‌ها خسته بیدار می‌شویم.",
+     "Many of us go to bed late and wake up tired in the morning."
+    ],
+    [
+     "پزشکان می‌گویند که بیشتر آدم‌ها هر شب به هفت تا هشت ساعت خواب احتیاج دارند.",
+     "Doctors say most people need seven to eight hours of sleep every night."
+    ],
+    [
+     "خواب کم روی حافظه و حال ما اثر بدی دارد.",
+     "Too little sleep has a bad effect on our memory and mood."
+    ],
+    [
+     "در اینجا چند توصیه برای خواب بهتر می‌خوانید.",
+     "Here you can read some advice for better sleep."
+    ],
+    [
+     "اول، هر شب در یک ساعت مشخص بخوابید، حتی آخر هفته‌ها.",
+     "First, go to bed at a fixed time every night, even at weekends."
+    ],
+    [
+     "دوم، بعد از ساعت چهار عصر قهوه و چای ننوشید.",
+     "Second, don't drink coffee or tea after four in the afternoon."
+    ],
+    [
+     "سوم، یک ساعت قبل از خواب از گوشی و کامپیوتر استفاده نکنید، چون نور صفحه به مغز می‌گوید که هنوز روز است.",
+     "Third, don't use your phone or computer for an hour before bed, because the light of the screen tells the brain it is still day."
+    ],
+    [
+     "چهارم، اتاق خواب باید تاریک، ساکت و کمی سرد باشد.",
+     "Fourth, the bedroom should be dark, quiet and a little cool."
+    ],
+    [
+     "ورزش هم به خواب کمک می‌کند، اما بهتر است درست قبل از خواب ورزش نکنید.",
+     "Exercise also helps sleep, but it's better not to exercise right before bed."
+    ],
+    [
+     "اگر بعد از بیست دقیقه نتوانستید بخوابید، از تخت بلند شوید و کمی کتاب بخوانید تا دوباره خسته شوید.",
+     "If you can't fall asleep after twenty minutes, get out of bed and read a little until you feel tired again."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "طبق این متن، بیشتر آدم‌ها به چند ساعت خواب احتیاج دارند؟",
+     "en": "According to this text, how many hours of sleep do most people need?",
+     "type": "mc",
+     "options": [
+      "حدود چهار ساعت",
+      "پنج تا شش ساعت",
+      "نه تا ده ساعت",
+      "هفت تا هشت ساعت"
+     ],
+     "answer": 3,
+     "words": [
+      "احتیاج داشتن",
+      "خواب"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "بهتر است آخر هفته‌ها دیرتر بخوابیم.",
+     "en": "It's better to go to bed later at weekends.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "مشخص"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "طبق متن، نوشیدن قهوه در عصر برای خواب خوب نیست.",
+     "en": "According to the text, drinking coffee in the afternoon is bad for sleep.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "قهوه"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "چرا نباید قبل از خواب از گوشی استفاده کرد؟",
+     "en": "Why shouldn't you use your phone before bed?",
+     "type": "mc",
+     "options": [
+      "نور صفحه باعث می‌شود مغز فکر کند روز است",
+      "صدای گوشی خواب همه‌ی خانواده را خراب می‌کند",
+      "چشم‌ها بعد از چند ساعت خیلی خسته می‌شوند",
+      "خبرهای بد آدم را عصبانی و نگران می‌کند"
+     ],
+     "answer": 0,
+     "words": [
+      "نور",
+      "مغز"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "اگر بعد از بیست دقیقه خوابتان نمی‌آید، چه باید بکنید؟",
+     "en": "If you can't fall asleep after twenty minutes, what should you do?",
+     "type": "mc",
+     "options": [
+      "یک چای گرم بنوشید",
+      "از تخت بیرون بیایید و مطالعه کنید",
+      "کمی ورزش کنید",
+      "چشم‌هایتان را ببندید و بمانید"
+     ],
+     "answer": 1,
+     "words": [
+      "بلند شدن",
+      "کتاب"
+     ],
+     "sentence": 9
+    }
+   ]
+  },
+  {
+   "id": "p0046",
+   "lv": "B1",
+   "title": "شنبه‌ها در کتابخانه",
+   "oop": {
+    "نگار": "name"
+   },
+   "names": [
+    "نگار"
+   ],
+   "sentences": [
+    [
+     "شنبه‌ها کتابخانه‌ی محله‌ی ما برای بچه‌ها برنامه‌ی ویژه‌ای دارد.",
+     "On Saturdays our local library has a special programme for children."
+    ],
+    [
+     "من دو سال است که شنبه‌ها بدون پول در آنجا کمک می‌کنم.",
+     "For two years I have been helping there on Saturdays without being paid."
+    ],
+    [
+     "اول، یکی از ما یک داستان را با صدای بلند برایشان می‌خواند.",
+     "First, one of us reads them a story aloud."
+    ],
+    [
+     "بچه‌های کوچک‌تر روی زمین می‌نشینند و با دقت گوش می‌دهند.",
+     "The younger children sit on the floor and listen carefully."
+    ],
+    [
+     "بعد، هر بچه درباره‌ی داستان یک نقاشی می‌کشد.",
+     "Then each child draws a picture about the story."
+    ],
+    [
+     "بعضی از بچه‌ها خجالتی هستند و اول با هیچ‌کس حرف نمی‌زنند، اما کم‌کم راحت‌تر می‌شوند.",
+     "Some of the children are shy and don't talk to anyone at first, but little by little they relax."
+    ],
+    [
+     "هفته‌ی پیش، دختری به اسم نگار که اول خیلی ساکت بود، از من خواست داستانی را که خودش نوشته بود برای همه بخوانم.",
+     "Last week a girl called Negar, who was very quiet at first, asked me to read everyone a story she had written herself."
+    ],
+    [
+     "داستان درباره‌ی گربه‌ای بود که می‌خواست مثل پرنده‌ها پرواز کند.",
+     "The story was about a cat that wanted to fly like the birds."
+    ],
+    [
+     "همه برایش دست زدند و مادرش از خوشحالی گریه کرد.",
+     "Everyone clapped for her and her mother cried with happiness."
+    ],
+    [
+     "به خاطر همین لحظه‌ها است که هر شنبه به کتابخانه می‌روم.",
+     "It is for moments like these that I go to the library every Saturday."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "در شروع برنامه چه اتفاقی می‌افتد؟",
+     "en": "What happens at the start of the programme?",
+     "type": "mc",
+     "options": [
+      "هر بچه یک کتاب قرض می‌گیرد",
+      "بچه‌ها با هم در پارک بازی می‌کنند",
+      "یک داستان برای بچه‌ها خوانده می‌شود",
+      "مادرها برای بچه‌ها غذا می‌آورند"
+     ],
+     "answer": 2,
+     "words": [
+      "داستان"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "نویسنده برای کمک در کتابخانه پولی نمی‌گیرد.",
+     "en": "The writer is not paid for helping at the library.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "پول"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "بعد از داستان، بچه‌ها چه کار می‌کنند؟",
+     "en": "What do the children do after the story?",
+     "type": "mc",
+     "options": [
+      "داستان می‌نویسند",
+      "بازی می‌کنند",
+      "کتاب قرض می‌گیرند",
+      "نقاشی می‌کشند"
+     ],
+     "answer": 3,
+     "words": [
+      "نقاشی"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "نگار از اول با همه راحت حرف می‌زد.",
+     "en": "From the start Negar talked easily with everyone.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "ساکت"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "داستان نگار درباره‌ی چه بود؟",
+     "en": "What was Negar's story about?",
+     "type": "mc",
+     "options": [
+      "گربه‌ای که می‌خواست پرواز کند",
+      "پرنده‌ای که نمی‌توانست آواز بخواند",
+      "دختری که گربه‌اش را گم کرده بود",
+      "سگی که هر شنبه به کتابخانه می‌آمد"
+     ],
+     "answer": 0,
+     "words": [
+      "گربه",
+      "پرواز"
+     ],
+     "sentence": 7
+    }
+   ]
+  },
+  {
+   "id": "p0047",
+   "lv": "B1",
+   "title": "ماشین کمتر، هوای بهتر",
+   "oop": {
+    "ایران": "name"
+   },
+   "names": [
+    "ایران"
+   ],
+   "sentences": [
+    [
+     "هوای شهرهای بزرگ ایران در زمستان اغلب آلوده است.",
+     "The air in Iran's big cities is often polluted in winter."
+    ],
+    [
+     "در بعضی روزها، مدرسه‌ها و اداره‌ها به خاطر هوای آلوده تعطیل می‌شوند.",
+     "On some days schools and offices close because of the polluted air."
+    ],
+    [
+     "یکی از دلیل‌های اصلی این مشکل، تعداد زیاد ماشین‌ها است.",
+     "One of the main reasons for this problem is the large number of cars."
+    ],
+    [
+     "برای همین، مدیران شهر برنامه‌ی جدیدی را شروع کرده‌اند.",
+     "That is why the city's managers have started a new plan."
+    ],
+    [
+     "از ماه آینده، ورود ماشین‌های شخصی به مرکز شهر از ساعت هفت صبح تا پنج عصر ممنوع است.",
+     "From next month, private cars will be banned from the city centre from seven in the morning until five in the afternoon."
+    ],
+    [
+     "به جای آن، تعداد اتوبوس‌ها بیشتر می‌شود و قیمت بلیت اتوبوس نصف می‌شود.",
+     "Instead, there will be more buses and bus fares will be halved."
+    ],
+    [
+     "همچنین در خیابان‌های اصلی مسیرهای جدیدی برای دوچرخه ساخته می‌شود.",
+     "New cycle lanes will also be built on the main streets."
+    ],
+    [
+     "نظر مردم درباره‌ی این برنامه متفاوت است.",
+     "People's opinions about the plan differ."
+    ],
+    [
+     "خیلی‌ها موافق هستند و می‌گویند که هوای پاک برای سلامتی بچه‌ها مهم است.",
+     "Many agree and say that clean air is important for children's health."
+    ],
+    [
+     "اما صاحبان مغازه‌های مرکز شهر نگران هستند که مشتری‌هایشان کمتر شوند.",
+     "But shop owners in the city centre are worried that they will have fewer customers."
+    ],
+    [
+     "بعضی‌ها هم می‌گویند که اتوبوس‌ها همین حالا هم خیلی شلوغ هستند.",
+     "Others say the buses are already very crowded."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "یکی از دلیل‌های اصلی هوای آلوده چیست؟",
+     "en": "What is one of the main reasons for the polluted air?",
+     "type": "mc",
+     "options": [
+      "کارخانه‌های بزرگ",
+      "تعداد زیاد ماشین‌ها",
+      "هوای سرد زمستان",
+      "آتش در جنگل‌ها"
+     ],
+     "answer": 1,
+     "words": [
+      "تعداد",
+      "ماشین"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "از ماه آینده، ماشین‌های شخصی شب‌ها هم نمی‌توانند به مرکز شهر بروند.",
+     "en": "From next month private cars can't go into the city centre at night either.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "ممنوع"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "با برنامه‌ی جدید، قیمت بلیت اتوبوس چه می‌شود؟",
+     "en": "With the new plan, what happens to bus fares?",
+     "type": "mc",
+     "options": [
+      "عوض نمی‌شود",
+      "دو برابر می‌شود",
+      "نصف می‌شود",
+      "کمی بیشتر می‌شود"
+     ],
+     "answer": 2,
+     "words": [
+      "نصف",
+      "بلیت"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "مردم درباره‌ی این برنامه نظرهای مختلفی دارند.",
+     "en": "People have different opinions about this plan.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "متفاوت"
+     ],
+     "sentence": 7
+    },
+    {
+     "q": "صاحبان مغازه‌ها نگران چه هستند؟",
+     "en": "What are the shop owners worried about?",
+     "type": "mc",
+     "options": [
+      "کم شدن اتوبوس‌ها",
+      "گران شدن بلیت",
+      "بسته شدن مدرسه‌ها",
+      "کم شدن مشتری‌ها"
+     ],
+     "answer": 3,
+     "words": [
+      "مشتری",
+      "نگران"
+     ],
+     "sentence": 9
+    }
+   ]
+  },
+  {
+   "id": "p0048",
+   "lv": "B1",
+   "title": "اولین سفر تنهایی",
+   "oop": {
+    "یزد": "name"
+   },
+   "names": [
+    "یزد"
+   ],
+   "sentences": [
+    [
+     "تابستان گذشته، وقتی نوزده ساله بودم، برای اولین بار تنها به سفر رفتم.",
+     "Last summer, when I was nineteen, I travelled alone for the first time."
+    ],
+    [
+     "پدر و مادرم اول مخالف بودند، چون فکر می‌کردند هنوز برای این کار جوان هستم.",
+     "My parents were against it at first, because they thought I was still too young for it."
+    ],
+    [
+     "اما بالاخره قبول کردند، به این شرط که هر شب به آن‌ها زنگ بزنم.",
+     "But in the end they agreed, on condition that I called them every night."
+    ],
+    [
+     "من با قطار به یزد رفتم و سه روز در یک خانه‌ی قدیمی که حالا هتل است ماندم.",
+     "I went to Yazd by train and stayed three days in an old house that is now a hotel."
+    ],
+    [
+     "روز اول کمی ترسیده بودم و نمی‌دانستم از کجا شروع کنم.",
+     "On the first day I was a little scared and didn't know where to start."
+    ],
+    [
+     "اما خیلی زود با دو دانشجوی خارجی آشنا شدم که آن‌ها هم تنها سفر می‌کردند.",
+     "But very soon I met two foreign students who were also travelling alone."
+    ],
+    [
+     "با هم در کوچه‌های قدیمی شهر قدم زدیم و غذاهای محلی را امتحان کردیم.",
+     "Together we walked through the old lanes of the city and tried the local food."
+    ],
+    [
+     "یک شب هم با یک راهنما به بیرون از شهر رفتیم تا ستاره‌ها را ببینیم.",
+     "One night we also went outside the city with a guide to look at the stars."
+    ],
+    [
+     "آسمان آنجا آنقدر صاف بود که هزاران ستاره دیده می‌شد.",
+     "The sky there was so clear that thousands of stars could be seen."
+    ],
+    [
+     "در این سفر یاد گرفتم که خودم تصمیم بگیرم و مشکلاتم را خودم حل کنم.",
+     "On this trip I learned to make my own decisions and solve my own problems."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "پدر و مادر نویسنده از اول با سفر او موافق بودند.",
+     "en": "The writer's parents agreed to the trip from the start.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "مخالف"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "شرط پدر و مادر نویسنده چه بود؟",
+     "en": "What was the writer's parents' condition?",
+     "type": "mc",
+     "options": [
+      "هر شب با آن‌ها تماس بگیرد",
+      "با یکی از دوستانش برود",
+      "بیشتر از دو روز نماند",
+      "با اتوبوس سفر کند"
+     ],
+     "answer": 0,
+     "words": [
+      "شرط",
+      "زنگ زدن"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "نویسنده در یزد کجا ماند؟",
+     "en": "Where did the writer stay in Yazd?",
+     "type": "mc",
+     "options": [
+      "در خانه‌ی یکی از دوستان پدرش",
+      "در یک خانه‌ی قدیمی",
+      "در یک هتل جدید در مرکز شهر",
+      "در خانه‌ی دو دانشجوی خارجی"
+     ],
+     "answer": 1,
+     "words": [
+      "خانه",
+      "قدیمی"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "نویسنده در یزد با دو دانشجو آشنا شد.",
+     "en": "The writer met two students in Yazd.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "آشنا شدن"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "آن‌ها یک شب برای چه بیرون از شهر رفتند؟",
+     "en": "Why did they go outside the city one night?",
+     "type": "mc",
+     "options": [
+      "برای خرید",
+      "برای شام خوردن",
+      "برای دیدن ستاره‌ها",
+      "برای دیدن یک روستا"
+     ],
+     "answer": 2,
+     "words": [
+      "ستاره"
+     ],
+     "sentence": 7
+    }
+   ]
+  },
+  {
+   "id": "p0049",
+   "lv": "B1",
+   "title": "جوان‌ها و گوشی",
+   "oop": {
+    "ایران": "name"
+   },
+   "names": [
+    "ایران"
+   ],
+   "sentences": [
+    [
+     "تحقیق تازه‌ای در ایران نشان می‌دهد که جوان‌ها هر روز حدود شش ساعت از گوشی استفاده می‌کنند.",
+     "A new study in Iran shows that young people use their phones for about six hours every day."
+    ],
+    [
+     "بیشتر این وقت صرف شبکه‌های اجتماعی و ویدیو می‌شود.",
+     "Most of this time is spent on social networks and videos."
+    ],
+    [
+     "خیلی از پدر و مادرها از این موضوع نگران هستند.",
+     "Many parents are worried about this."
+    ],
+    [
+     "آن‌ها می‌گویند که بچه‌هایشان کمتر کتاب می‌خوانند و شب‌ها دیر می‌خوابند.",
+     "They say their children read fewer books and go to bed late."
+    ],
+    [
+     "بعضی از معلم‌ها هم معتقدند که گوشی روی درس بچه‌ها اثر بدی دارد.",
+     "Some teachers also believe that phones have a bad effect on children's schoolwork."
+    ],
+    [
+     "اما همه با این نظر موافق نیستند.",
+     "But not everyone agrees with this view."
+    ],
+    [
+     "یک استاد دانشگاه به ما گفت: «گوشی فقط یک وسیله است.",
+     "A university professor told us: \"A phone is just a tool."
+    ],
+    [
+     "جوان‌ها با آن چیزهای زیادی یاد می‌گیرند، با دوستانشان در تماس هستند و حتی کار پیدا می‌کنند.»",
+     "Young people learn a lot with it, stay in touch with their friends and even find jobs.\""
+    ],
+    [
+     "به نظر او، مشکل خود گوشی نیست، بلکه این است که بعضی‌ها نمی‌دانند کی باید آن را کنار بگذارند.",
+     "In his view, the problem isn't the phone itself, but that some people don't know when to put it down."
+    ],
+    [
+     "او پیشنهاد می‌کند که خانواده‌ها سر میز شام گوشی‌هایشان را خاموش کنند.",
+     "He suggests that families switch off their phones at the dinner table."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "طبق تحقیق، جوان‌ها هر روز چند ساعت از گوشی استفاده می‌کنند؟",
+     "en": "According to the study, how many hours a day do young people use their phones?",
+     "type": "mc",
+     "options": [
+      "کمتر از یک ساعت",
+      "حدود دو ساعت",
+      "حدود ده ساعت",
+      "حدود شش ساعت"
+     ],
+     "answer": 3,
+     "words": [
+      "تحقیق",
+      "استفاده کردن"
+     ],
+     "sentence": 0
+    },
+    {
+     "q": "پدر و مادرها می‌گویند که بچه‌ها به خاطر گوشی دیرتر می‌خوابند.",
+     "en": "Parents say children go to bed later because of their phones.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "دیر"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "استاد دانشگاه درباره‌ی گوشی چه فکر می‌کند؟",
+     "en": "What does the university professor think about phones?",
+     "type": "mc",
+     "options": [
+      "مشکل خود گوشی نیست",
+      "گوشی برای جوان‌ها خطرناک است",
+      "جوان‌ها نباید گوشی داشته باشند",
+      "گوشی فقط برای بازی خوب است"
+     ],
+     "answer": 0,
+     "words": [
+      "مشکل"
+     ],
+     "sentence": 8
+    },
+    {
+     "q": "استاد می‌گوید جوان‌ها با گوشی هیچ چیزی یاد نمی‌گیرند.",
+     "en": "The professor says young people learn nothing with their phones.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "یاد گرفتن"
+     ],
+     "sentence": 7
+    },
+    {
+     "q": "استاد به خانواده‌ها چه پیشنهادی می‌کند؟",
+     "en": "What does the professor suggest to families?",
+     "type": "mc",
+     "options": [
+      "برای بچه‌ها گوشی نخرند",
+      "سر شام گوشی‌ها را خاموش کنند",
+      "فقط آخر هفته‌ها از گوشی استفاده کنند",
+      "هر شب با بچه‌ها فیلم ببینند"
+     ],
+     "answer": 1,
+     "words": [
+      "پیشنهاد کردن",
+      "خاموش کردن"
+     ],
+     "sentence": 9
+    }
+   ]
+  },
+  {
+   "id": "p0050",
+   "lv": "B1",
+   "title": "همسایه‌های بالا",
+   "oop": {},
+   "names": [],
+   "sentences": [
+    [
+     "سه ماه پیش یک خانواده‌ی جدید به آپارتمان بالای ما آمدند.",
+     "Three months ago a new family moved into the flat above ours."
+    ],
+    [
+     "از همان هفته‌ی اول، مشکل شروع شد.",
+     "The problem started in the very first week."
+    ],
+    [
+     "آن‌ها تا ساعت یک یا دو شب به موسیقی گوش می‌دادند و مهمان داشتند.",
+     "They listened to music and had guests until one or two in the morning."
+    ],
+    [
+     "من صبح‌ها ساعت شش بیدار می‌شوم و این صداها نمی‌گذاشت خوب بخوابم.",
+     "I wake up at six in the morning and the noise didn't let me sleep well."
+    ],
+    [
+     "چند شب اول چیزی نگفتم، چون نمی‌خواستم دعوا بشود.",
+     "For the first few nights I didn't say anything, because I didn't want a fight."
+    ],
+    [
+     "اما بعد از دو هفته که درست نخوابیده بودم، تصمیم گرفتم با آن‌ها صحبت کنم.",
+     "But after two weeks of not sleeping properly, I decided to talk to them."
+    ],
+    [
+     "یک عصر به طبقه‌ی بالا رفتم و زنگ خانه‌شان را زدم.",
+     "One evening I went upstairs and rang their doorbell."
+    ],
+    [
+     "مرد جوانی در را باز کرد و وقتی مشکل را توضیح دادم، تعجب کرد.",
+     "A young man opened the door and when I explained the problem, he was surprised."
+    ],
+    [
+     "او گفت که نمی‌دانسته است که صدا تا این اندازه به پایین می‌رسد.",
+     "He said he had no idea the sound carried downstairs so much."
+    ],
+    [
+     "او معذرت خواست و قول داد که بعد از ساعت یازده صدای موسیقی را کم کنند.",
+     "He apologised and promised they would turn the music down after eleven."
+    ],
+    [
+     "از آن شب، ساختمان خیلی آرام‌تر شده است و حالا با هم دوست هستیم.",
+     "Since that night the building has been much quieter, and now we are friends."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "همسایه‌های جدید پایین آپارتمان نویسنده زندگی می‌کنند.",
+     "en": "The new neighbours live below the writer's flat.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "بالا"
+     ],
+     "sentence": 0
+    },
+    {
+     "q": "مشکل همسایه‌ها چه بود؟",
+     "en": "What was the problem with the neighbours?",
+     "type": "mc",
+     "options": [
+      "سگشان شب‌ها زیاد صدا می‌کرد",
+      "ماشینشان را جلوی در می‌گذاشتند",
+      "تا دیر وقت به موسیقی گوش می‌دادند",
+      "بچه‌هایشان در ساختمان بازی می‌کردند"
+     ],
+     "answer": 2,
+     "words": [
+      "موسیقی",
+      "گوش دادن"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "نویسنده از شب اول به همسایه‌ها چیزی گفت.",
+     "en": "The writer said something to the neighbours from the first night.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "گفتن"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "مرد جوان وقتی مشکل را شنید چه کرد؟",
+     "en": "What did the young man do when he heard about the problem?",
+     "type": "mc",
+     "options": [
+      "گفت که به پلیس زنگ می‌زند",
+      "عصبانی شد و در را بست",
+      "گفت که مشکل از همسایه‌ی دیگر است",
+      "گفت متاسف است و صدا را کم می‌کنند"
+     ],
+     "answer": 3,
+     "words": [
+      "معذرت",
+      "قول دادن"
+     ],
+     "sentence": 9
+    },
+    {
+     "q": "حالا رابطه‌ی نویسنده با همسایه‌ها چطور است؟",
+     "en": "What is the writer's relationship with the neighbours like now?",
+     "type": "mc",
+     "options": [
+      "با هم دوست هستند",
+      "با هم حرف نمی‌زنند",
+      "هنوز با هم مشکل دارند",
+      "همسایه‌ها از آنجا رفته‌اند"
+     ],
+     "answer": 0,
+     "words": [
+      "دوست"
+     ],
+     "sentence": 10
+    }
+   ]
+  },
+  {
+   "id": "p0051",
+   "lv": "B1",
+   "title": "شروع دوباره در چهل سالگی",
+   "oop": {
+    "رضا": "name"
+   },
+   "names": [
+    "رضا"
+   ],
+   "sentences": [
+    [
+     "رضا تا چهل سالگی در یک بانک کار می‌کرد.",
+     "Reza worked at a bank until he was forty."
+    ],
+    [
+     "کارش امن بود و درآمد خوبی داشت، اما احساس می‌کرد چیزی در زندگی‌اش کم است.",
+     "His job was secure and paid well, but he felt something was missing from his life."
+    ],
+    [
+     "او از کودکی عاشق غذا درست کردن بود.",
+     "Since childhood he had loved cooking."
+    ],
+    [
+     "دو سال پیش، بعد از صحبت با همسرش، کارش را ترک کرد و یک رستوران کوچک باز کرد.",
+     "Two years ago, after talking it over with his wife, he left his job and opened a small restaurant."
+    ],
+    [
+     "دوستانش فکر می‌کردند که دیوانه شده است.",
+     "His friends thought he had gone mad."
+    ],
+    [
+     "سال اول سخت بود: رستوران مشتری زیادی نداشت و رضا مجبور شد بخشی از پولی را که جمع کرده بود خرج کند.",
+     "The first year was hard: the restaurant didn't have many customers and Reza had to spend part of the money he had saved."
+    ],
+    [
+     "اما کم‌کم مردم محله غذاهای او را شناختند و یک نویسنده در مجله‌ای درباره‌ی رستورانش نوشت.",
+     "But gradually the people of the neighbourhood got to know his food and a writer wrote about his restaurant in a magazine."
+    ],
+    [
+     "حالا برای شام جمعه باید از قبل جا بگیرید.",
+     "Now you have to book ahead for Friday dinner."
+    ],
+    [
+     "رضا می‌گوید درآمدش هنوز به اندازه‌ی بانک نیست، اما هر روز با خوشحالی سر کار می‌رود.",
+     "Reza says his income is still not as high as at the bank, but he goes to work happily every day."
+    ],
+    [
+     "او به کسانی که از کارشان راضی نیستند می‌گوید: «برای شروع دوباره هیچ‌وقت دیر نیست.»",
+     "He tells people who are unhappy with their jobs: \"It's never too late to start again.\""
+    ]
+   ],
+   "questions": [
+    {
+     "q": "رضا قبلاً کجا کار می‌کرد؟",
+     "en": "Where did Reza work before?",
+     "type": "mc",
+     "options": [
+      "در یک رستوران",
+      "در یک بانک",
+      "در یک مجله",
+      "در یک مدرسه"
+     ],
+     "answer": 1,
+     "words": [
+      "بانک"
+     ],
+     "sentence": 0
+    },
+    {
+     "q": "رضا در بانک پول کمی می‌گرفت.",
+     "en": "Reza earned little money at the bank.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "درآمد"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "دوستان رضا تصمیم او را عجیب می‌دانستند.",
+     "en": "Reza's friends found his decision strange.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "دیوانه شدن"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "چه چیزی به معروف شدن رستوران کمک کرد؟",
+     "en": "What helped the restaurant become well known?",
+     "type": "mc",
+     "options": [
+      "یک برنامه‌ی تلویزیونی درباره‌ی رضا",
+      "قیمت‌های ارزان غذاهای رستوران",
+      "نوشته‌ی یک نویسنده در مجله",
+      "کمک همسر رضا در آشپزخانه"
+     ],
+     "answer": 2,
+     "words": [
+      "مجله",
+      "نویسنده"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "رضا درباره‌ی درآمد امروزش چه می‌گوید؟",
+     "en": "What does Reza say about his income today?",
+     "type": "mc",
+     "options": [
+      "هیچ درآمدی ندارد",
+      "دو برابر درآمد بانک شده است",
+      "خیلی بیشتر از قبل است",
+      "هنوز از درآمد بانک کمتر است"
+     ],
+     "answer": 3,
+     "words": [
+      "درآمد"
+     ],
+     "sentence": 8
+    }
+   ]
+  },
+  {
+   "id": "p0052",
+   "lv": "B1",
+   "title": "باغی روی سقف",
+   "oop": {
+    "صدری": "name"
+   },
+   "names": [
+    "صدری"
+   ],
+   "sentences": [
+    [
+     "سقف ساختمان ما سال‌ها خالی بود.",
+     "The roof of our building was empty for years."
+    ],
+    [
+     "سال گذشته یکی از همسایه‌ها، خانم صدری، پیشنهاد داد که آنجا باغ درست کنیم.",
+     "Last year one of the neighbours, Mrs Sadri, suggested making a garden there."
+    ],
+    [
+     "اول بعضی‌ها مخالف بودند و می‌گفتند آب و خاک برای سقف سنگین است.",
+     "At first some people were against it and said that water and soil would be too heavy for the roof."
+    ],
+    [
+     "اما یک مهندس ساختمان را بررسی کرد و گفت که مشکلی نیست.",
+     "But an engineer inspected the building and said there was no problem."
+    ],
+    [
+     "هر خانواده کمی پول داد و در یک آخر هفته همه با هم کار کردیم.",
+     "Each family gave a little money and one weekend we all worked together."
+    ],
+    [
+     "جعبه‌های چوبی بزرگ ساختیم، آن‌ها را با خاک پر کردیم و در آن‌ها گیاه و گل کاشتیم.",
+     "We built big wooden boxes, filled them with soil and planted plants and flowers in them."
+    ],
+    [
+     "حالا هر خانواده یک قسمت از باغ را دارد و مسئول آب دادن به آن است.",
+     "Now each family has its own part of the garden and is responsible for watering it."
+    ],
+    [
+     "بچه‌ها خوشحال هستند، چون می‌بینند گیاه‌ها چطور رشد می‌کنند.",
+     "The children are happy, because they see how plants grow."
+    ],
+    [
+     "قبلاً همسایه‌ها فقط در پله‌ها به هم سلام می‌کردند، اما حالا دوستان خوبی شده‌ایم.",
+     "Before, the neighbours only said hello to each other on the stairs, but now we have become good friends."
+    ],
+    [
+     "خانم صدری می‌گوید: «این باغ فقط برای گیاه‌ها نیست، برای آدم‌ها هم هست.»",
+     "Mrs Sadri says: \"This garden isn't only for plants, it's for people too.\""
+    ]
+   ],
+   "questions": [
+    {
+     "q": "چه کسی پیشنهاد باغ را داد؟",
+     "en": "Who suggested the garden?",
+     "type": "mc",
+     "options": [
+      "یکی از همسایه‌ها",
+      "مدیر ساختمان",
+      "یک مهندس",
+      "بچه‌های ساختمان"
+     ],
+     "answer": 0,
+     "words": [
+      "همسایه",
+      "پیشنهاد دادن"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "همه‌ی همسایه‌ها از اول با این کار موافق بودند.",
+     "en": "All the neighbours agreed with the idea from the start.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "مخالف"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "مهندس بعد از بررسی ساختمان چه گفت؟",
+     "en": "What did the engineer say after inspecting the building?",
+     "type": "mc",
+     "options": [
+      "سقف خیلی سنگین است",
+      "مشکلی نیست",
+      "باید سقف را عوض کرد",
+      "آب برای ساختمان خطرناک است"
+     ],
+     "answer": 1,
+     "words": [
+      "مهندس",
+      "مشکل"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "هر خانواده مسئول یک قسمت از باغ است.",
+     "en": "Each family is responsible for part of the garden.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "مسئول",
+      "قسمت"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "باغ چه تغییری در رابطه‌ی همسایه‌ها ایجاد کرد؟",
+     "en": "What change did the garden make to the neighbours' relationship?",
+     "type": "mc",
+     "options": [
+      "کمتر همدیگر را می‌بینند",
+      "بیشتر با هم دعوا می‌کنند",
+      "حالا با هم دوست هستند",
+      "هیچ فرقی نکرده است"
+     ],
+     "answer": 2,
+     "words": [
+      "دوست"
+     ],
+     "sentence": 8
+    }
+   ]
+  },
+  {
+   "id": "p0053",
+   "lv": "B1",
+   "title": "مسابقه‌ی غذا",
+   "oop": {
+    "فسنجان": "fesenjan, the dish she cooks: no pack word names it",
+    "مهری": "name"
+   },
+   "names": [
+    "مهری"
+   ],
+   "sentences": [
+    [
+     "هر سال در جشن پاییز شهر ما، مسابقه‌ای برای پختن بهترین غذا برگزار می‌شود.",
+     "Every year at our town's autumn festival there is a competition for cooking the best dish."
+    ],
+    [
+     "امسال خاله‌ام، مهری، هم در آن شرکت کرد.",
+     "This year my aunt Mehri took part too."
+    ],
+    [
+     "او سی سال است که برای خانواده غذا می‌پزد و همه غذاهایش را دوست دارند.",
+     "She has been cooking for the family for thirty years and everyone loves her food."
+    ],
+    [
+     "در مسابقه، هر کس باید در دو ساعت یک غذای ایرانی درست می‌کرد.",
+     "In the competition everyone had to make an Iranian dish in two hours."
+    ],
+    [
+     "خاله مهری تصمیم گرفت فسنجان بپزد.",
+     "Aunt Mehri decided to cook fesenjan."
+    ],
+    [
+     "اما وقتی به محل مسابقه رسید، فهمید که یکی از چیزهای لازم را در خانه جا گذاشته است.",
+     "But when she reached the competition venue, she realised she had left one of the ingredients at home."
+    ],
+    [
+     "دخترش سریع رفت و آن را آورد، اما آن‌ها بیست دقیقه وقت از دست دادند.",
+     "Her daughter quickly went and brought it, but they lost twenty minutes."
+    ],
+    [
+     "خاله مهری آرامش خودش را حفظ کرد و غذایش را درست به موقع تمام کرد.",
+     "Aunt Mehri kept calm and finished her dish just in time."
+    ],
+    [
+     "سه نفر که در رستوران‌های معروف شهر کار می‌کنند، غذاها را امتحان کردند.",
+     "Three people who work in the town's well-known restaurants tasted the dishes."
+    ],
+    [
+     "در پایان، خاله مهری نفر دوم شد و یک جایزه‌ی کوچک گرفت.",
+     "In the end, Aunt Mehri came second and won a small prize."
+    ],
+    [
+     "او می‌گوید که سال آینده حتماً اول می‌شود!",
+     "She says that next year she will definitely come first!"
+    ]
+   ],
+   "questions": [
+    {
+     "q": "خاله مهری چند سال است که غذا می‌پزد؟",
+     "en": "How long has Aunt Mehri been cooking?",
+     "type": "mc",
+     "options": [
+      "چهل سال",
+      "بیست سال",
+      "ده سال",
+      "سی سال"
+     ],
+     "answer": 3,
+     "words": [
+      "سال"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "در مسابقه هر کس سه ساعت وقت داشت.",
+     "en": "In the competition everyone had three hours.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "ساعت"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "چه مشکلی برای خاله مهری پیش آمد؟",
+     "en": "What problem did Aunt Mehri have?",
+     "type": "mc",
+     "options": [
+      "یک چیز لازم را با خودش نیاورده بود",
+      "دیر به محل مسابقه رسید",
+      "غذایش روی آتش سوخت",
+      "روز مسابقه مریض شد و حالش خوب نبود"
+     ],
+     "answer": 0,
+     "words": [
+      "جا گذاشتن",
+      "لازم"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "خاله مهری غذایش را به موقع تمام کرد.",
+     "en": "Aunt Mehri finished her dish in time.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "تمام کردن",
+      "موقع"
+     ],
+     "sentence": 7
+    },
+    {
+     "q": "خاله مهری در پایان مسابقه چه نتیجه‌ای گرفت؟",
+     "en": "What result did Aunt Mehri get at the end of the competition?",
+     "type": "mc",
+     "options": [
+      "نفر اول شد",
+      "نفر دوم شد",
+      "نفر سوم شد",
+      "جایزه‌ای نگرفت"
+     ],
+     "answer": 1,
+     "words": [
+      "دوم",
+      "جایزه"
+     ],
+     "sentence": 9
+    }
+   ]
+  },
+  {
+   "id": "p0054",
+   "lv": "B1",
+   "title": "عروسی دختر عمو",
+   "oop": {
+    "نسیم": "name",
+    "آرمان": "name"
+   },
+   "names": [
+    "نسیم",
+    "آرمان"
+   ],
+   "sentences": [
+    [
+     "شب جمعه‌ی گذشته عروسی دختر عمویم، نسیم، بود.",
+     "Last Thursday night was the wedding of my cousin Nasim."
+    ],
+    [
+     "جشن در یک باغ بزرگ بیرون از شهر برگزار شد و حدود ۳۰۰ مهمان داشت.",
+     "The party was held in a large garden outside the city and had about 300 guests."
+    ],
+    [
+     "همه‌ی خانواده از چند هفته قبل برای این شب آماده می‌شدند.",
+     "The whole family had been getting ready for this night for weeks."
+    ],
+    [
+     "نسیم لباس سفید بسیار زیبایی پوشیده بود و خیلی خوشحال به نظر می‌رسید.",
+     "Nasim was wearing a very beautiful white dress and looked very happy."
+    ],
+    [
+     "آرمان، مردی که نسیم با او ازدواج کرد، مهندس است و آن‌ها در دانشگاه با هم آشنا شده بودند.",
+     "Arman, the man Nasim married, is an engineer, and they had met at university."
+    ],
+    [
+     "بعد از شام، موسیقی شروع شد و تقریباً همه رقصیدند، حتی عموی پیرم که همیشه ساکت است.",
+     "After dinner the music started and almost everyone danced, even my old uncle who is always quiet."
+    ],
+    [
+     "من اول کمی خجالت کشیدم، اما بالاخره من هم رقصیدم.",
+     "At first I felt a little shy, but in the end I danced too."
+    ],
+    [
+     "نزدیک ساعت دوازده، عروس و آرمان کیک را بریدند و همه دست زدند.",
+     "Around midnight the bride and Arman cut the cake and everyone clapped."
+    ],
+    [
+     "ما ساعت دو صبح به خانه رسیدیم، خسته اما خوشحال.",
+     "We got home at two in the morning, tired but happy."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "جشن کجا بود؟",
+     "en": "Where was the party?",
+     "type": "mc",
+     "options": [
+      "در خانه‌ی عموی نویسنده",
+      "در یک هتل در مرکز شهر",
+      "در یک باغ بیرون از شهر",
+      "در رستورانی نزدیک دانشگاه"
+     ],
+     "answer": 2,
+     "words": [
+      "باغ"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "نسیم و آرمان در محل کار با هم آشنا شدند.",
+     "en": "Nasim and Arman met at work.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "دانشگاه",
+      "آشنا شدن"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "بعد از شام، فقط جوان‌ها رقصیدند.",
+     "en": "After dinner only the young people danced.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "رقصیدن"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "عموی پیر نویسنده معمولاً چطور است؟",
+     "en": "What is the writer's old uncle usually like?",
+     "type": "mc",
+     "options": [
+      "خسته",
+      "شاد",
+      "عصبانی",
+      "ساکت"
+     ],
+     "answer": 3,
+     "words": [
+      "ساکت"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "آن‌ها کی به خانه رسیدند؟",
+     "en": "When did they get home?",
+     "type": "mc",
+     "options": [
+      "ساعت دو صبح",
+      "ساعت دوازده شب",
+      "ساعت یک صبح",
+      "صبح زود"
+     ],
+     "answer": 0,
+     "words": [
+      "رسیدن"
+     ],
+     "sentence": 8
+    }
+   ]
+  },
+  {
+   "id": "p0055",
+   "lv": "B1",
+   "title": "موزه شب‌ها هم باز است",
+   "oop": {},
+   "names": [],
+   "sentences": [
+    [
+     "موزه‌ی تاریخ شهر از هفته‌ی آینده دو شب در هفته تا ساعت ده باز است.",
+     "From next week the city's history museum will be open until ten, two nights a week."
+    ],
+    [
+     "مدیر موزه گفت که این تصمیم برای کسانی است که روزها کار می‌کنند.",
+     "The museum's director said the decision is for people who work during the day."
+    ],
+    [
+     "تا حالا، بیشتر کسانی که به موزه می‌آمدند گروه‌های مدرسه بودند.",
+     "Until now most visitors were school groups."
+    ],
+    [
+     "در این شب‌ها، برنامه‌های ویژه هم وجود دارد.",
+     "On these nights there are also special events."
+    ],
+    [
+     "سه‌شنبه‌ها یکی از استادان دانشگاه درباره‌ی تاریخ یک قسمت از موزه صحبت می‌کند.",
+     "On Tuesdays a university professor talks about the history of one part of the museum."
+    ],
+    [
+     "پنج‌شنبه‌ها هم در سالن اصلی موزه موسیقی سنتی اجرا می‌شود.",
+     "On Thursdays traditional music is performed in the museum's main hall."
+    ],
+    [
+     "قیمت بلیت شب‌ها همان قیمت روز است، اما دانشجوها با کارت دانشجویی نصف قیمت می‌پردازند.",
+     "Evening tickets cost the same as daytime ones, but students with a student card pay half price."
+    ],
+    [
+     "کافه‌ی موزه هم این شب‌ها باز است.",
+     "The museum café is open on these nights too."
+    ],
+    [
+     "مدیر موزه امیدوار است که با این برنامه، تعداد کسانی که به موزه می‌آیند دو برابر شود.",
+     "The director hopes this plan will double the number of people who visit the museum."
+    ],
+    [
+     "اگر برنامه موفق باشد، ممکن است از سال آینده موزه هر شب باز باشد.",
+     "If the plan succeeds, the museum may be open every night from next year."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "موزه چند شب در هفته تا دیر وقت باز است؟",
+     "en": "How many nights a week is the museum open late?",
+     "type": "mc",
+     "options": [
+      "سه شب",
+      "دو شب",
+      "یک شب",
+      "هر شب"
+     ],
+     "answer": 1,
+     "words": [
+      "هفته"
+     ],
+     "sentence": 0
+    },
+    {
+     "q": "به گفته‌ی مدیر، آدم‌هایی که روزها سر کار هستند از هفته‌ی آینده می‌توانند شب به موزه بروند.",
+     "en": "According to the director, from next week people who are at work during the day can go to the museum in the evening.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "کار کردن"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "پنج‌شنبه‌ها در موزه چه برنامه‌ای هست؟",
+     "en": "What event is there at the museum on Thursdays?",
+     "type": "mc",
+     "options": [
+      "نمایش یک فیلم",
+      "صحبت یک استاد",
+      "موسیقی سنتی",
+      "کلاس نقاشی"
+     ],
+     "answer": 2,
+     "words": [
+      "موسیقی"
+     ],
+     "sentence": 5
+    },
+    {
+     "q": "دانشجوها کمتر از دیگران پول بلیت می‌دهند.",
+     "en": "Students pay less for tickets than others.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "نصف"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "مدیر موزه به چه چیزی امیدوار است؟",
+     "en": "What does the museum director hope for?",
+     "type": "mc",
+     "options": [
+      "موزه روزها بسته باشد",
+      "قیمت بلیت کمتر شود",
+      "کافه‌ی موزه بزرگ‌تر شود",
+      "آدم‌های بیشتری به موزه بیایند"
+     ],
+     "answer": 3,
+     "words": [
+      "امیدوار",
+      "تعداد"
+     ],
+     "sentence": 8
+    }
+   ]
+  },
+  {
+   "id": "p0056",
+   "lv": "B1",
+   "title": "کار از خانه",
+   "oop": {},
+   "names": [],
+   "sentences": [
+    [
+     "در چند سال اخیر، خیلی از شرکت‌ها به کارمندانشان اجازه می‌دهند که از خانه کار کنند.",
+     "In recent years many companies have allowed their staff to work from home."
+    ],
+    [
+     "من هم دو سال است که سه روز در هفته از خانه کار می‌کنم.",
+     "For two years I have also been working from home three days a week."
+    ],
+    [
+     "این کار فایده‌های زیادی دارد.",
+     "This has many benefits."
+    ],
+    [
+     "دیگر لازم نیست هر روز دو ساعت در راه باشم و می‌توانم صبح‌ها کمی بیشتر بخوابم.",
+     "I no longer have to spend two hours a day on the road, and I can sleep a little longer in the mornings."
+    ],
+    [
+     "وقت بیشتری هم برای بچه‌هایم دارم.",
+     "I also have more time for my children."
+    ],
+    [
+     "اما کار از خانه مشکلات خودش را هم دارد.",
+     "But working from home has its own problems too."
+    ],
+    [
+     "گاهی فراموش می‌کنم کی باید کار را تمام کنم و تا شب پشت کامپیوتر می‌نشینم.",
+     "Sometimes I forget when I should stop working and sit at the computer until night."
+    ],
+    [
+     "دلم هم برای همکارانم و صحبت‌های کوتاهمان در آشپزخانه‌ی شرکت تنگ می‌شود.",
+     "I also miss my colleagues and our short chats in the office kitchen."
+    ],
+    [
+     "برای همین، چند قانون گذاشته‌ام: ساعت نه کار را شروع می‌کنم، ظهر استراحت می‌کنم و ساعت پنج کامپیوتر را خاموش می‌کنم.",
+     "So I have made some rules: I start work at nine, take a break at noon and switch off the computer at five."
+    ],
+    [
+     "به نظر من، بهترین راه این است که آدم هم در خانه کار کند و هم در شرکت.",
+     "In my opinion, the best way is to work both at home and in the office."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "نویسنده چند روز در هفته از خانه کار می‌کند؟",
+     "en": "How many days a week does the writer work from home?",
+     "type": "mc",
+     "options": [
+      "سه روز",
+      "دو روز",
+      "پنج روز",
+      "یک روز"
+     ],
+     "answer": 0,
+     "words": [
+      "هفته"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "نویسنده حالا وقت بیشتری برای بچه‌هایش دارد.",
+     "en": "The writer now has more time for his children.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "بچه"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "یکی از مشکلات کار از خانه برای نویسنده چیست؟",
+     "en": "What is one problem of working from home for the writer?",
+     "type": "mc",
+     "options": [
+      "اینترنت خانه‌اش خوب نیست",
+      "گاهی تا شب کار می‌کند",
+      "بچه‌هایش زیاد صدا می‌کنند",
+      "رئیسش از او راضی نیست"
+     ],
+     "answer": 1,
+     "words": [
+      "فراموش کردن"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "دل نویسنده برای همکارانش تنگ نمی‌شود.",
+     "en": "The writer doesn't miss his colleagues.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "همکار",
+      "تنگ"
+     ],
+     "sentence": 7
+    },
+    {
+     "q": "نویسنده ساعت پنج چه کار می‌کند؟",
+     "en": "What does the writer do at five o'clock?",
+     "type": "mc",
+     "options": [
+      "کار را شروع می‌کند",
+      "ظهر استراحت می‌کند",
+      "کامپیوتر را خاموش می‌کند",
+      "به شرکت می‌رود"
+     ],
+     "answer": 2,
+     "words": [
+      "خاموش کردن"
+     ],
+     "sentence": 8
+    }
+   ]
+  },
+  {
+   "id": "p0057",
+   "lv": "B1",
+   "title": "دوچرخه‌ای که دزدیده شد",
+   "oop": {},
+   "names": [],
+   "sentences": [
+    [
+     "هفته‌ی پیش دوچرخه‌ی من را جلوی دانشگاه دزدیدند.",
+     "Last week my bike was stolen in front of the university."
+    ],
+    [
+     "آن را با یک قفل به دیوار بسته بودم، اما وقتی بعد از کلاس برگشتم، فقط قفل شکسته روی زمین بود.",
+     "I had locked it to the wall, but when I came back after class, only the broken lock was on the ground."
+    ],
+    [
+     "خیلی ناراحت شدم، چون آن دوچرخه را با پولی که یک سال جمع کرده بودم خریده بودم.",
+     "I was very upset, because I had bought that bike with money I had saved for a year."
+    ],
+    [
+     "اول به پلیس رفتم.",
+     "First I went to the police."
+    ],
+    [
+     "مامور پلیس حرف‌هایم را نوشت، اما گفت که پیدا کردن دوچرخه‌های دزدی خیلی سخت است.",
+     "The police officer wrote down what I said, but said that finding stolen bikes is very hard."
+    ],
+    [
+     "بعد عکس دوچرخه را در شبکه‌های اجتماعی گذاشتم و از دوستانم خواستم آن را برای دیگران بفرستند.",
+     "Then I posted a photo of the bike on social media and asked my friends to send it to others."
+    ],
+    [
+     "دو روز بعد، یک نفر برایم پیغام فرستاد که دوچرخه‌ای شبیه مال من را در یک سایت دیده است.",
+     "Two days later someone sent me a message saying they had seen a bike like mine on a website."
+    ],
+    [
+     "با پلیس تماس گرفتم و آن‌ها با کمک صاحب سایت، دزد را پیدا کردند.",
+     "I contacted the police and, with the help of the website's owner, they found the thief."
+    ],
+    [
+     "حالا دوچرخه‌ام دوباره پیش من است و همیشه از دو قفل استفاده می‌کنم.",
+     "Now I have my bike back and I always use two locks."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "دوچرخه کجا دزدیده شد؟",
+     "en": "Where was the bike stolen?",
+     "type": "mc",
+     "options": [
+      "کنار ایستگاه",
+      "جلوی خانه",
+      "در پارک",
+      "جلوی دانشگاه"
+     ],
+     "answer": 3,
+     "words": [
+      "دزدیدن"
+     ],
+     "sentence": 0
+    },
+    {
+     "q": "نویسنده دوچرخه را با پول خودش خریده بود.",
+     "en": "The writer had bought the bike with his own money.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "پول",
+      "خریدن"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "مامور پلیس اول چه گفت؟",
+     "en": "What did the police officer say at first?",
+     "type": "mc",
+     "options": [
+      "پیدا کردن دوچرخه‌های دزدی سخت است",
+      "دوچرخه را تا فردا پیدا می‌کنیم",
+      "باید یک دوچرخه‌ی نو و بهتر بخری",
+      "دزد را می‌شناسیم و او را پیدا می‌کنیم"
+     ],
+     "answer": 0,
+     "words": [
+      "مامور",
+      "دزدی"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "یکی از دوستانش دوچرخه را در خیابان دید.",
+     "en": "One of his friends saw the bike in the street.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "سایت"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "حالا نویسنده چه کار می‌کند؟",
+     "en": "What does the writer do now?",
+     "type": "mc",
+     "options": [
+      "دوچرخه را در خانه نگه می‌دارد",
+      "از دو قفل استفاده می‌کند",
+      "با اتوبوس به دانشگاه می‌رود",
+      "دوچرخه‌اش را فروخته است"
+     ],
+     "answer": 1,
+     "words": [
+      "قفل"
+     ],
+     "sentence": 8
+    }
+   ]
+  },
+  {
+   "id": "p0058",
+   "lv": "B1",
+   "title": "نظر من درباره‌ی رستوران نارون",
+   "oop": {
+    "نارون": "name"
+   },
+   "names": [
+    "نارون"
+   ],
+   "sentences": [
+    [
+     "هفته‌ی گذشته برای تولد همسرم به رستوران نارون رفتیم که تازه در مرکز شهر باز شده است.",
+     "Last week we went to Narvan restaurant, which has just opened in the city centre, for my wife's birthday."
+    ],
+    [
+     "ساختمان رستوران قدیمی است، اما داخلش بسیار زیبا و مدرن است.",
+     "The restaurant building is old, but inside it is very beautiful and modern."
+    ],
+    [
+     "میز ما کنار پنجره بود و از آنجا باغ کوچک پشت رستوران را می‌دیدیم.",
+     "Our table was by the window and from there we could see the small garden behind the restaurant."
+    ],
+    [
+     "کارمندان رستوران مهربان بودند و با دقت به همه‌ی سوال‌های ما جواب دادند.",
+     "The staff were kind and answered all our questions carefully."
+    ],
+    [
+     "برای شروع، نان تازه و پنیر محلی آوردند که عالی بود.",
+     "To start, they brought fresh bread and local cheese, which was excellent."
+    ],
+    [
+     "غذای اصلی من ماهی با برنج بود؛ ماهی تازه بود و خیلی خوب پخته شده بود.",
+     "My main course was fish with rice; the fish was fresh and very well cooked."
+    ],
+    [
+     "اما غذای همسرم، که گوشت بود، کمی سرد بود و نمک زیادی داشت.",
+     "But my wife's dish, which was meat, was a bit cold and too salty."
+    ],
+    [
+     "وقتی این را گفتیم، آن‌ها سریع غذا را عوض کردند و از ما معذرت خواستند.",
+     "When we told them, they quickly replaced the dish and apologised to us."
+    ],
+    [
+     "قیمت‌ها کمی بالا است، اما با توجه به کیفیت غذا منطقی است.",
+     "Prices are a little high, but reasonable given the quality of the food."
+    ],
+    [
+     "در کل، از این شب خیلی لذت بردیم و حتماً دوباره به آنجا می‌رویم. امتیاز من: چهار از پنج.",
+     "All in all, we really enjoyed the evening and will definitely go again. My rating: four out of five."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "آن‌ها برای چه به رستوران رفتند؟",
+     "en": "Why did they go to the restaurant?",
+     "type": "mc",
+     "options": [
+      "دیدن یک دوست قدیمی",
+      "جشن کار جدید نویسنده",
+      "تولد همسر نویسنده",
+      "ازدواج یکی از دوستانشان"
+     ],
+     "answer": 2,
+     "words": [
+      "تولد"
+     ],
+     "sentence": 0
+    },
+    {
+     "q": "داخل رستوران قدیمی و ساده است.",
+     "en": "The inside of the restaurant is old and plain.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "مدرن",
+      "داخل"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "مشکل غذای همسر چه بود؟",
+     "en": "What was wrong with the wife's dish?",
+     "type": "mc",
+     "options": [
+      "برای یک نفر خیلی کم بود",
+      "خیلی دیر به میز آمد",
+      "گوشتش اصلاً تازه نبود",
+      "گرم نبود و نمکش زیاد بود"
+     ],
+     "answer": 3,
+     "words": [
+      "نمک",
+      "سرد"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "کارمندان رستوران غذای همسر را عوض کردند.",
+     "en": "The restaurant staff replaced the wife's dish.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "عوض کردن"
+     ],
+     "sentence": 7
+    },
+    {
+     "q": "نویسنده درباره‌ی قیمت‌ها چه فکر می‌کند؟",
+     "en": "What does the writer think about the prices?",
+     "type": "mc",
+     "options": [
+      "با توجه به کیفیت منطقی است",
+      "خیلی ارزان است",
+      "برای این کیفیت خیلی گران است",
+      "از همه‌ی رستوران‌های شهر کمتر است"
+     ],
+     "answer": 0,
+     "words": [
+      "کیفیت",
+      "منطقی"
+     ],
+     "sentence": 8
+    }
+   ]
+  },
+  {
+   "id": "p0059",
+   "lv": "B1",
+   "title": "یاد گرفتن زبان در بزرگسالی",
+   "oop": {
+    "فرهادی": "name"
+   },
+   "names": [
+    "فرهادی"
+   ],
+   "sentences": [
+    [
+     "خیلی‌ها فکر می‌کنند که یاد گرفتن یک زبان جدید فقط برای بچه‌ها آسان است.",
+     "Many people think that learning a new language is only easy for children."
+    ],
+    [
+     "اما تحقیقات تازه نشان می‌دهد که بزرگ‌ترها هم می‌توانند زبان را خوب یاد بگیرند.",
+     "But new research shows that adults can also learn languages well."
+    ],
+    [
+     "بچه‌ها معمولاً زبان جدید را طبیعی‌تر حرف می‌زنند، اما بزرگ‌ترها دستور زبان را سریع‌تر می‌فهمند.",
+     "Children usually speak a new language more naturally, but adults understand grammar faster."
+    ],
+    [
+     "مهم‌ترین چیز، انگیزه و تمرین هر روز است.",
+     "The most important thing is motivation and daily practice."
+    ],
+    [
+     "متخصصان می‌گویند بهتر است هر روز کمی با زبان جدید کار کنیم، نه هفته‌ای یک بار چند ساعت.",
+     "Experts say it's better to work with the new language a little every day, not for several hours once a week."
+    ],
+    [
+     "گوش دادن به آهنگ، دیدن فیلم و خواندن مطالب ساده هم کمک می‌کند.",
+     "Listening to songs, watching films and reading simple texts also help."
+    ],
+    [
+     "از اشتباه کردن نترسید؛ هر اشتباه یک فرصت برای یاد گرفتن است.",
+     "Don't be afraid of making mistakes; every mistake is a chance to learn."
+    ],
+    [
+     "خانم فرهادی در شصت سالگی شروع به یاد گرفتن یک زبان خارجی کرد.",
+     "Mrs Farhadi started learning a foreign language at the age of sixty."
+    ],
+    [
+     "او حالا کتاب‌های ساده می‌خواند و برای دوستانش در کشورهای دیگر ایمیل می‌نویسد.",
+     "Now she reads simple books and writes emails to her friends in other countries."
+    ],
+    [
+     "او می‌گوید: «سن فقط یک عدد است.»",
+     "She says: \"Age is just a number.\""
+    ]
+   ],
+   "questions": [
+    {
+     "q": "طبق این متن، فقط بچه‌ها می‌توانند زبان جدید را خوب یاد بگیرند.",
+     "en": "According to this text, only children can learn a new language well.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "تحقیق"
+     ],
+     "sentence": 1
+    },
+    {
+     "q": "بزرگ‌ترها چه کاری را سریع‌تر از بچه‌ها انجام می‌دهند؟",
+     "en": "What do adults do faster than children?",
+     "type": "mc",
+     "options": [
+      "زبان را طبیعی حرف می‌زنند",
+      "دستور زبان را می‌فهمند",
+      "کلمه‌های تازه را حفظ می‌کنند",
+      "با آدم‌های دیگر دوست می‌شوند"
+     ],
+     "answer": 1,
+     "words": [
+      "دستور"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "متخصصان چه توصیه‌ای می‌کنند؟",
+     "en": "What do experts recommend?",
+     "type": "mc",
+     "options": [
+      "فقط با کتاب‌های درسی یاد بگیریم",
+      "هفته‌ای یک بار چند ساعت درس بخوانیم",
+      "هر روز مدت کوتاهی تمرین کنیم",
+      "اول همه‌ی کلمه‌ها را حفظ کنیم"
+     ],
+     "answer": 2,
+     "words": [
+      "متخصص"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "به نظر نویسنده، باید از اشتباه کردن ترسید.",
+     "en": "In the writer's view, you should be afraid of making mistakes.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "اشتباه",
+      "ترسیدن"
+     ],
+     "sentence": 6
+    },
+    {
+     "q": "خانم فرهادی کی شروع به یاد گرفتن زبان کرد؟",
+     "en": "When did Mrs Farhadi start learning the language?",
+     "type": "mc",
+     "options": [
+      "در چهل سالگی",
+      "در سی سالگی",
+      "در بیست سالگی",
+      "در شصت سالگی"
+     ],
+     "answer": 3,
+     "words": [
+      "سالگی"
+     ],
+     "sentence": 7
+    }
+   ]
+  },
+  {
+   "id": "p0060",
+   "lv": "B1",
+   "title": "ده سال بعد",
+   "oop": {},
+   "names": [],
+   "sentences": [
+    [
+     "معلم ما از ما خواست که درباره‌ی زندگی‌مان در ده سال آینده بنویسیم.",
+     "Our teacher asked us to write about our lives ten years from now."
+    ],
+    [
+     "وقتی به این سوال فکر کردم، اول نمی‌دانستم چه بنویسم.",
+     "When I thought about this question, at first I didn't know what to write."
+    ],
+    [
+     "حالا هفده سال دارم و در سال آخر دبیرستان هستم.",
+     "I am seventeen now and in my last year of high school."
+    ],
+    [
+     "امیدوارم تا ده سال دیگر درس پزشکی را تمام کرده باشم و در یک بیمارستان کار کنم.",
+     "I hope that within ten years I will have finished studying medicine and will be working in a hospital."
+    ],
+    [
+     "دوست دارم در یک شهر کوچک زندگی کنم، جایی که مردم به دکتر خوب احتیاج دارند.",
+     "I'd like to live in a small town, somewhere people need a good doctor."
+    ],
+    [
+     "شاید هم مدتی به یک کشور دیگر بروم تا تجربه‌ی بیشتری به دست بیاورم.",
+     "Perhaps I'll also go to another country for a while to gain more experience."
+    ],
+    [
+     "البته زندگی فقط کار نیست.",
+     "Of course, life isn't only work."
+    ],
+    [
+     "می‌خواهم وقت کافی برای خانواده و دوستانم داشته باشم و هر سال حداقل به یک سفر بروم.",
+     "I want to have enough time for my family and friends and to take at least one trip every year."
+    ],
+    [
+     "همچنین دوست دارم نقاشی را یاد بگیرم، چون همیشه برایش وقت نداشته‌ام.",
+     "I'd also like to learn to paint, because I've never had time for it."
+    ],
+    [
+     "نمی‌دانم که همه‌ی این آرزوها به واقعیت تبدیل می‌شوند یا نه، اما فکر می‌کنم داشتن هدف به آدم کمک می‌کند که راهش را پیدا کند.",
+     "I don't know whether all these wishes will come true, but I think having a goal helps you find your way."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "نویسنده حالا چند سال دارد؟",
+     "en": "How old is the writer now?",
+     "type": "mc",
+     "options": [
+      "هفده سال",
+      "هجده سال",
+      "بیست سال",
+      "پانزده سال"
+     ],
+     "answer": 0,
+     "words": [
+      "سال"
+     ],
+     "sentence": 2
+    },
+    {
+     "q": "نویسنده دوست دارد در آینده کجا کار کند؟",
+     "en": "Where would the writer like to work in the future?",
+     "type": "mc",
+     "options": [
+      "در یک دبیرستان",
+      "در یک بیمارستان",
+      "در یک مغازه",
+      "در یک شرکت کامپیوتر"
+     ],
+     "answer": 1,
+     "words": [
+      "بیمارستان"
+     ],
+     "sentence": 3
+    },
+    {
+     "q": "نویسنده می‌خواهد در یک شهر بزرگ زندگی کند.",
+     "en": "The writer wants to live in a big city.",
+     "type": "tf",
+     "options": null,
+     "answer": false,
+     "words": [
+      "شهر",
+      "کوچک"
+     ],
+     "sentence": 4
+    },
+    {
+     "q": "نویسنده می‌خواهد برای خانواده‌اش هم وقت داشته باشد.",
+     "en": "The writer wants to have time for family too.",
+     "type": "tf",
+     "options": null,
+     "answer": true,
+     "words": [
+      "خانواده",
+      "کافی"
+     ],
+     "sentence": 7
+    },
+    {
+     "q": "چرا نویسنده می‌خواهد نقاشی یاد بگیرد؟",
+     "en": "Why does the writer want to learn to paint?",
+     "type": "mc",
+     "options": [
+      "دوستانش نقاشی می‌کنند",
+      "معلمش به او گفته است",
+      "همیشه برایش وقت نداشته است",
+      "برای کارش لازم است"
+     ],
+     "answer": 2,
+     "words": [
+      "نقاشی"
+     ],
+     "sentence": 8
+    }
+   ]
+  }
+ ]
+}
