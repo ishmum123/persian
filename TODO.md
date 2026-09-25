@@ -116,9 +116,23 @@ Residuals from the v1 QA rounds. The rules already in place are in
   A paraphrased translation falls back to the stem X. The pack has 15 such
   pairs, including بیماری, پزشکی, همکاری, دوستی, دزدی and عروسی.
 
-## Rebuild drift (found 2026-09-25)
-- w2002 خواهش می‌کنم ships with pos "phrase" but the engine rebuilds it as
+## Rebuild drift (found 2026-09-25, fixed in engine ff88f44)
+- **Fixed**: fa.py `finalize_words` sets pos "phrase" for PLEASE_PHRASE; the
+  rebuild keeps w2002 "phrase" and `check` passes.
+- (was) w2002 خواهش می‌کنم ships with pos "phrase" but the engine rebuilds it as
   "intj" (fa.py maps it to group PLEASE_PHRASE with kpos INTJ; core/words.py
   sets "phrase" only for group PHRASE), which makes `check` fail on its
   alt[0]. Fix fa.py (or core) before the next rebuild so the pack stays
   check-clean; words.json was restored to the shipped file for now.
+
+## Policy rebuild (2026-09-25, engine ff88f44)
+- Word ceiling: کشتن, خون, قتل (A1) and اسلحه, قاتل, سلاح (A2) moved to B1;
+  band edges: حدود, حد, مربوط A2->A1; امتیاز, باغ, مشتری, غربی, برش, عدم
+  B1->A2. Ranks, ids, glosses unchanged. دارو "medicine, drug" is exempt
+  (medical sense).
+- Drop-everywhere (suicide): s2319, s2320 (written sentences) removed; their
+  rows stay in `tools/generated_sentences.tsv` so ranks do not move. خودکشی
+  (w1599) refilled from `tools/generated_examples.tsv`; that example also
+  serves آمار and کم کردن, which replaced two corpus examples (s2760, s2296).
+  Sentences 3,030 -> 3,025 (13 removed, 8 added, by text). passages.json unchanged.
+

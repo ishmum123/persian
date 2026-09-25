@@ -137,6 +137,12 @@ not had a native-speaker review.
   - for Persian, also illicit drugs (مواد مخدر) and abuse (سوء استفاده, آزار).
 
   Rape and sexual abuse sentences are dropped at every level (1 sentence).
+  Since 2026-09-25 (engine ff88f44) suicide and self-harm sentences are too
+  (2 written sentences); خودکشی keeps one neutral written example
+  (`tools/generated_examples.tsv`). A word whose gloss names killing, murder,
+  weapons or blood ships at B1 only: کشتن, خون, قتل (were A1), اسلحه, قاتل,
+  سلاح (were A2). Ranks, ids and glosses did not change. The pack has 3,025
+  sentences.
   A1 and A2 glosses are scanned too, and one sense of کردن was skipped by
   that scan. Four Tatoeba sentences with errors are dropped by text.
 
@@ -182,6 +188,7 @@ tools/
   gloss_overrides.json   hand gloss fixes ("lemma|pos", folded keys)
   forced_a1.txt      A1 core list (closed sets are in langs/fa.py)
   generated_sentences.tsv  sentences written for this pack (append only: line order sets ids)
+  generated_examples.tsv   hand-reviewed written examples (example only, never frequency; exempt from the drop-everywhere filter)
   id_map_v1.json     frozen "lemma|pos" -> word id (keeps learner progress across rebuilds)
   requirements.txt   packbuilder deps + stanza
   REPORT.md          generated build report

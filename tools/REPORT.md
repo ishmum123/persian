@@ -39,19 +39,19 @@ Candidate pool: 6,789 (lemma, POS) keys in blended-rank order, one POS per lemma
 Forced A1 items (days, Iranian months, seasons, numbers 0-20 + tens + صد/هزار, colours, greetings, pronouns, question words, core prepositions/conjunctions, five light verbs, A1 core list): 298/298 included.
 Word ids reused from v1 for unchanged (lemma, pos): 1,999; the rest are new ids above w2000 (v1 ids of words whose POS/lemma was wrong are retired, not reassigned).
 
-Levels: {'A1': 600, 'A2': 700, 'B1': 700}. POS: {'noun': 1184, 'adj': 310, 'verb': 301, 'adv': 73, 'prep': 32, 'num': 32, 'pron': 24, 'conj': 18, 'det': 16, 'intj': 9, 'part': 1}.
+Levels: {'A1': 600, 'A2': 700, 'B1': 700}. POS: {'noun': 1184, 'adj': 310, 'verb': 301, 'adv': 73, 'prep': 32, 'num': 32, 'pron': 24, 'conj': 18, 'det': 16, 'intj': 8, 'part': 1, 'phrase': 1}.
 
 ## Sentences
 
-- Final sentences: **3,030**, 0 with audio (`https://tatoeba.org/audio/download/<audio_id>`).
-- Word coverage: 0 = 0, 1 = 6, 2 = 1994.
-- Candidate sentences (terminal punctuation, 3-14 tokens, content lemmas in pack/top-3000, >=1 link): 5,583. Rejected for a content lemma outside pack/top-3000: 3,443.
-- Primary word level of each sentence: {'B1': 1178, 'A1': 728, 'A2': 1124}.
+- Final sentences: **3,025**, 0 with audio (`https://tatoeba.org/audio/download/<audio_id>`).
+- Word coverage: 0 = 0, 1 = 7, 2 = 1993.
+- Candidate sentences (terminal punctuation, 3-14 tokens, content lemmas in pack/top-3000, >=1 link): 5,579. Rejected for a content lemma outside pack/top-3000: 3,443.
+- Primary word level of each sentence: {'B1': 1171, 'A1': 729, 'A2': 1125}.
 - Token-length distribution of the final set:
 
 | tokens | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| sentences | 51 | 286 | 875 | 750 | 502 | 253 | 129 | 82 | 42 | 33 | 14 | 13 |
+| sentences | 51 | 287 | 870 | 750 | 504 | 252 | 128 | 82 | 41 | 33 | 14 | 13 |
 
 ## Top 100 by rank (lemma [pos] gloss)
 
@@ -159,4 +159,16 @@ Levels: {'A1': 600, 'A2': 700, 'B1': 700}. POS: {'noun': 1184, 'adj': 310, 'verb
 ```
 
 <!-- manual:begin -->
+## Policy rebuild 2026-09-25 (engine ff88f44; hand-written, preserved)
+- Words: ranks, ids, glosses unchanged; w2002 خواهش می‌کنم stays "phrase".
+  Word ceiling to B1: کشتن, خون, قتل A1; اسلحه, قاتل, سلاح A2. Band-edge
+  shifts: حدود, حد, مربوط A2->A1; امتیاز, باغ, مشتری, غربی, برش, عدم B1->A2.
+- Sentences 3,030 -> 3,025 (13 removed, 8 added, by text). Drop-everywhere:
+  s2319, s2320 (written, خودکشی). Levels A1 645->649, A2 1,043->1,048, B1
+  1,342->1,328.
+- خودکشی (w1599) keeps one written example (`tools/generated_examples.tsv`,
+  exempt from `drop_all_levels`): "دولت می‌خواهد آمار خودکشی را کم کند."
+  attribution.json: written_sentences 1,213 -> 1,211; new written_examples 3.
+- passages.json byte-identical; double build byte-identical; ./check.sh green.
+
 <!-- manual:end -->

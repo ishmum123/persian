@@ -107,10 +107,16 @@
     "licences": "per clip; recorders listed per licence",
     "recorders": {}
   },
+  "written_examples": {
+    "source": "written for this pack (tools/generated_examples.tsv) and reviewed; marked \"src\": \"gen\"",
+    "licence": "CC-BY-SA-4.0",
+    "count": 3,
+    "note": "Example sentences only, for words whose corpus sentences are missing or dropped by policy; no audio."
+  },
   "written_sentences": {
     "source": "written for this pack (tools/generated_sentences.tsv) and reviewed; marked \"src\": \"gen\"",
     "licence": "CC-BY-SA-4.0",
-    "count": 1213,
+    "count": 1210,
     "note": "Written where Tatoeba has fewer than two usable sentences for a word; no audio."
   }
 }
