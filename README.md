@@ -153,6 +153,8 @@ not had a native-speaker review.
 | Written sentences | `tools/generated_sentences.tsv`, written for this pack | same as this repo | 1,211 sentences marked `"src": "gen"` |
 | Font | Vazirmatn via Google Fonts | SIL OFL 1.1 | display only |
 
+Licence: code MIT, pack data CC BY-SA 4.0, see LICENSE.
+
 No graded Persian word list is used or shipped.
 
 ## Level bands
