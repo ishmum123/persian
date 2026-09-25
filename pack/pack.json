@@ -134,5 +134,32 @@
   "fonts": [
     "Vazirmatn:wght@400;700"
   ],
-  "lineHeight": 1.9
+  "lineHeight": 1.9,
+  "script": {
+    "stages": [
+      {
+        "key": "abjad",
+        "label": "الفبا"
+      }
+    ],
+    "setsPerSession": 2,
+    "mastered": 3,
+    "tts": false,
+    "learnKinds": [
+      "symSound",
+      "formFind"
+    ],
+    "reviewKinds": [
+      "symSound",
+      "formMatch",
+      "formFind",
+      "wordRead"
+    ],
+    "testKinds": {
+      "symSound": 35,
+      "formMatch": 25,
+      "wordRead": 25,
+      "symType": 15
+    }
+  }
 }

@@ -8,6 +8,12 @@ comprehension questions (see "Reading passages" below).
 
 **Live:** https://ishmum123.github.io/persian/
 
+**Script primer.** An "الفبا" stage now runs before A1 and teaches the
+Perso-Arabic alphabet (33 units) with symbol-to-sound, recognition and
+word-reading items. It's skippable with "I can read it" and reversible later
+from Progress. There is no Persian voice, so the Persian primer is
+text-only.
+
 This repo holds the Persian data pack and the Persian data files its build
 reads, plus [`vocab-engine`](https://github.com/ishmum123/vocab-engine) as a
 git submodule at `engine/`. The engine holds the shared UI and drill logic

@@ -1,5 +1,5 @@
 // Service worker for a built trainer page. build.sh writes it as sw.js next to the page,
-// filling in 2263879264-1442782 (cksum of the built page before its marker line) and index.html
+// filling in 3405509388-1511873 (cksum of the built page before its marker line) and index.html
 // (its file name), so every rebuild that changes the page also changes sw.js and the
 // browser installs it. build.sh ends the page with the marker <!--ve-build:<id>-->.
 //
@@ -19,7 +19,7 @@
 //   what it already loaded (the page is self-contained); the next load gets the new build.
 // Kill switch / rollback: README "Offline and repeat loads"; never delete a published sw.js.
 "use strict";
-const BUILD = "2263879264-1442782";
+const BUILD = "3405509388-1511873";
 const PAGE = "index.html";
 const MARK = "<!--ve-build:" + BUILD + "-->";
 const SCOPE = self.registration ? self.registration.scope : new URL("./", self.location.href).href;
