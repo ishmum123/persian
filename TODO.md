@@ -101,6 +101,10 @@ Residuals from the v1 QA rounds. The rules already in place are in
 - Options: accept the re-rank as a v2 pack change, or add a core hook that
   corrects sentence links without touching the frequency pass, then drop the
   two links and give w1254 written examples.
+- Live check 2026-09-25: the joined alt "کمکم" now bolds those wrong examples
+  in Learn ("help me" shown as کم‌کم). Decision taken: the corpus counts
+  کمکم as کم‌کم, so the honest fix is the sentence-links-only hook plus
+  written examples; until then the word keeps its two wrong examples.
 
 ## Passage link rules (latent limits)
 - Noun compound head (`passage_post_resolve`): a token that is two pack
