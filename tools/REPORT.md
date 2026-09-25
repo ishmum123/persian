@@ -171,4 +171,6 @@ Levels: {'A1': 600, 'A2': 700, 'B1': 700}. POS: {'noun': 1184, 'adj': 310, 'verb
   attribution.json: written_sentences 1,213 -> 1,211; new written_examples 3.
 - passages.json byte-identical; double build byte-identical; ./check.sh green.
 
+- 2026-09-25 engine bump: 072795d (voice-init fix, no-voice notice timing, word ceiling). Persian was already rebuilt with the shared word-level ceiling; words/sentences/passages are byte-identical to the previous build. No rank, id, level or gloss changed.
+
 <!-- manual:end -->
