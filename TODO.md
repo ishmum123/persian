@@ -115,3 +115,10 @@ Residuals from the v1 QA rounds. The rules already in place are in
   names its gloss. The flag is set in `fix_sentence` on passage rows only.
   A paraphrased translation falls back to the stem X. The pack has 15 such
   pairs, including بیماری, پزشکی, همکاری, دوستی, دزدی and عروسی.
+
+## Rebuild drift (found 2026-09-25)
+- w2002 خواهش می‌کنم ships with pos "phrase" but the engine rebuilds it as
+  "intj" (fa.py maps it to group PLEASE_PHRASE with kpos INTJ; core/words.py
+  sets "phrase" only for group PHRASE), which makes `check` fail on its
+  alt[0]. Fix fa.py (or core) before the next rebuild so the pack stays
+  check-clean; words.json was restored to the shipped file for now.
