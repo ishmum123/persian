@@ -1,0 +1,7 @@
+# Example sentences written for this pack that serve only as word examples:
+# tagged apart from the corpus, so they never move the frequency pass or
+# glosses (tools/generated_sentences.tsv rows do). Format: Persian<TAB>English.
+# Reviewed by hand; they ship with "src": "gen" and no audio. Append only.
+# کم‌کم "gradually": its two Tatoeba examples are really کمک + م "help me".
+هوا کم‌کم گرم می‌شود.	The weather is gradually getting warm.
+بچه‌ها کم‌کم بزرگ می‌شوند.	The children are gradually growing up.

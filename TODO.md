@@ -91,20 +91,19 @@ Residuals from the v1 QA rounds. The rules already in place are in
   (آنهاست, آنهایی) or as the clitic شان that the tagger lemmatises to آنها.
   The engine does not match inflected forms for any word.
 
-## کم‌کم vs کمکم "help me" (open, needs a decision)
-- Both pack examples of w1254 کم‌کم "gradually" are really کمک + م "help me":
-  s0141 هیچ کس به کمکم نیامد, s1328 منتظرم تا کسی کمکم کند.
-- Measured on 2026-09-25: a corpus rule (کمکم after به, or before a form of
-  کردن, is کمک) drops w1254 out of the 2000. عربی (w2010, B1) comes in,
-  864 words change rank and 2,041 sentences.json entries change. Almost all
-  corpus کمکم tokens are "help me". The rule was reverted.
-- Options: accept the re-rank as a v2 pack change, or add a core hook that
-  corrects sentence links without touching the frequency pass, then drop the
-  two links and give w1254 written examples.
-- Live check 2026-09-25: the joined alt "کمکم" now bolds those wrong examples
-  in Learn ("help me" shown as کم‌کم). Decision taken: the corpus counts
-  کمکم as کم‌کم, so the honest fix is the sentence-links-only hook plus
-  written examples; until then the word keeps its two wrong examples.
+## کم‌کم vs کمکم "help me" (done 2026-09-25)
+- Both pack examples of w1254 کم‌کم "gradually" were really کمک + م "help me":
+  هیچ کس به کمکم نیامد, منتظرم تا کسی کمکم کند.
+- A corpus rule in post_resolve re-ranked 864 words, so it was reverted. The
+  fix is `fa.fix_links` (engine hook, sentence links and example choice only):
+  joined کمکم after به links کمک, before a form of کردن (خواه- aux allowed
+  between) links کمک کردن and absorbs the کردن link. The frequency pass still
+  counts کمکم as کم‌کم.
+- w1254 got two written examples in tools/generated_examples.tsv (example-only
+  rows: tagged apart from the corpus, never frequency evidence; "src": "gen").
+- Rebuild: words.json and passages.json byte-identical; sentences.json: the two
+  sentences relinked (now A1), 2 gen added, 3 re-chosen away (به هیچ کس این را
+  نگو, چه کسی در ایران است؟, در شیراز بزرگ شدم), so sentence ids shift.
 
 ## Passage link rules (latent limits)
 - Noun compound head (`passage_post_resolve`): a token that is two pack
