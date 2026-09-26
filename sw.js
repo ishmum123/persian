@@ -1,5 +1,5 @@
 // Service worker for a built trainer page. build.sh writes it as sw.js next to the page,
-// filling in 460435353-1754525 (cksum of the built page before its marker line) and index.html
+// filling in 732943880-1754525 (cksum of the built page before its marker line) and index.html
 // (its file name), so every rebuild that changes the page also changes sw.js and the
 // browser installs it. build.sh ends the page with the marker <!--ve-build:<id>-->.
 //
@@ -19,7 +19,7 @@
 //   what it already loaded (the page is self-contained); the next load gets the new build.
 // - Recorded clips under audio/ (docs/AUDIO.md) are never precached. A clip is cached the
 //   first time it plays, in its own cache AUDIO_CACHE (named by pack.json audio.version,
-//   1), capped at AUDIO_CAP clips with the oldest-stored evicted. activate
+//   2), capped at AUDIO_CAP clips with the oldest-stored evicted. activate
 //   keeps it across page builds and deletes audio caches of other versions. Offline, a
 //   cached clip plays and an uncached one fails (the page then says so or uses TTS).
 //   Media elements send Range requests (Chrome: bytes=0-), so the whole clip is fetched
@@ -27,14 +27,14 @@
 //   range behaviour is untested until the phase 3 live check (docs/AUDIO.md).
 // Kill switch / rollback: README "Offline and repeat loads"; never delete a published sw.js.
 "use strict";
-const BUILD = "460435353-1754525";
+const BUILD = "732943880-1754525";
 const PAGE = "index.html";
 const MARK = "<!--ve-build:" + BUILD + "-->";
 const SCOPE = self.registration ? self.registration.scope : new URL("./", self.location.href).href;
 const PREFIX = "ve:" + new URL(SCOPE).pathname + ":";
 const CACHE = PREFIX + BUILD;
 const PAGE_URL = new URL(PAGE, SCOPE).href;
-const AUDIO_CACHE = PREFIX + "audio:v" + "1";
+const AUDIO_CACHE = PREFIX + "audio:v" + "2";
 const AUDIO_CAP = 800;
 
 // true when res is a direct 200 whose body carries this build's marker. Reads a clone.
