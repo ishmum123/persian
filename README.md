@@ -70,14 +70,18 @@ A level's 20 passages unlock once the learner has learned 70% of that
 level's words. Tapping any word in a passage shows its gloss, including
 inflected forms, via per-sentence token spans linked to word ids.
 Comprehension questions (286 total: 143 multiple-choice, 143 true/false)
-feed missed words back into the review queue as weak words. As with the
-rest of the pack, there is no audio: passages have no recordings, and the
-browser has no Persian TTS voice either, so the Read tab's speaker
-buttons are silent.
+feed missed words back into the review queue as weak words. Every word,
+sentence, passage sentence and script unit has a recorded Piper
+(`ganji_adabi`) audio clip under `audio/`, so the Read tab's speaker
+buttons play.
 
 The passages and questions are machine-written by Claude, checked by an
 automated QA pass and two rounds of manual/external QA fixes; they have
 not had a native-speaker review.
+
+A passage's Today spaced re-read (after 7 days) becomes a listening pass
+when audio is available for every sentence: the text stays hidden and about
+half the questions are audio-only.
 
 ## Script and display
 
