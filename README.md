@@ -110,8 +110,10 @@ not had a native-speaker review.
   می‌روم) still matches a pack word. `strictFromLevel` is `null`: harakat
   are never written in ordinary Persian text at any level, so strict is
   never appropriate. Arabic kaf/yeh keyboard variants (ك/ي) always equal
-  the Persian forms (ک/ی); see TODO.md for a residual the fold does not
-  cover.
+  the Persian forms (ک/ی). As of engine 122d88a, hamza-carrier drop and
+  the ezafe letter ۀ → ه are also folded for typing, guarded against
+  collision with another pack word (one pair in this pack: جز/جزء; see
+  TODO.md).
 
 ## Persian rules (summary; details in `langs/fa.py`)
 

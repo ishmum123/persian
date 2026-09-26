@@ -125,21 +125,20 @@ Residuals from the v1 QA rounds. The rules already in place are in
   alt[0]. Fix fa.py (or core) before the next rebuild so the pack stays
   check-clean; words.json was restored to the shipped file for now.
 
-## Typed production residual (2026-09-26, engine typing on)
+## Typed production residual — resolved (engine 122d88a, 2026-09-26)
 
-- `typing.accents: lenient` folds harakat/tatweel/ZWNJ-ZWJ but the engine
-  deliberately keeps the hamza marks U+0653-0655 unfolded (core.js
-  `FOLD_SCRIPTS`/comment), so the precomposed ezafe letter ۀ (heh with
-  hamza above, U+06C0) never collapses to bare ه. One shipped sentence
-  (s0762 "به خانۀ ما خوش آمدید.") spells the ezafe with ۀ; a learner who
-  reasonably types the compound spelling ه + ZWNJ + ی (خانه‌ی) or plain
-  ه + ی (خانه ای) instead of the single ۀ character would be marked
-  wrong on that word if it is ever a typed cloze target, since these are
-  different letter sequences, not accent variants. Not a bug in this
-  pack's data (ۀ is the correct standard spelling here); flagging as an
-  engine-owner residual because PACK_SCHEMA's accent fold has no rule
-  for ezafe-letter equivalence in either direction. Word/sentence text
-  unaffected by the typing-on rebuild; audio/md5 unchanged.
+- Was: `typing.accents: lenient` folded harakat/tatweel/ZWNJ-ZWJ but kept
+  the precomposed ezafe letter ۀ (heh with hamza above, U+06C0) unfolded,
+  so a learner typing the compound spelling ه + ZWNJ + ی (خانه‌ی) or
+  plain ه + ی (خانه ای) for a word spelled with ۀ (s0762 "به خانۀ ما خوش
+  آمدید.") would be marked wrong.
+- Fixed: engine 122d88a adds ۀ → ه to the lenient letter folds
+  (PACK_SCHEMA.md's Arabic-script fold table), so those spellings are
+  now accepted for a typed ۀ target. The fold is collision-guarded: a
+  folded match is rejected when it spells another pack word exactly.
+  This pack has one such pair — جز (w0686, A2) also folds to جزء (w1496,
+  B1) and is rejected both ways. Word/sentence text and audio/md5
+  unchanged by this rebuild.
 
 ## Policy rebuild (2026-09-25, engine ff88f44)
 - Word ceiling: کشتن, خون, قتل (A1) and اسلحه, قاتل, سلاح (A2) moved to B1;
