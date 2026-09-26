@@ -6,7 +6,7 @@ romanisation. Every word also has at least two example sentences with
 English translations. The Read tab adds 60 short reading passages with
 comprehension questions (see "Reading passages" below).
 
-**Live:** https://ishmum123.github.io/persian/
+**Live:** https://bannerless-studio.github.io/persian/
 
 **Script primer.** An "الفبا" stage now runs before A1 and teaches the
 Perso-Arabic alphabet (33 units) with symbol-to-sound, recognition and
@@ -15,7 +15,7 @@ from Progress. There is no Persian voice, so the Persian primer is
 text-only.
 
 This repo holds the Persian data pack and the Persian data files its build
-reads, plus [`vocab-engine`](https://github.com/ishmum123/vocab-engine) as a
+reads, plus [`vocab-engine`](https://github.com/Bannerless-Studio/vocab-engine) as a
 git submodule at `engine/`. The engine holds the shared UI and drill logic
 and the shared pack builder, `engine/tools/packbuilder`. The builder's
 Persian rules live in `engine/tools/packbuilder/langs/fa.py`.
