@@ -94,6 +94,16 @@
      under a long one (профессиональный + its pron at 360px) instead of overflowing. */
   .opts button .op{display:inline-block;max-width:100%;color:var(--mute);font-size:14px;font-weight:400;margin-inline-start:8px}
   .opts button[dir=rtl]{text-align:right}
+  /* .num and .op carry UIA (dir=ltr data-ui, docs/PACK_SCHEMA.md "RTL rendering"), so
+     their own margin-inline-* resolves against their OWN ltr direction, not the RTL
+     button's. In an RTL button the number sits first (rightmost) with the word to its
+     left, and the pron span sits after the word (further left, word to ITS right): both
+     gaps are on each element's physical-left/right, the opposite of the ltr case, so the
+     inline-end/inline-start pair flips here rather than moving to a flex gap (the button
+     is a plain wrapping text run, not a flex row, and .opts uses grid for the button
+     list itself — restructuring it to flex would change dist bytes for every pack). */
+  .opts button[dir=rtl] b.num{margin-inline-end:0;margin-inline-start:8px}
+  .opts button[dir=rtl] .op{margin-inline-start:0;margin-inline-end:8px}
   .opts button.ok{border-color:var(--ok);background:var(--ok-bg);color:var(--ok)}
   .opts button.bad{border-color:var(--bad);background:var(--bad-bg);color:var(--bad)}
   .opts-hero button{font-size:18px;padding:18px 18px;min-height:58px;font-weight:500}
@@ -885,6 +895,21 @@ const AR_SEARCH_MAP = { "ٱ":"ا", "ٲ":"ا", "ٳ":"ا", "ٵ":"ا", "ٶ":"و", "
 function foldDevanagari(f){
   return f.normalize("NFD").replace(/़/g, "").replace(/ँ/g, "ं").normalize("NFC");
 }
+// A reduplicated or doubled-word query or entry ("dhīre dhīre", "धीरे धीरे", "kabhī
+// kabhī") folds to its single token, so search treats a reduplicated spelling, its
+// hyphenated form (already turned to a space above) and the bare word as one and the
+// same phrase in both directions: the bare form is a substring of the doubled one either
+// way once both are folded down to one token, and a doubled query still matches an entry
+// stored bare. Consecutive identical whitespace-delimited tokens collapse to one; this
+// runs after every script fold (so accents/nukta/Arabic variants are already unified and
+// two spellings of "the same" token compare equal) and is a no-op for scripts written
+// without spaces (zh/ja/ko han text has no tokens to collapse).
+function foldReduplication(f){
+  const parts = f.split(" ");
+  const out = [];
+  parts.forEach(p => { if(!out.length || out[out.length - 1] !== p) out.push(p); });
+  return out.join(" ");
+}
 function searchFold(s){
   // Nasal tildes over a romanised vowel (kahā̃) are how this pack's roman pron marks
   // nasalisation; loose ASCII typing spells that with a trailing n (kahan), so convert
@@ -894,9 +919,11 @@ function searchFold(s){
   const pre = String(s == null ? "" : s).normalize("NFD").replace(/̃/g, "n").normalize("NFC").replace(/-/g, " ");
   let f = normalizeTyped(pre, { foldAccents: true });
   if(/[ऀ-ॿ]/.test(f)) f = foldDevanagari(f);
-  if(!/[؀-ۿ]/.test(f)) return f;
-  return f.replace(/[ٱ-ٳٵ-ٸةىۀۃه]/g, c => AR_SEARCH_MAP[c]).normalize("NFD").replace(/[ٓ-ٕ]/g, "")
-    .replace(/[كي]/g, c => ARABIC_VARIANTS[c]).replace(/ے(?=\s|$)/g, "ی").normalize("NFC");
+  if(/[؀-ۿ]/.test(f)){
+    f = f.replace(/[ٱ-ٳٵ-ٸةىۀۃه]/g, c => AR_SEARCH_MAP[c]).normalize("NFD").replace(/[ٓ-ٕ]/g, "")
+      .replace(/[كي]/g, c => ARABIC_VARIANTS[c]).replace(/ے(?=\s|$)/g, "ی").normalize("NFC");
+  }
+  return foldReduplication(f);
 }
 // The Arabic definite article: a word-initial ال before at least two more letters is
 // optional in search (كتاب finds الكتاب, and الكتاب finds كتاب). Applied to folded text.
@@ -1328,6 +1355,21 @@ function lessonSayMode(item, speechOK){
 // learner in the primer has no learned words yet.
 function todayGates(learnedCount, hasNextSet, availSentCount, scriptCount){
   return { review: learnedCount >= 5 || (scriptCount || 0) > 0, learn: !!hasNextSet, listen: learnedCount >= 4, recall: learnedCount >= 4, sentences: availSentCount >= 8 };
+}
+// How many of the Listen step's 12 words will actually be served as a Listen item, so
+// the Today plan line agrees with the session: app.html's hearItem() falls back to a
+// Read item (canHearWord false — no TTS voice and no recorded clip for that word), so a
+// word that can't be heard is not a Listen item even though the same 12 words are
+// drilled either way. canHear(word) is the caller's canHearWord.
+// Deliberately not weakFirst(learned, 12): app.html calls weakFirst(lw,12) with no recs,
+// so its "weakest first" is really an unweighted jitter shuffle that draws from the
+// global Math.random — calling it again here, purely to render a plan line, would burn
+// extra draws on every Today render and shift every later shuffle/weakFirst call in the
+// same session (the review/recall word picks, seeded-RNG test goldens, ...). A plain
+// slice is just as representative a sample of the unweighted pool, with no such
+// side effect.
+function listenPlanCount(learned, canHear){
+  return (learned || []).slice(0, 12).filter(canHear).length;
 }
 // Test tab: free word tests need TEST_MIN_WORDS learned words; the sentence test needs
 // 8 available sentences. The "learn first" notice depends on learned words only
@@ -2978,7 +3020,7 @@ const API = { shuffle, escapeHtml, gloss, firstTwoWords, normKey,
   surfaces, sharesSurface, samePron,
   findSurface, locateWord, packSurfaces, spannedByLonger, gapMatch, gapCandidateIndices, blankSentence,
   strata, placementItemCount, placementStopIndex, applyPlacement, dedupeMisses,
-  parseStored, dropUnknownSets, bootProg, lessonItemKey, lessonSayMode, applyImport, todayGates, testGates, pickVoice, speechUsable, isSamsungBrowser, wordAudio, packAudio,
+  parseStored, dropUnknownSets, bootProg, lessonItemKey, lessonSayMode, applyImport, todayGates, testGates, listenPlanCount, pickVoice, speechUsable, isSamsungBrowser, wordAudio, packAudio,
   PROG_VERSION, WORD_MASTERED, SENTENCE_MASTERED, storageKey, defaultProg, validateProgShape, normalizeProg,
   markRec, weakScore, weakFirst, provPick, learnedWords, nextNewSet, currentLevelIndex, availableSentences,
   PRODUCTION_KINDS, REVIEW_SIZE, REVIEW_PRODUCTION_SHARE, kindMix, buildReviewPlan, buildRecallPlan, sentenceKind,
@@ -3281,6 +3323,13 @@ const wordAudio = VC.wordAudio;
 const sayWord = (w, btn) => speak(w.w, btn, wordAudio(w));
 const canHearWord = w => hasSpeech || !!wordAudio(w);
 const PACK_AUDIO = VC.packAudio(PACK);
+// Today's Listen line: the same 12 weakest words hearItem() would drill, counted by
+// VC.listenPlanCount with the session's own canHearWord, so a pack with no voice and no
+// clips shows no count instead of a "12 items" the session can't actually serve as Listen.
+function listenLine(lw){
+  const n = VC.listenPlanCount(lw, canHearWord);
+  return n ? `${n} items` : "no items until a voice or recording is available";
+}
 function speechNotice(){
   if(hasSpeech || PACK_AUDIO || noticeShown) return "";
   noticeShown = true;
@@ -3525,6 +3574,12 @@ function quitDrill(){ D = null; drillKeyHandler = null; render(); }
 // popover (glossHTML, the Read-tab one) inside the nearest data-tokbox and speaks the word
 // only; the whole sentence is heard from its speaker button (sentSayHTML). No progress
 // effect. Never used inside answer buttons.
+// A multi-token pack word (PACK_SCHEMA.md sentences[].spans/passages[].spans: "a word may
+// have several spans, one per occurrence" — the builder emits one span per surface token
+// of a multi-word entry, के लिए as two adjacent spans sharing one wordId) renders one .tk
+// span per token, all sharing data-tok. A tap highlights every one of them, not only the
+// tapped token, so the whole word reads as one unit; the popover and speech still come
+// from the tapped token's own head/surface.
 function tokTapHTML(wordId, inner, head){
   const h = head ? ` data-ts="${escapeHtml(head.surface)}" data-tr="${escapeHtml(head.reading)}"` : "";
   return `<span class="tk" data-tok="${escapeHtml(wordId)}"${h} role="button" tabindex="0">${inner}</span>`;
@@ -3548,6 +3603,7 @@ function tokTap(t){
   if(box){
     box.querySelectorAll(".tk.on").forEach(x => x.classList.remove("on"));
     t.classList.add("on");
+    box.querySelectorAll(".tk").forEach(x => { if(x !== t && x.dataset && x.dataset.tok === t.dataset.tok) x.classList.add("on"); });
     let g = box.querySelector(".tokgloss");
     if(!g){ g = document.createElement("div"); g.className = "gloss tokgloss"; if(DISP.rtl) g.setAttribute("dir", "ltr"); box.appendChild(g); } // an LTR box, as glossBox
     g.innerHTML = html; g.hidden = false;
@@ -4130,7 +4186,7 @@ function todayRender(){
   const steps = [
     ["Review", g.review ? reviewLine : (snap && snap.stage && snap.stage.kind === "script" ? "skipped until a set is learned" : "skipped until 5+ words are learned")],
     ["Learn", snap ? snapLearnLine(snap) : (nn ? `${levelLabel(nn.lv)}, set ${nn.set+1}` : "everything covered")],
-    ["Listen", g.listen ? "12 items" : "skipped until something is learned"],
+    ["Listen", g.listen ? listenLine(lw) : "skipped until something is learned"],
     ["Recall", g.recall ? "8 items" : "skipped until something is learned"],
     ["Sentences", g.sentences ? "8 items, weakest first" : "skipped until 8+ sentences are available"]
   ];
@@ -5153,4 +5209,4 @@ function legacyFailHTML(why){
 </script>
 </body>
 </html>
-<!--ve-build:1644727574-1750530-->
+<!--ve-build:460435353-1754525-->
