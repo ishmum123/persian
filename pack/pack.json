@@ -144,7 +144,7 @@
     ],
     "setsPerSession": 2,
     "mastered": 3,
-    "tts": true,
+    "tts": false,
     "learnKinds": [
       "symSound",
       "formFind"
