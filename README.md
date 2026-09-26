@@ -103,8 +103,15 @@ not had a native-speaker review.
   - Classical romanisations (ā, ī, ū) are converted into this scheme.
   - Words that Wiktionary gives no romanisation are built from a base word
     plus a suffix, as in دقیقاً = daqiq + an.
-- Typing drills are off (`typing: null`). Recall and cloze drills use
-  multiple choice.
+- Typing drills are on (`typing: {caseSensitive: false, accents: lenient,
+  strictFromLevel: null}`). "Type the word" drills the written form.
+  Lenient accents fold harakat, tatweel and ZWNJ/ZWJ on both sides, so a
+  typed answer without diacritics or the ZWNJ pseudo-space (میروم for
+  می‌روم) still matches a pack word. `strictFromLevel` is `null`: harakat
+  are never written in ordinary Persian text at any level, so strict is
+  never appropriate. Arabic kaf/yeh keyboard variants (ك/ي) always equal
+  the Persian forms (ک/ی); see TODO.md for a residual the fold does not
+  cover.
 
 ## Persian rules (summary; details in `langs/fa.py`)
 
