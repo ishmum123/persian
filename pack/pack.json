@@ -161,5 +161,9 @@
       "wordRead": 25,
       "symType": 15
     }
+  },
+  "audio": {
+    "voice": "fa_IR-ganji_adabi-medium",
+    "version": 1
   }
 }
