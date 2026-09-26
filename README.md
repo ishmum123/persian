@@ -11,8 +11,8 @@ comprehension questions (see "Reading passages" below).
 **Script primer.** An "الفبا" stage now runs before A1 and teaches the
 Perso-Arabic alphabet (33 units) with symbol-to-sound, recognition and
 word-reading items. It's skippable with "I can read it" and reversible later
-from Progress. There is no Persian voice, so the Persian primer is
-text-only.
+from Progress. Every script unit has a recorded Piper clip, so the
+primer plays even on devices with no Persian voice.
 
 This repo holds the Persian data pack and the Persian data files its build
 reads, plus [`vocab-engine`](https://github.com/Bannerless-Studio/vocab-engine) as a
@@ -38,9 +38,9 @@ the 3,031 example sentences were written for this pack**. They are marked
 `"src": "gen"` in `pack/sentences.json` and listed in
 `tools/generated_sentences.tsv`. The other 1,820 come from Tatoeba, and 447
 words have only written sentences. The written sentences are machine-written
-and reviewed, but not by a native Persian speaker. Tatoeba has no Persian audio recordings,
-so the pack has no sentence audio, and speech uses the browser's fa-IR
-voice. 1,980 of 2000 words have a romanisation; `tools/REPORT.md` lists
+and reviewed, but not by a native Persian speaker. Tatoeba has no Persian audio recordings;
+every word and sentence has a recorded Piper (`ganji_adabi`) clip instead,
+with the browser's fa-IR voice as fallback. 1,980 of 2000 words have a romanisation; `tools/REPORT.md` lists
 the rest. Known residuals are in `TODO.md`.
 
 ## Reading passages (Read tab)
